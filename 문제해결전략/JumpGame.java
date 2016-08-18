@@ -19,8 +19,7 @@ public class JumpGame {
             }
 
             // String ret = jump(0,0) ? "YES":"NO"; // without memoization
-            String ret = (jump2(0, 0) != 0 ? "YES" : "NO"); // jump2(0,0)>0으로 하면
-                                                            // 안됨. 왜?
+            String ret = (jump2(0, 0) != 0 ? "YES" : "NO"); // jump2내에 return시 덧셈을 하면 jump2(0,0)>0으로 하면 안됨 왜? 덧셈하다보면 오버플로우가 발생해서 0보다 작은 수가 있음
 
             System.out.println(ret);
         }
@@ -51,6 +50,7 @@ public class JumpGame {
             return cache[y][x];
 
         int jumpSize = board[y][x];
-        return cache[y][x] = (jump2(y + jumpSize, x) + jump2(y, x + jumpSize));
+
+        return cache[y][x] = jump2(y + jumpSize, x) | jump2(y, x + jumpSize); // '|' 대신 덧셈을 하면 오버플로우 발생
     }
 }
