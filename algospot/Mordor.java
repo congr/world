@@ -16,14 +16,19 @@ public class Mordor {
             int N = Integer.parseInt(NQ[0]);
             int Q = Integer.parseInt(NQ[1]);
 
-            // option 1 - StringTokenizer with For loop (1552ms) :: faster
+            // option 1 - StringTokenizer & for loop (1204ms) :: faster
             // StringTokenizer stk = new StringTokenizer(br.readLine());
             // int[] heights = new int[N];
             // for (int i = 0; i < N; i++) heights[i] = Integer.parseInt(stk.nextToken());
 
-            // option 2 - split with stream.mapToInt (2392ms)
-            String[] nLines = br.readLine().split(" ");
-            int[] heights = Arrays.stream(nLines).mapToInt(Integer::parseInt).toArray();
+            // option 2 - split & stream.mapToInt (2328ms)
+            // String[] nLines = br.readLine().split(" ");
+            // int[] heights = Arrays.stream(nLines).mapToInt(Integer::parseInt).toArray();
+
+            // option 3 - split & for loop (1688ms)
+            int[] heights = new int[N];
+            String[] lines = br.readLine().split(" ");
+            for (int i = 0; i < N; i++) heights[i] = Integer.parseInt(lines[i]);
 
             // RMQ
             SegmentTree st = new SegmentTree(heights); // 3 9 5 6 10 8 ....
