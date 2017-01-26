@@ -17,7 +17,6 @@ public class FamilyTree {
 
         Node(int data) {
             this.data = data;
-            this.depth = 0;
         }
 
         void addChild(Node child) {
@@ -40,26 +39,33 @@ public class FamilyTree {
             int Q = Integer.parseInt(NQ[1]);
 
             String[] P = br.readLine().split(" ");
-            int[] parents = new int[N];
-            parents[0] = 0; // root's parent - just set 0
 
-
-            // build tree
+            // declare array list for tree, add nodes sequentially
             ArrayList<Node> tree = new ArrayList<>();
             for (int i = 0; i < N; i++) tree.add(new Node(i));
 
+            // add children to parent
             for (int i = 0; i < N - 1; i++) {
-                parents[i + 1] = Integer.parseInt(P[i]);
-                //Node self = new Node(i+1);
-                //tree.add (self);
-                tree.get(parents[i + 1]).addChild(tree.get(i + 1));
+                int pIndex = Integer.parseInt(P[i]);
+                Node parent = tree.get(pIndex);
+                Node child = tree.get(i + 1);
+                parent.addChild(child);
+                //child.depth = parent.depth + 1; // can't set depth from parent, if parent is not yet set since input data might not be sorted
             }
 
-            // set each node's depth
-            tour(tree.get(0));
-            out.println("tree" + tree.toString());
+            // eulerTour output -> eulerVisits[2N-1], eulerDepths[2N-1], nodeFirstBump[N]
+            // eulerTour : vertex cnt = 2n - 2, node cnt = 2n - 1
+            int[] eulerVisits = new int[2 * N - 1];
+            int[] eulerDepths = new int[2 * N - 1];
+            int[] nodeFirstBump = new int[N];
+            Arrays.fill(nodeFirstBump, -1);
 
-            SegmentTree st = new SegmentTree(parents);
+            pos = 0;
+            dep = 0;
+            eulerTour(tree.get(0), eulerVisits, eulerDepths, nodeFirstBump);
+            //out.println("tree" + tree.toString());
+
+            SegmentTree st = new SegmentTree(eulerDepths);
             for (int i = 0; i < Q; i++) {
                 String[] query = br.readLine().split(" ");
                 int a = Integer.parseInt(query[0]);
@@ -67,37 +73,53 @@ public class FamilyTree {
 
                 if (a == b) out.println(0);
                 else {
-                    int from = Math.min(a, b);
-                    int to = Math.max(a, b);
-                    int lca = st.rMinQ(from, to); // find LCA
+                    int eulerDepthIndexA = nodeFirstBump[a]; // the position a is shown at first on euler tour
+                    int eulerDepthIndexB = nodeFirstBump[b];
 
-                    int fromDepth = tree.get(from).depth;
-                    int toDepth = tree.get(to).depth;
-                    int lcaDepth = tree.get(lca).depth;
+                    int from = Math.min(eulerDepthIndexA, eulerDepthIndexB); // eulerDepth array's index
+                    int to = Math.max(eulerDepthIndexA, eulerDepthIndexB);
+                    int lcaDepth = st.rMinQ(from, to);  // find LCA depth, not LCA data value (eulerDepths array passed to segment tree)
+
+                    int fromDepth = tree.get(a).depth;  // same as eulerDepths[from];
+                    int toDepth = tree.get(b).depth;    //same as eulerDepths[to];
+
                     int totalDist = fromDepth + toDepth - 2 * lcaDepth;
                     out.println(totalDist);
                 }
             }
-
-            h = 0;
         }
 
         br.close();
         out.close();
     }
 
-    static int h = 0;
+    static int pos = 0;
+    static int dep = 0;
 
-    // set node's depth (root depth: 0)
-    static void tour(Node root) {
+    static void eulerTour(Node root, int[] eulerVisits, int[] eulerDepths, int[] nodeFirstBump) {
+        // store first visit position (node 6 visited on 2nd spot, nodeFirstBump[6] = 1)
+        if (nodeFirstBump[root.data] == -1) // if not visited yet
+            nodeFirstBump[root.data] = pos;
+
+        // each node set here at first
+        eulerVisits[pos] = root.data;
+        eulerDepths[pos] = root.depth;
+        pos++;
+
         for (Node node : root.children) {
-            node.depth = ++h;
-            tour(node);
-            h--;
+            dep++;
+            node.depth = dep;
+            eulerTour(node, eulerVisits, eulerDepths, nodeFirstBump);
+            dep--;
+
+            // each node set here again (set euler tour's node occurrence)
+            eulerVisits[pos] = root.data;
+            eulerDepths[pos] = root.depth;
+            pos++;
         }
     }
 
-    // Do not travel at every query
+    // *** Do not travel at every query (inefficient & time over)
     /*static int findPath(int[] parents, int child) {
         int dist = 0;
         int pIndex = child;
