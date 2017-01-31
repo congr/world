@@ -26,20 +26,38 @@ public class Dictionary {
             Graph g = new Graph(26); // alphabet cnt
 
             makeGraph(g, input);
+            //g.printGraph();
             ArrayList<Integer> order = topologicalSort(g);
-            System.out.println(order.toString());
+            if (order.size() == 0)
+                out.println("INVALID HYPOTHESIS");
+            else {
+
+                for (int i =0; i<order.size();i++) {
+                    char ch = (char)(order.get(i) + 'a');
+                    out.print(ch);
+                }
+                out.println();
+                //System.out.println(order.toString());
+            }
         }
+
+        br.close();
+        out.close();
     }
 
     static void makeGraph(Graph g, String[] input){
         for (int j =1; j<input.length;++j) {
             int i = j-1;
-            int len = Math.min(input[i].length(), input[j].length());
+            String inputI = input[i];
+            String inputJ = input[j];
+
+            int len = Math.min(inputI.length(), inputJ.length());
 
             for (int k=0; k<len;++k) {
-                if (input[i].charAt(k) != input[j].charAt(k)) {
-                    int a = input[i].charAt(k) - 'a';
-                    int b = input[j].charAt(k) - 'a';
+                if (inputI.charAt(k) != inputJ.charAt(k)) {
+                    int a = inputI.charAt(k) - 'a';
+                    int b = inputJ.charAt(k) - 'a';
+                    //System.out.println(inputI.charAt(k) + " " + a + " " + inputJ.charAt(k) + " " +b);
                     g.adjMatrix[a][b] = true;
                     break;
                 }
@@ -54,7 +72,7 @@ public class Dictionary {
 
         int n = g.V;
         for (int i =0; i<n; ++i) {
-            for (int j =0; j<n; ++j) {
+            for (int j =i+1; j<n; ++j) {
                 if (g.adjMatrix[g.order.get(j)][g.order.get(i)])
                     return new ArrayList<>();
             }
@@ -70,7 +88,8 @@ public class Dictionary {
         int E;
         ArrayList<Integer> order;
 
-        Graph(int V) {
+        Graph(int v) {
+            this.V = v;
             adjMatrix = new boolean[V][V];
             visited = new boolean[V];
 
@@ -100,7 +119,15 @@ public class Dictionary {
                 if (visited[i] == false)
                     dfs(i);
             }
+        }
 
+        void printGraph() {
+            for (int i=0; i<V;i++) {
+                for (int j=0; j<V; j++) {
+                    System.out.print(adjMatrix[i][j] ? "1" : 0);
+                }
+                System.out.println();
+            }
         }
     }
 }
