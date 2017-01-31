@@ -32,8 +32,8 @@ public class Dictionary {
                 out.println("INVALID HYPOTHESIS");
             else {
 
-                for (int i =0; i<order.size();i++) {
-                    char ch = (char)(order.get(i) + 'a');
+                for (int i = 0; i < order.size(); i++) {
+                    char ch = (char) (order.get(i) + 'a');
                     out.print(ch);
                 }
                 out.println();
@@ -45,15 +45,15 @@ public class Dictionary {
         out.close();
     }
 
-    static void makeGraph(Graph g, String[] input){
-        for (int j =1; j<input.length;++j) {
-            int i = j-1;
+    static void makeGraph(Graph g, String[] input) {
+        for (int j = 1; j < input.length; ++j) {
+            int i = j - 1;
             String inputI = input[i];
             String inputJ = input[j];
 
             int len = Math.min(inputI.length(), inputJ.length());
 
-            for (int k=0; k<len;++k) {
+            for (int k = 0; k < len; ++k) {
                 if (inputI.charAt(k) != inputJ.charAt(k)) {
                     int a = inputI.charAt(k) - 'a';
                     int b = inputJ.charAt(k) - 'a';
@@ -71,8 +71,8 @@ public class Dictionary {
         Collections.reverse(g.order);
 
         int n = g.V;
-        for (int i =0; i<n; ++i) {
-            for (int j =i+1; j<n; ++j) {
+        for (int i = 0; i < n; ++i) {
+            for (int j = i + 1; j < n; ++j) {
                 if (g.adjMatrix[g.order.get(j)][g.order.get(i)])
                     return new ArrayList<>();
             }
@@ -122,8 +122,8 @@ public class Dictionary {
         }
 
         void printGraph() {
-            for (int i=0; i<V;i++) {
-                for (int j=0; j<V; j++) {
+            for (int i = 0; i < V; i++) {
+                for (int j = 0; j < V; j++) {
                     System.out.print(adjMatrix[i][j] ? "1" : 0);
                 }
                 System.out.println();
