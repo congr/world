@@ -1,5 +1,6 @@
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Created by cutececil on 2017. 2. 1..
@@ -23,7 +24,22 @@ public class WordChain {
 
             ArrayList<Integer> circuit = g.getEulerTrailOrCircuit();
 
-            System.out.println(circuit.toString());
+            // sort as reverse order
+            Collections.reverse(circuit);
+
+            ArrayList<String> words = new ArrayList<>();
+            for (int i = 0; i < circuit.size() - 1; i++) {
+                int a = circuit.get(i);
+                int b = circuit.get(i + 1);
+                String str = g.wordMatrix[a][b];
+                words.add(str);
+            }
+            if (words.size() != input.length) out.println("IMPOSSIBLE");
+            else {
+                for (String s : words)
+                    out.print(s + " ");
+                out.println();
+            }
         }
 
         br.close();
@@ -54,7 +70,7 @@ public class WordChain {
             for (int i = 0; i < input.length; ++i) {
                 String str = input[i];
                 int a = str.charAt(0) - 'a';
-                int b = str.charAt(str.lastIndexOf(str)) - 'a';
+                int b = str.charAt(str.length() - 1) - 'a';
                 wordMatrix[a][b] = str;
                 adjMatrix[a][b]++;
                 outdegree[a]++;
@@ -97,8 +113,8 @@ public class WordChain {
             for (int i = 0; i < V; ++i) {
                 if (outdegree[i] > 0) {
                     getEulerCircuit(i, circuit);
+                    return circuit;
                 }
-                return circuit;
             }
 
             return circuit;
