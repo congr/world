@@ -39,7 +39,9 @@ public class ChildrenDay {
     // C mod n == m인 최소의 C를 찾는다
     static String gift(String digits, int n, int m) {
         // 간선의 번호를 오름차순으로 정렬해 두면 사전순으로 가장 앞에 있는 경로를 찾을 수 있다
-        Collections.reverse(Arrays.asList(digits));
+        char[] digitsArray = digits.toCharArray();
+        Arrays.sort(digitsArray);
+        digits = String.valueOf(digitsArray);
 
         // 흰색 정점 i는 0 ~ n-1, 회색 정점은 i는 n ~ 2n -1
         // choice[i] = parent[i]에서 i로 연결된 간선의 번호
@@ -54,7 +56,7 @@ public class ChildrenDay {
         queue.add(0);
 
         while (!queue.isEmpty()) {
-            int here = queue.peek();
+            int here = queue.poll(); // retrieve and remove
             for (int i = 0; i < digits.length(); i++) {
                 int there = append(here, digits.charAt(i) - '0', n);
                 if (parent[there] == -1) {
@@ -69,14 +71,13 @@ public class ChildrenDay {
         if (parent[n + m] == -1) return "IMPOSSIBLE";
 
         // 부모로 가는 연결을 따라가면서 C를 계산한다
-        String ret = "";
+        StringBuffer sb = new StringBuffer(); // string + 보다 string buffer 를 쓰는 것이 낫다. 이유는...
         int here = n + m;
         while (parent[here] != here) {
-            ret += '0' + choice[here];
+            sb.append(choice[here]); // digits.charAt(i) - '0'를 하지 않아도 append(int i) 가 있어서 코드가 간결하다
             here = parent[here];
         }
-        Collections.reverse(Arrays.asList(ret));
-        return ret;
-    }
 
+        return sb.reverse().toString(); // reverse가 편하다
+    }
 }
