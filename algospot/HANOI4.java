@@ -3,6 +3,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.*;
+import java.util.stream.IntStream;
 
 /**
  * Created by cutececil on 2017. 2. 15..
@@ -10,7 +11,7 @@ import java.util.*;
 public class HANOI4 {
     public static int MAX_DISCS = 12;
     static BitSet[] hanoi = new BitSet[MAX_DISCS + 1];
-    static HashMap<BitSet, Integer> discovered = new HashMap<>();
+    static LinkedHashMap<BitSet[], Integer> discovered = new LinkedHashMap<>();
 
     // BFS - precalc
     public static void main(String[] args) throws Exception {
@@ -24,10 +25,13 @@ public class HANOI4 {
 //        for (int i = 0; i < MAX_DISCS; i++) {
 //            hanoi[i] = new BitSet(MAX_DISCS);
 //        }
-
+        BitSet[] state = new BitSet[4];
         for (int i = 1; i <= MAX_DISCS; i++) {
-            BitSet state = new BitSet(i);
-            state.set(0, i); // 0부터 끝까지 모든 비트를 true셋팅
+            state[0] = new BitSet(i);
+            state[1] = new BitSet(i);
+            state[2] = new BitSet(i);
+            state[3] = new BitSet(i);
+            state[3].set(0, i); // 0부터 끝까지 모든 비트를 true셋팅
             precalcBFS(state, i); // i: 원반 개수
         }
 
@@ -66,29 +70,41 @@ public class HANOI4 {
     }
 
     static int set(int state, int index, int value) {
-        state &= ~(3 << (index * 2));
-        state |= value << (index * 2);
+        state &= ~(3 << (index));
+        state |= value << (index);
         return state;
     }
 
+//    static String toString(BitSet bits, int N) {
+//        StringBuffer sb = new StringBuffer(N);
+//        for (int i = N - 1; i >= 0; i--)
+//            sb.append(bits.get(i) ? 1 : 0);
+//        return sb.toString();
+//    }
+
     // state 현재 상태, N 원반의 개수
     // sortGame과 같은 형태이나 Bit 처리한 것이 차이로 미리 모든 형태의 그래프를 준비해둠.
-    static void precalcBFS(BitSet state, int N) {
-
-        Queue<BitSet> queue = new LinkedList<>();
+    static void precalcBFS(BitSet[] state, int N) {
+        //System.out.println(toString(state, N));
+               
+        Queue<BitSet[]> queue = new LinkedList<>();
         queue.add(state);
         discovered.put(state, 0);
 
         while (!queue.isEmpty()) {
-            BitSet here = queue.poll(); // retrieve and remove
+            BitSet[] here = queue.poll(); // retrieve and remove
             int cost = discovered.get(here);
 
             // 각 기둥에서 제일 위에 있는 원반의 번호를 계산한다
             int[] top = {-1, -1, -1, -1};
-            for (int i = N - 1; i >= 0; --i) {
-                int index = here.nextSetBit(i);
-                top[index & 3] = i; // 11번 기둥 위치는? 4개 index중에 있다고 업뎃, 10기둥위치는? 같은 기둥이라면 덮어씀... 가장 작은 기둥으로 top이 다 채워짐
-            }
+            top[3] = here[3].nextSetBit(0);
+            top[2] = here[2].nextSetBit(0);
+            top[1] = here[1].nextSetBit(0);
+            top[0] = here[0].nextSetBit(0);
+//            for (int i = 0; i < N; ++i) {
+//                int index = here.nextSetBit(i);
+//                top[index / 3] = i; // 11번 기둥 위치는? 4개 index중에 있다고 업뎃, 10기둥위치는? 같은 기둥이라면 덮어씀... 가장 작은 기둥으로 top이 다 채워짐
+//            }
 
             //i번 기둥의 맨 위에 있는 원반을 j번 기둥으로 옮긴다
             for (int i = 0; i < 4; i++) {
@@ -98,9 +114,9 @@ public class HANOI4 {
                 for (int j = 0; j < 4; j++) {
                     // j번 기둥은 비어 있거나 맨위의 원반이 더 커야 한다
                     if (i != j && (top[j] == -1 || top[j] > top[i])) { // 이동 가능
-                        BitSet there = here;
-                        there.clear(top[i]); // top[i] 원반을 j기둥으로 이동
-                        there.set(j);
+                        BitSet[] there = (BitSet[]) here.clone();
+                        there[i].clear(top[i]); // top[i] 원반을 j기둥으로 이동
+                        there[j].set(top[i]);
                         if (discovered.containsKey(there) == false) {
                             discovered.put(there, cost + 1);
                         }
@@ -108,6 +124,15 @@ public class HANOI4 {
                 }
             }
         }
+    }
+
+    public static int bitSetToInt(BitSet bitSet)
+    {
+        int bitInteger = 0;
+        for(int i = 0 ; i < 32; i++)
+            if(bitSet.get(i))
+                bitInteger |= (1 << i);
+        return bitInteger;
     }
 
 }
