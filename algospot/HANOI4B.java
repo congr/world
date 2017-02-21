@@ -36,14 +36,14 @@ public class HANOI4B {
 
                 for (int j = 0; j < A; j++) { // 원반 개수만큼 루프를 돌면서 어떤 원반이 i기둥에 있는지 set
                     int value = Integer.parseInt(AB[j + 1]);
-                    begin = set(begin, i, value -1); // i 기둥에 value 원반이 있다고 set
+                    begin = set(begin, value - 1, i); // i 기둥에 value 원반이 있다고 set
                 }
             }
 
             // 끝 상태 - 모두 옮겨저서 정렬된 상태
             int end = 0;
-            for (int j = N-1; j >= 0; --j) { // disc
-                end = set(end, 3, j); // 기둥은 항상 4개이므로 마지막 3번째 기둥에 모든 원반을 세팅
+            for (int j = 0; j < N; j++) { // 원반 개수 N
+                end = set(end, j, 3); // 기둥은 항상 4개이므로 마지막 3번째 기둥에 모든 원반을 세팅
             }
 
             System.out.println(precalcBFS(N, begin, end));
@@ -54,13 +54,15 @@ public class HANOI4B {
         out.close();
     }
 
-    static int get(int state, int index) {
-        return (state >> (index * 2)) & 3;
+    // disc 원반은 어느 기둥에 있는가?
+    static int get(int state, int disc) {
+        return (state >> (disc * 2)) & 3;
     }
 
-    static int set(int state, int index, int value) {
-        state &= ~(3 << (index * 2));
-        state |= value << (index * 2);
+    // tower 기둥에 disc번 원반이 있다고 state에 해당 비트를 켠다
+    static int set(int state, int disc, int tower) {
+        state &= ~(3 << (disc * 2));
+        state |= tower << (disc * 2);
         return state;
 //        return (state & ~(3 << (index * 2))) | (value << (index * 2));
     }
