@@ -1,26 +1,24 @@
 'use strict';
 
+const utils = require('../../utils');
 const AWS = require('aws-sdk'); // eslint-disable-line import/no-extraneous-dependencies
+
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
+const TAG = 'createDevice';
 
 module.exports.createDevice = (event, context, callback) => {
-    console.log("createDevice", event.body);
+    utils.logEvent(TAG, event);
+
+    const data = JSON.parse(event.body);
+    if (!utils.isValidDeviceBody(data)) return;
 
     const timestamp = new Date().toJSON();
-    const data = JSON.parse(event.body);
-
-    if ((data.hasOwnProperty('deviceId') && data.hasOwnProperty('sensorId') && data.hasOwnProperty('userId')) === false) {
-        console.error('deviceId or sensorId or userId is missing.');
-        callback(new Error('Couldn\'t create the device item.'));
-        return;
-    }
-
     const params = {
         TableName: process.env.DYNAMODB_TABLE,
         Item: {
-            deviceId: data.deviceId,
-            sensorId: data.sensorId,
-            userId: data.userId,
+            did: data.did,
+            sid: data.sid,
+            uid: data.uid,
             euid: data.euid,
             model: data.model,
             type: data.type,
