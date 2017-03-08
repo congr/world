@@ -1,0 +1,128 @@
+service: iot-package-devices
+
+frameworkVersion: ">=1.1.0 <2.0.0"
+
+package:
+  exclude:
+    - tmp/**
+    - .git/**
+    - .idea/**
+    - package.json
+  include:
+    - ./*.js
+    - node_modules/**
+
+provider:
+  name: aws
+  runtime: nodejs4.3
+  region: ap-northeast-1
+  stage: qa
+  environment:
+    DYNAMODB_TABLE: ${opt:stage, self:provider.stage}-${self:service}
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:Query
+        - dynamodb:Scan
+        - dynamodb:GetItem
+        - dynamodb:PutItem
+        - dynamodb:UpdateItem
+        - dynamodb:DeleteItem
+      Resource: "arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/${self:provider.environment.DYNAMODB_TABLE}"
+
+functions:
+  deleteConfig:
+    handler: handler/config-delete.deleteConfig
+    events:
+      - http:
+          path: devices/{did}/{sid}
+          method: delete
+          cors: true
+
+  lookupConfig:
+    handler: handler/config-lookup.lookupConfig
+    events:
+      - http:
+          path: devices/{did}/{sid}
+          method: get
+          cors: true
+
+  updateConfig:
+    handler: handler/config-update.updateConfig
+    events:
+      - http:
+          path: devices/{did}/{sid}
+          method: put
+          cors: true
+
+  createDevice:
+    handler: handler/device-create.createDevice
+    events:
+      - http:
+          path: devices
+          method: post
+          cors: true
+
+  deleteDevice:
+    handler: handler/device-delete.deleteDevice
+    events:
+      - http:
+          path: devices/{did}
+          method: delete
+          cors: true
+
+  lookupDevice:
+    handler: handler/device-lookup.lookupDevice
+    events:
+      - http:
+          path: devices/{did}
+          method: get
+          cors: true
+
+  deleteUser:
+    handler: handler/user-delete.deleteUser
+    events:
+      - http:
+          path: devices
+          method: delete
+          cors: true
+
+resources:
+  Resources:
+    devicesDynamoDbTable:
+      Type: 'AWS::DynamoDB::Table'
+      DeletionPolicy: Retain
+      Properties:
+        AttributeDefinitions:
+          -
+            AttributeName: did
+            AttributeType: S
+          -
+            AttributeName: sid
+            AttributeType: S
+          -
+            AttributeName: uid
+            AttributeType: S
+        KeySchema:
+          -
+            AttributeName: did
+            KeyType: HASH
+          -
+            AttributeName: sid
+            KeyType: RANGE
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        GlobalSecondaryIndexes:
+        - IndexName: "did-uid-index"
+          KeySchema:
+          - AttributeName: "did"
+            KeyType: "HASH"
+          - AttributeName: "uid"
+            KeyType: "RANGE"
+          Projection:
+            ProjectionType: "ALL"
+          ProvisionedThroughput:
+            ReadCapacityUnits: 1
+            WriteCapacityUnits: 1
+        TableName: ${self:provider.environment.DYNAMODB_TABLE}
