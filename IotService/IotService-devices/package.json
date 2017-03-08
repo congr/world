@@ -5,9 +5,10 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "aws-sdk": "^2.22.0",
-    "bluebird": "^3.5.0",
-    "dynamodb": "^0.3.6",
-    "unirest": "^0.5.1"
+    "requestify": "^0.2.5"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.24.0",
+    "dynamodb": "^0.3.6"
   }
 }

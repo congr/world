@@ -3,7 +3,7 @@
 const consts = require('../consts');
 const utils = require('../utils');
 const AWS = require('aws-sdk'); // eslint-disable-line import/no-extraneous-dependencies
-const Unirest = require('unirest'); // TODO : requestify 가 promise 좋은듯 변경하자
+const Requestify = require('requestify');
 
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
 const TAG = consts.PREFIX + ':createDevice';
@@ -18,30 +18,35 @@ module.exports.createDevice = (event, context, callback) => {
     requestDM()
         .then(putDynamo)
         .then(response => {
-            console.log(TAG, response);
-            callback(null, response)
+            console.log(TAG, 'success', response);
+            callback(null, response);
         })
-        .catch(error => {
-            console.error(TAG, error);
-            callback(new Error(error))
+        .catch(reason => {
+            console.error(TAG, 'fail', reason);
+            callback(new Error(JSON.stringify(reason)));
         });
 
     function requestDM() {
+        console.log(TAG, 'requestDM');
         return new Promise((resolve, reject) => {
-            if (!data['type'] || !data['country_code']) throw 'type or country_code is missing';
-            Unirest.post(consts.URL_DATAPOINTS)
-                .headers({'Content-Type': 'application/json'})
-                .send({'deviceType': data.type, 'countryCode': data.country_code, 'deviceId': data.sid})
-                .end(response => {
-                    console.log(TAG, 'datapoints response:', JSON.stringify(response));
-                    if (response.error) reject(response.error);
-                    else if (response.body.result !== '200') reject(response.body.result);
-                    else resolve(response);
-                });
+            Requestify.post(consts.URL_DATAPOINTS, {
+                'deviceType': data.type,
+                'countryCode': data.country_code,
+                'deviceId': data.sid
+            }).then(response => {
+                console.log(TAG, 'datapoints response:', response);
+                const body = JSON.parse(response.body);
+                if (body.result === '200') resolve();
+                else reject(body);
+            }).fail(response => {
+                console.log(TAG, 'datapoints response:', response);
+                reject(response.body);
+            });
         });
     }
 
     function putDynamo() {
+        console.log(TAG, 'putDynamo');
         return new Promise((resolve, reject) => {
             const timestamp = new Date().toJSON();
             const params = {
@@ -60,7 +65,7 @@ module.exports.createDevice = (event, context, callback) => {
             };
 
             dynamoDb.put(params, (error, result) => {
-                if (error) reject(error.stack);
+                if (error) reject(error);
 
                 resolve({
                     statusCode: 200,

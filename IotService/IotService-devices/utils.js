@@ -27,7 +27,7 @@ module.exports.isValidConfigUrl = (TAG, event, callback) => {
 
 module.exports.isValidDeviceUrl = (TAG, event, callback) => {
     if (!event.pathParameters['did']) {
-        console.error(ERROR_MISSING_PATH_PARAM_DID);
+        console.error(TAG, ERROR_MISSING_PATH_PARAM_DID);
         callback(new Error(ERROR_MISSING_PATH_PARAM_DID));
         return false;
     }
@@ -37,8 +37,13 @@ module.exports.isValidDeviceUrl = (TAG, event, callback) => {
 
 module.exports.isValidDeviceBody = (TAG, data, callback) => {
     if ((data.hasOwnProperty('did') && data.hasOwnProperty('sid') && data.hasOwnProperty('uid')) === false) {
-        console.error('did or sid or uid is missing.');
+        console.error(TAG, 'did or sid or uid is missing.');
         callback(new Error('did or sid or uid is missing.'));
+        return false;
+    }
+    if (!data['type'] || !data['country_code']) {
+        console.error(TAG, 'type or country_code is missing');
+        callback(new error('type or country_code is missing'));
         return false;
     }
 
@@ -47,7 +52,7 @@ module.exports.isValidDeviceBody = (TAG, data, callback) => {
 
 module.exports.isValidUserBody = (TAG, data, callback) => {
     if (!data.hasOwnProperty('uid')) {
-        console.error('uid is missing.');
+        console.error(TAG, 'uid is missing.');
         callback(new Error('uid is missing.'));
         return false;
     }
