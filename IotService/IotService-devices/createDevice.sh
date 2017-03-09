@@ -1,0 +1,1 @@
+sls invoke local --function createDevice --path data/createDevice.json

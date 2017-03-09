@@ -6,13 +6,20 @@ const AWS = require('aws-sdk'); // eslint-disable-line import/no-extraneous-depe
 const Requestify = require('requestify');
 
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
-const TAG = consts.PREFIX + ':createDevice';
+const TAG = consts.PREFIX + ':createDevice]';
 
 module.exports.createDevice = (event, context, callback) => {
     utils.logEvent(TAG, event);
 
     const data = JSON.parse(event.body);
-    if (!utils.isValidDeviceBody(TAG, data, callback)) return;
+    const source = data.params.source;
+    const settings = data.params.settings;
+    const type = Object.keys(settings)[0];
+    const settingsValue = settings[type];
+    const euid = settingsValue.euid;
+    const model = settingsValue.model;
+
+    if (!utils.isValidDeviceBody(TAG, source, callback)) return;
 
     // DM Thing create -> Dynamo put
     requestDM()
@@ -29,11 +36,13 @@ module.exports.createDevice = (event, context, callback) => {
     function requestDM() {
         console.log(TAG, 'requestDM');
         return new Promise((resolve, reject) => {
-            Requestify.post(consts.URL_DATAPOINTS, {
-                'deviceType': data.type,
+            const reqData = {
+                'deviceType': type,
                 'countryCode': data.country_code,
-                'deviceId': data.sid
-            }).then(response => {
+                'deviceId': source.sid
+            };
+            console.log(TAG, consts.URL_DATAPOINTS, reqData);
+            Requestify.post(consts.URL_DATAPOINTS, reqData).then(response => {
                 console.log(TAG, 'datapoints response:', response);
                 const body = JSON.parse(response.body);
                 if (body.result === '200') resolve();
@@ -49,16 +58,17 @@ module.exports.createDevice = (event, context, callback) => {
         console.log(TAG, 'putDynamo');
         return new Promise((resolve, reject) => {
             const timestamp = new Date().toJSON();
+
             const params = {
                 TableName: process.env.DYNAMODB_TABLE,
                 Item: {
-                    did: data.did,
-                    sid: data.sid,
-                    uid: data.uid,
-                    euid: data.euid,
-                    model: data.model,
-                    type: data.type,
-                    settings: data.settings,
+                    did: source.did,
+                    sid: source.sid,
+                    uid: source.uid,
+                    euid: euid,
+                    model: model,
+                    type: type,
+                    settings: settingsValue,
                     createdAt: timestamp,
                     updatedAt: timestamp,
                 },

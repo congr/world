@@ -41,11 +41,11 @@ module.exports.isValidDeviceBody = (TAG, data, callback) => {
         callback(new Error('did or sid or uid is missing.'));
         return false;
     }
-    if (!data['type'] || !data['country_code']) {
-        console.error(TAG, 'type or country_code is missing');
-        callback(new error('type or country_code is missing'));
-        return false;
-    }
+    // if (!data['type'] || !data['country_code']) {
+    //     console.error(TAG, 'type or country_code is missing');
+    //     callback(new error('type or country_code is missing'));
+    //     return false;
+    // }
 
     return true;
 };
