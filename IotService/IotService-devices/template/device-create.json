@@ -1,5 +1,5 @@
 {
-  "body": "{\r\n  \"JSON-rpc\":\"2.0\",\r\n  \"method\":\"create_sensor_config\",\r\n  \"uuid\":\"uniquemessageId\",\r\n  \"phase\":\"dv\",\r\n  \"region\":\"kic\",\r\n  \"country_code\":\"kr\",\r\n  \"params\":{\r\n    \"version\":\"11234\",\r\n    \"mid\":\"messageId\",\r\n    \"source\":{\r\n      \"did\":\"${did}\",\r\n      \"sid\":\"666\",\r\n      \"uid\":\"${uid}\",\r\n      \"tz\":\"Asia\/Seoul\",\r\n      \"ts\":\"1234\"\r\n    },\r\n    \"settings\": {\r\n     \"th\": {\r\n        \"nick\":\"${uid}\uD83D\uDE01\",\r\n        \"euid\":\"euid1\",\r\n      \"model\":\"10001\"\r\n       \r\n      }\r\n    }\r\n  }\r\n}",
+  "body": "{\r\n  \"JSON-rpc\":\"2.0\",\r\n  \"method\":\"create_sensor_config\",\r\n  \"uuid\":\"uniquemessageId\",\r\n  \"phase\":\"dv\",\r\n  \"region\":\"kic\",\r\n  \"country_code\":\"kr\",\r\n  \"params\":{\r\n    \"version\":\"11234\",\r\n    \"mid\":\"messageId\",\r\n    \"source\":{\r\n      \"did\":\"did555\",\r\n      \"sid\":\"sid555\",\r\n      \"uid\":\"user1\",\r\n      \"tz\":\"Asia\/Seoul\",\r\n      \"ts\":\"1234\"\r\n    },\r\n    \"settings\": {\r\n     \"th\": {\r\n        \"nick\":\"${uid}\uD83D\uDE01\",\r\n        \"euid\":\"euid1\",\r\n      \"model\":\"10001\"\r\n       \r\n      }\r\n    }\r\n  }\r\n}",
   "resource": "/{proxy+}",
   "requestContext": {
     "resourceId": "123456",

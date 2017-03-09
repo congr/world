@@ -1,7 +1,7 @@
 'use strict';
 
-const consts = require('../consts');
-const utils = require('../utils');
+const consts = require('../common/consts');
+const utils = require('../common/utils');
 const AWS = require('aws-sdk'); // eslint-disable-line import/no-extraneous-dependencies
 
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
@@ -15,32 +15,43 @@ module.exports.lookupDevice = (event, context, callback) => {
     if (!utils.isValidDeviceUrl(TAG, event, callback)) return;
 
     const data = JSON.parse(event.body);
+    const source = data.params.source;
+
     let params = {};
     if (data.hasOwnProperty('uid'))
         params = {
             TableName: process.env.DYNAMODB_TABLE,
-            Key: {
-                did: event.pathParameters.did,
-                uid: data.uid
+            IndexName: "did-uid-index",
+            KeyConditionExpression: "#did_name = :did_value and #uid_name = :uid_value",
+            ExpressionAttributeNames: {
+                "#did_name": "did" || event.pathParameters.did,
+                "#uid_name": "uid"
+            },
+            ExpressionAttributeValues: {
+                ":did_value": source.did || event.pathParameters.did,
+                ":uid_value": source.uid
             }
         };
     else
         params = {
             TableName: process.env.DYNAMODB_TABLE,
-            Key: {
-                did: event.pathParameters.did
+            KeyConditionExpression: "#did_name = :did_value",
+            ExpressionAttributeNames: {
+                "#did_name": "did"
+            },
+            ExpressionAttributeValues: {
+                ":did_value": source.did || event.pathParameters.did
             }
         };
 
-
-    dynamoDb.scan(params, (error, result) => {
+    dynamoDb.query(params, (error, result) => {
+        console.log(TAG, "dynamo result", JSON.stringify(result, null, " "));
         if (error) {
             console.error(error);
             callback(new Error('Couldn\'t fetch the devices.'));
             return;
         }
 
-        // create a response
         const response = {
             statusCode: 200,
             body: JSON.stringify(result.Items),

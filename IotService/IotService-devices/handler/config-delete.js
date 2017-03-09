@@ -1,7 +1,7 @@
 'use strict';
 
-const consts = require('../consts');
-const utils = require('../utils');
+const consts = require('../common/consts');
+const utils = require('../common/utils');
 const AWS = require('aws-sdk'); // eslint-disable-line import/no-extraneous-dependencies
 
 const dynamoDb = new AWS.DynamoDB.DocumentClient();

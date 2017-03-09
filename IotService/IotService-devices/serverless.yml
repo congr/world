@@ -6,10 +6,14 @@ package:
   exclude:
     - tmp/**
     - .git/**
+    - .gitignore
     - .idea/**
+    - data/**
+    - script/**
+    - template/**
     - package.json
   include:
-    - ./*.js
+    - common/*.js
     - node_modules/**
 
 provider:
@@ -33,6 +37,7 @@ provider:
 functions:
   deleteConfig:
     handler: handler/config-delete.deleteConfig
+    description: delete config
     events:
       - http:
           path: devices/{did}/{sid}
@@ -41,6 +46,7 @@ functions:
 
   lookupConfig:
     handler: handler/config-lookup.lookupConfig
+    description: lookup config
     events:
       - http:
           path: devices/{did}/{sid}
@@ -49,6 +55,7 @@ functions:
 
   updateConfig:
     handler: handler/config-update.updateConfig
+    description: update config
     events:
       - http:
           path: devices/{did}/{sid}
@@ -57,6 +64,7 @@ functions:
 
   createDevice:
     handler: handler/device-create.createDevice
+    description: create device
     events:
       - http:
           path: devices
@@ -65,6 +73,7 @@ functions:
 
   deleteDevice:
     handler: handler/device-delete.deleteDevice
+    description: delete device
     events:
       - http:
           path: devices/{did}
@@ -73,6 +82,7 @@ functions:
 
   lookupDevice:
     handler: handler/device-lookup.lookupDevice
+    description: lookup device
     events:
       - http:
           path: devices/{did}
@@ -81,6 +91,7 @@ functions:
 
   deleteUser:
     handler: handler/user-delete.deleteUser
+    description: delete user
     events:
       - http:
           path: devices
@@ -113,16 +124,27 @@ resources:
         ProvisionedThroughput:
           ReadCapacityUnits: 1
           WriteCapacityUnits: 1
+
+        LocalSecondaryIndexes:
+          - IndexName: "did-uid-index"
+            KeySchema:
+              - AttributeName: "did"
+                KeyType: "HASH"
+              - AttributeName: "uid"
+                KeyType: "RANGE"
+            Projection:
+              ProjectionType: "ALL"
+
         GlobalSecondaryIndexes:
-        - IndexName: "did-uid-index"
-          KeySchema:
-          - AttributeName: "did"
-            KeyType: "HASH"
-          - AttributeName: "uid"
-            KeyType: "RANGE"
-          Projection:
-            ProjectionType: "ALL"
-          ProvisionedThroughput:
-            ReadCapacityUnits: 1
-            WriteCapacityUnits: 1
+          - IndexName: "uid-sid-index"
+            KeySchema:
+              - AttributeName: "uid"
+                KeyType: "HASH"
+              - AttributeName: "sid"
+                KeyType: "RANGE"
+            Projection:
+              ProjectionType: "ALL"
+            ProvisionedThroughput:
+              ReadCapacityUnits: 1
+              WriteCapacityUnits: 1
         TableName: ${self:provider.environment.DYNAMODB_TABLE}

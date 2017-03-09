@@ -1,7 +1,7 @@
 'use strict';
 
-const consts = require('../consts');
-const utils = require('../utils');
+const consts = require('../common/consts');
+const utils = require('../common/utils');
 const AWS = require('aws-sdk'); // eslint-disable-line import/no-extraneous-dependencies
 const Requestify = require('requestify');
 
@@ -18,6 +18,8 @@ module.exports.createDevice = (event, context, callback) => {
     const settingsValue = settings[type];
     const euid = settingsValue.euid;
     const model = settingsValue.model;
+    delete settingsValue.euid;
+    delete settingsValue.model;
 
     if (!utils.isValidDeviceBody(TAG, source, callback)) return;
 
@@ -43,7 +45,7 @@ module.exports.createDevice = (event, context, callback) => {
             };
             console.log(TAG, consts.URL_DATAPOINTS, reqData);
             Requestify.post(consts.URL_DATAPOINTS, reqData).then(response => {
-                console.log(TAG, 'datapoints response:', response);
+                console.log(TAG, 'datapoints response:', response.body);
                 const body = JSON.parse(response.body);
                 if (body.result === '200') resolve();
                 else reject(body);
@@ -58,7 +60,6 @@ module.exports.createDevice = (event, context, callback) => {
         console.log(TAG, 'putDynamo');
         return new Promise((resolve, reject) => {
             const timestamp = new Date().toJSON();
-
             const params = {
                 TableName: process.env.DYNAMODB_TABLE,
                 Item: {
@@ -75,6 +76,7 @@ module.exports.createDevice = (event, context, callback) => {
             };
 
             dynamoDb.put(params, (error, result) => {
+                console.log(TAG, "dynamo result", result);
                 if (error) reject(error);
 
                 resolve({
