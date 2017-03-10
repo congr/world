@@ -1,6 +1,12 @@
-service: iot-package-devices
+service: iot-pkg-devices
 
 frameworkVersion: ">=1.1.0 <2.0.0"
+
+plugins:
+  - serverless-webpack
+
+custom:
+  webpackIncludeModules: true
 
 package:
   exclude:
@@ -12,9 +18,6 @@ package:
     - script/**
     - template/**
     - package.json
-  include:
-    - common/*.js
-    - node_modules/**
 
 provider:
   name: aws

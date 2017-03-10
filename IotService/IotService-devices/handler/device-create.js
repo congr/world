@@ -11,7 +11,7 @@ const TAG = consts.PREFIX + ':createDevice]';
 module.exports.createDevice = (event, context, callback) => {
     utils.logEvent(TAG, event);
 
-    const data = JSON.parse(event.body);
+    const data = event.body;//JSON.parse(event.body);
     const source = data.params.source;
     const settings = data.params.settings;
     const type = Object.keys(settings)[0];

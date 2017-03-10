@@ -1,0 +1,30 @@
+{
+  "body": {
+    "JSON-rpc":"2.0",
+    "method":"create_sensor_config",
+    "uuid":"uniquemessageId",
+    "phase":"dv",
+    "region":"kic",
+    "country_code":"kr",
+    "params":{
+      "version":"11234",
+      "mid":"messageId",
+      "source":{
+        "did":"did777",
+        "sid":"sid777",
+        "uid":"cecil",
+        "tz":"Asia/Seoul",
+        "ts":"1234"
+      },
+      "settings": {
+        "th": {
+          "nick":"imNic",
+          "euid":"euid1",
+          "model":"SCMODEL"
+        }
+      }
+    }
+  }
+}
+
+
