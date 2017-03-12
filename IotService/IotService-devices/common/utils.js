@@ -1,16 +1,17 @@
 'use strict';
 
-const ERROR_MISSING_PATH_PARAM_DID = 'missing path parameter: did';
-const ERROR_MISSING_PATH_PARAM_SID = 'missing path parameter: sid';
+// const ERROR_MISSING_PATH_PARAM_DID = 'missing path parameter: did';
+// const ERROR_MISSING_PATH_PARAM_SID = 'missing path parameter: sid';
 
 module.exports.logEvent = (TAG, event) => {
-    console.log(TAG, 'event', event);
+    //console.log(TAG, 'event', event);
     console.log(TAG, 'event.path', event['path']);
     console.log(TAG, 'event.pathParameters', event['pathParameters']);
     console.log(TAG, 'event.body', JSON.stringify(event['body'], null, " "));
 };
 
-module.exports.isValidConfigUrl = (TAG, event, callback) => {
+/*
+module.exports.isValidSensorUrl = (TAG, event, callback) => {
     if (!event.pathParameters['did']) {
         console.error(TAG, ERROR_MISSING_PATH_PARAM_DID);
         callback(new Error(ERROR_MISSING_PATH_PARAM_DID));
@@ -59,4 +60,4 @@ module.exports.isValidUserBody = (TAG, data, callback) => {
     }
 
     return true;
-};
+};*/

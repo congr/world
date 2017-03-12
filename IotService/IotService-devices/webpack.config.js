@@ -4,12 +4,12 @@ var UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     entry: {
-        'handler/config-delete': './handler/config-delete.js',
-        'handler/config-lookup': './handler/config-lookup.js',
-        'handler/config-update': './handler/config-update.js',
-        'handler/device-create': './handler/device-create.js',
         'handler/device-delete': './handler/device-delete.js',
         'handler/device-lookup': './handler/device-lookup.js',
+        'handler/sensor-create': './handler/sensor-create.js',
+        'handler/sensor-delete': './handler/sensor-delete.js',
+        'handler/sensor-lookup': './handler/sensor-lookup.js',
+        'handler/sensor-update': './handler/sensor-update.js',
         'handler/user-delete': './handler/user-delete.js'
     },
     target: 'node',
@@ -24,7 +24,7 @@ module.exports = {
         mangle: {
             except: ['$super', '$', 'exports', 'require']
         },
-        compress: false,
-        beautify: true
+        compress: true,
+        beautify: false
     })]
 };

@@ -38,42 +38,6 @@ provider:
       Resource: "arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/${self:provider.environment.DYNAMODB_TABLE}"
 
 functions:
-  deleteConfig:
-    handler: handler/config-delete.deleteConfig
-    description: delete config
-    events:
-      - http:
-          path: devices/{did}/{sid}
-          method: delete
-          cors: true
-
-  lookupConfig:
-    handler: handler/config-lookup.lookupConfig
-    description: lookup config
-    events:
-      - http:
-          path: devices/{did}/{sid}
-          method: get
-          cors: true
-
-  updateConfig:
-    handler: handler/config-update.updateConfig
-    description: update config
-    events:
-      - http:
-          path: devices/{did}/{sid}
-          method: put
-          cors: true
-
-  createDevice:
-    handler: handler/device-create.createDevice
-    description: create device
-    events:
-      - http:
-          path: devices
-          method: post
-          cors: true
-
   deleteDevice:
     handler: handler/device-delete.deleteDevice
     description: delete device
@@ -92,12 +56,48 @@ functions:
           method: get
           cors: true
 
+  createSensor:
+    handler: handler/sensor-create.createSensor
+    description: create device
+    events:
+      - http:
+          path: sensor
+          method: post
+          cors: true
+
+  deleteSensor:
+    handler: handler/sensor-delete.deleteSensor
+    description: delete sensor
+    events:
+      - http:
+          path: sensor/{sid}
+          method: delete
+          cors: true
+
+  lookupSensor:
+    handler: handler/sensor-lookup.lookupSensor
+    description: lookup sensor
+    events:
+      - http:
+          path: sensor/{sid}
+          method: get
+          cors: true
+
+  updateSensor:
+    handler: handler/sensor-update.updateSensor
+    description: update sensor
+    events:
+      - http:
+          path: sensor/{sid}
+          method: put
+          cors: true
+
   deleteUser:
     handler: handler/user-delete.deleteUser
     description: delete user
     events:
       - http:
-          path: devices
+          path: user/{uid}
           method: delete
           cors: true
 
@@ -109,41 +109,41 @@ resources:
       Properties:
         AttributeDefinitions:
           -
-            AttributeName: did
-            AttributeType: S
-          -
             AttributeName: sid
             AttributeType: S
           -
             AttributeName: uid
             AttributeType: S
-        KeySchema:
           -
             AttributeName: did
-            KeyType: HASH
+            AttributeType: S
+        KeySchema:
           -
             AttributeName: sid
+            KeyType: HASH
+          -
+            AttributeName: uid
             KeyType: RANGE
         ProvisionedThroughput:
           ReadCapacityUnits: 1
           WriteCapacityUnits: 1
 
         LocalSecondaryIndexes:
-          - IndexName: "did-uid-index"
+          - IndexName: "sid-did-index"
             KeySchema:
-              - AttributeName: "did"
+              - AttributeName: "sid"
                 KeyType: "HASH"
-              - AttributeName: "uid"
+              - AttributeName: "did"
                 KeyType: "RANGE"
             Projection:
               ProjectionType: "ALL"
 
         GlobalSecondaryIndexes:
-          - IndexName: "uid-sid-index"
+          - IndexName: "did-uid-index"
             KeySchema:
-              - AttributeName: "uid"
+              - AttributeName: "did"
                 KeyType: "HASH"
-              - AttributeName: "sid"
+              - AttributeName: "uid"
                 KeyType: "RANGE"
             Projection:
               ProjectionType: "ALL"

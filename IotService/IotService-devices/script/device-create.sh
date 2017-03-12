@@ -1,1 +1,0 @@
-sls invoke local --function createDevice --path template/device-create.json

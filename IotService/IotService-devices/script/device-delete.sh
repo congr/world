@@ -1,0 +1,1 @@
+sls invoke local --function deleteDevice --path template/device-delete.json

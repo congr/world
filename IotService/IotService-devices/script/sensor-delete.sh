@@ -1,0 +1,1 @@
+sls invoke local --function deleteSensor --path template/sensor-delete.json

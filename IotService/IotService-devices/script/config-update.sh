@@ -1,1 +1,0 @@
-sls invoke local --function updateConfig --path template/config-update.json

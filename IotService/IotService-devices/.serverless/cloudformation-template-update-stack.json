@@ -5,46 +5,46 @@
     "ServerlessDeploymentBucket": {
       "Type": "AWS::S3::Bucket"
     },
-    "DeleteConfigLogGroup": {
-      "Type": "AWS::Logs::LogGroup",
-      "Properties": {
-        "LogGroupName": "/aws/lambda/iot-package-devices-qa-deleteConfig"
-      }
-    },
-    "LookupConfigLogGroup": {
-      "Type": "AWS::Logs::LogGroup",
-      "Properties": {
-        "LogGroupName": "/aws/lambda/iot-package-devices-qa-lookupConfig"
-      }
-    },
-    "UpdateConfigLogGroup": {
-      "Type": "AWS::Logs::LogGroup",
-      "Properties": {
-        "LogGroupName": "/aws/lambda/iot-package-devices-qa-updateConfig"
-      }
-    },
-    "CreateDeviceLogGroup": {
-      "Type": "AWS::Logs::LogGroup",
-      "Properties": {
-        "LogGroupName": "/aws/lambda/iot-package-devices-qa-createDevice"
-      }
-    },
     "DeleteDeviceLogGroup": {
       "Type": "AWS::Logs::LogGroup",
       "Properties": {
-        "LogGroupName": "/aws/lambda/iot-package-devices-qa-deleteDevice"
+        "LogGroupName": "/aws/lambda/iot-pkg-devices-qa-deleteDevice"
       }
     },
     "LookupDeviceLogGroup": {
       "Type": "AWS::Logs::LogGroup",
       "Properties": {
-        "LogGroupName": "/aws/lambda/iot-package-devices-qa-lookupDevice"
+        "LogGroupName": "/aws/lambda/iot-pkg-devices-qa-lookupDevice"
+      }
+    },
+    "CreateSensorLogGroup": {
+      "Type": "AWS::Logs::LogGroup",
+      "Properties": {
+        "LogGroupName": "/aws/lambda/iot-pkg-devices-qa-createSensor"
+      }
+    },
+    "DeleteSensorLogGroup": {
+      "Type": "AWS::Logs::LogGroup",
+      "Properties": {
+        "LogGroupName": "/aws/lambda/iot-pkg-devices-qa-deleteSensor"
+      }
+    },
+    "LookupSensorLogGroup": {
+      "Type": "AWS::Logs::LogGroup",
+      "Properties": {
+        "LogGroupName": "/aws/lambda/iot-pkg-devices-qa-lookupSensor"
+      }
+    },
+    "UpdateSensorLogGroup": {
+      "Type": "AWS::Logs::LogGroup",
+      "Properties": {
+        "LogGroupName": "/aws/lambda/iot-pkg-devices-qa-updateSensor"
       }
     },
     "DeleteUserLogGroup": {
       "Type": "AWS::Logs::LogGroup",
       "Properties": {
-        "LogGroupName": "/aws/lambda/iot-package-devices-qa-deleteUser"
+        "LogGroupName": "/aws/lambda/iot-pkg-devices-qa-deleteUser"
       }
     },
     "IamRoleLambdaExecution": {
@@ -73,7 +73,7 @@
                 "-",
                 [
                   "qa",
-                  "iot-package-devices",
+                  "iot-pkg-devices",
                   "lambda"
                 ]
               ]
@@ -89,30 +89,6 @@
                   "Resource": [
                     {
                       "Fn::GetAtt": [
-                        "DeleteConfigLogGroup",
-                        "Arn"
-                      ]
-                    },
-                    {
-                      "Fn::GetAtt": [
-                        "LookupConfigLogGroup",
-                        "Arn"
-                      ]
-                    },
-                    {
-                      "Fn::GetAtt": [
-                        "UpdateConfigLogGroup",
-                        "Arn"
-                      ]
-                    },
-                    {
-                      "Fn::GetAtt": [
-                        "CreateDeviceLogGroup",
-                        "Arn"
-                      ]
-                    },
-                    {
-                      "Fn::GetAtt": [
                         "DeleteDeviceLogGroup",
                         "Arn"
                       ]
@@ -120,6 +96,30 @@
                     {
                       "Fn::GetAtt": [
                         "LookupDeviceLogGroup",
+                        "Arn"
+                      ]
+                    },
+                    {
+                      "Fn::GetAtt": [
+                        "CreateSensorLogGroup",
+                        "Arn"
+                      ]
+                    },
+                    {
+                      "Fn::GetAtt": [
+                        "DeleteSensorLogGroup",
+                        "Arn"
+                      ]
+                    },
+                    {
+                      "Fn::GetAtt": [
+                        "LookupSensorLogGroup",
+                        "Arn"
+                      ]
+                    },
+                    {
+                      "Fn::GetAtt": [
+                        "UpdateSensorLogGroup",
                         "Arn"
                       ]
                     },
@@ -137,62 +137,6 @@
                     "logs:PutLogEvents"
                   ],
                   "Resource": [
-                    {
-                      "Fn::Join": [
-                        ":",
-                        [
-                          {
-                            "Fn::GetAtt": [
-                              "DeleteConfigLogGroup",
-                              "Arn"
-                            ]
-                          },
-                          "*"
-                        ]
-                      ]
-                    },
-                    {
-                      "Fn::Join": [
-                        ":",
-                        [
-                          {
-                            "Fn::GetAtt": [
-                              "LookupConfigLogGroup",
-                              "Arn"
-                            ]
-                          },
-                          "*"
-                        ]
-                      ]
-                    },
-                    {
-                      "Fn::Join": [
-                        ":",
-                        [
-                          {
-                            "Fn::GetAtt": [
-                              "UpdateConfigLogGroup",
-                              "Arn"
-                            ]
-                          },
-                          "*"
-                        ]
-                      ]
-                    },
-                    {
-                      "Fn::Join": [
-                        ":",
-                        [
-                          {
-                            "Fn::GetAtt": [
-                              "CreateDeviceLogGroup",
-                              "Arn"
-                            ]
-                          },
-                          "*"
-                        ]
-                      ]
-                    },
                     {
                       "Fn::Join": [
                         ":",
@@ -227,6 +171,62 @@
                         [
                           {
                             "Fn::GetAtt": [
+                              "CreateSensorLogGroup",
+                              "Arn"
+                            ]
+                          },
+                          "*"
+                        ]
+                      ]
+                    },
+                    {
+                      "Fn::Join": [
+                        ":",
+                        [
+                          {
+                            "Fn::GetAtt": [
+                              "DeleteSensorLogGroup",
+                              "Arn"
+                            ]
+                          },
+                          "*"
+                        ]
+                      ]
+                    },
+                    {
+                      "Fn::Join": [
+                        ":",
+                        [
+                          {
+                            "Fn::GetAtt": [
+                              "LookupSensorLogGroup",
+                              "Arn"
+                            ]
+                          },
+                          "*"
+                        ]
+                      ]
+                    },
+                    {
+                      "Fn::Join": [
+                        ":",
+                        [
+                          {
+                            "Fn::GetAtt": [
+                              "UpdateSensorLogGroup",
+                              "Arn"
+                            ]
+                          },
+                          "*"
+                        ]
+                      ]
+                    },
+                    {
+                      "Fn::Join": [
+                        ":",
+                        [
+                          {
+                            "Fn::GetAtt": [
                               "DeleteUserLogGroup",
                               "Arn"
                             ]
@@ -247,7 +247,7 @@
                     "dynamodb:UpdateItem",
                     "dynamodb:DeleteItem"
                   ],
-                  "Resource": "arn:aws:dynamodb:ap-northeast-1:*:table/qa-iot-package-devices"
+                  "Resource": "arn:aws:dynamodb:ap-northeast-1:*:table/qa-iot-pkg-devices"
                 }
               ]
             }
@@ -258,177 +258,13 @@
           "Fn::Join": [
             "-",
             [
-              "iot-package-devices",
+              "iot-pkg-devices",
               "qa",
               "ap-northeast-1",
               "lambdaRole"
             ]
           ]
         }
-      }
-    },
-    "DeleteConfigLambdaFunction": {
-      "Type": "AWS::Lambda::Function",
-      "Properties": {
-        "Code": {
-          "S3Bucket": {
-            "Ref": "ServerlessDeploymentBucket"
-          },
-          "S3Key": "serverless/iot-package-devices/qa/1489079539899-2017-03-09T17:12:19.899Z/iot-package-devices.zip"
-        },
-        "FunctionName": "iot-package-devices-qa-deleteConfig",
-        "Handler": "handler/config-delete.deleteConfig",
-        "MemorySize": 1024,
-        "Role": {
-          "Fn::GetAtt": [
-            "IamRoleLambdaExecution",
-            "Arn"
-          ]
-        },
-        "Runtime": "nodejs4.3",
-        "Timeout": 6,
-        "Description": "delete config",
-        "Environment": {
-          "Variables": {
-            "DYNAMODB_TABLE": "qa-iot-package-devices"
-          }
-        }
-      },
-      "DependsOn": [
-        "IamRoleLambdaExecution"
-      ]
-    },
-    "DeleteConfigLambdaVersionUV12JrXQujcz4Bvfb4nZ3XSI3faUPyIHU5W0g9tELs": {
-      "Type": "AWS::Lambda::Version",
-      "DeletionPolicy": "Retain",
-      "Properties": {
-        "FunctionName": {
-          "Ref": "DeleteConfigLambdaFunction"
-        },
-        "CodeSha256": "UV12JrXQujcz4Bvfb4nZ3XSI3faUPyIHU5W0g9t+ELs="
-      }
-    },
-    "LookupConfigLambdaFunction": {
-      "Type": "AWS::Lambda::Function",
-      "Properties": {
-        "Code": {
-          "S3Bucket": {
-            "Ref": "ServerlessDeploymentBucket"
-          },
-          "S3Key": "serverless/iot-package-devices/qa/1489079539899-2017-03-09T17:12:19.899Z/iot-package-devices.zip"
-        },
-        "FunctionName": "iot-package-devices-qa-lookupConfig",
-        "Handler": "handler/config-lookup.lookupConfig",
-        "MemorySize": 1024,
-        "Role": {
-          "Fn::GetAtt": [
-            "IamRoleLambdaExecution",
-            "Arn"
-          ]
-        },
-        "Runtime": "nodejs4.3",
-        "Timeout": 6,
-        "Description": "lookup config",
-        "Environment": {
-          "Variables": {
-            "DYNAMODB_TABLE": "qa-iot-package-devices"
-          }
-        }
-      },
-      "DependsOn": [
-        "IamRoleLambdaExecution"
-      ]
-    },
-    "LookupConfigLambdaVersionUV12JrXQujcz4Bvfb4nZ3XSI3faUPyIHU5W0g9tELs": {
-      "Type": "AWS::Lambda::Version",
-      "DeletionPolicy": "Retain",
-      "Properties": {
-        "FunctionName": {
-          "Ref": "LookupConfigLambdaFunction"
-        },
-        "CodeSha256": "UV12JrXQujcz4Bvfb4nZ3XSI3faUPyIHU5W0g9t+ELs="
-      }
-    },
-    "UpdateConfigLambdaFunction": {
-      "Type": "AWS::Lambda::Function",
-      "Properties": {
-        "Code": {
-          "S3Bucket": {
-            "Ref": "ServerlessDeploymentBucket"
-          },
-          "S3Key": "serverless/iot-package-devices/qa/1489079539899-2017-03-09T17:12:19.899Z/iot-package-devices.zip"
-        },
-        "FunctionName": "iot-package-devices-qa-updateConfig",
-        "Handler": "handler/config-update.updateConfig",
-        "MemorySize": 1024,
-        "Role": {
-          "Fn::GetAtt": [
-            "IamRoleLambdaExecution",
-            "Arn"
-          ]
-        },
-        "Runtime": "nodejs4.3",
-        "Timeout": 6,
-        "Description": "update config",
-        "Environment": {
-          "Variables": {
-            "DYNAMODB_TABLE": "qa-iot-package-devices"
-          }
-        }
-      },
-      "DependsOn": [
-        "IamRoleLambdaExecution"
-      ]
-    },
-    "UpdateConfigLambdaVersionUV12JrXQujcz4Bvfb4nZ3XSI3faUPyIHU5W0g9tELs": {
-      "Type": "AWS::Lambda::Version",
-      "DeletionPolicy": "Retain",
-      "Properties": {
-        "FunctionName": {
-          "Ref": "UpdateConfigLambdaFunction"
-        },
-        "CodeSha256": "UV12JrXQujcz4Bvfb4nZ3XSI3faUPyIHU5W0g9t+ELs="
-      }
-    },
-    "CreateDeviceLambdaFunction": {
-      "Type": "AWS::Lambda::Function",
-      "Properties": {
-        "Code": {
-          "S3Bucket": {
-            "Ref": "ServerlessDeploymentBucket"
-          },
-          "S3Key": "serverless/iot-package-devices/qa/1489079539899-2017-03-09T17:12:19.899Z/iot-package-devices.zip"
-        },
-        "FunctionName": "iot-package-devices-qa-createDevice",
-        "Handler": "handler/device-create.createDevice",
-        "MemorySize": 1024,
-        "Role": {
-          "Fn::GetAtt": [
-            "IamRoleLambdaExecution",
-            "Arn"
-          ]
-        },
-        "Runtime": "nodejs4.3",
-        "Timeout": 6,
-        "Description": "create device",
-        "Environment": {
-          "Variables": {
-            "DYNAMODB_TABLE": "qa-iot-package-devices"
-          }
-        }
-      },
-      "DependsOn": [
-        "IamRoleLambdaExecution"
-      ]
-    },
-    "CreateDeviceLambdaVersionUV12JrXQujcz4Bvfb4nZ3XSI3faUPyIHU5W0g9tELs": {
-      "Type": "AWS::Lambda::Version",
-      "DeletionPolicy": "Retain",
-      "Properties": {
-        "FunctionName": {
-          "Ref": "CreateDeviceLambdaFunction"
-        },
-        "CodeSha256": "UV12JrXQujcz4Bvfb4nZ3XSI3faUPyIHU5W0g9t+ELs="
       }
     },
     "DeleteDeviceLambdaFunction": {
@@ -438,9 +274,9 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/iot-package-devices/qa/1489079539899-2017-03-09T17:12:19.899Z/iot-package-devices.zip"
+          "S3Key": "serverless/iot-pkg-devices/qa/1489338484608-2017-03-12T17:08:04.608Z/iot-pkg-devices.zip"
         },
-        "FunctionName": "iot-package-devices-qa-deleteDevice",
+        "FunctionName": "iot-pkg-devices-qa-deleteDevice",
         "Handler": "handler/device-delete.deleteDevice",
         "MemorySize": 1024,
         "Role": {
@@ -454,7 +290,7 @@
         "Description": "delete device",
         "Environment": {
           "Variables": {
-            "DYNAMODB_TABLE": "qa-iot-package-devices"
+            "DYNAMODB_TABLE": "qa-iot-pkg-devices"
           }
         }
       },
@@ -462,14 +298,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "DeleteDeviceLambdaVersionUV12JrXQujcz4Bvfb4nZ3XSI3faUPyIHU5W0g9tELs": {
+    "DeleteDeviceLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DeleteDeviceLambdaFunction"
         },
-        "CodeSha256": "UV12JrXQujcz4Bvfb4nZ3XSI3faUPyIHU5W0g9t+ELs="
+        "CodeSha256": "0/Ws41o5u99xmVZPQYG04XnK+1WaPKid3VBdG5g1jvc="
       }
     },
     "LookupDeviceLambdaFunction": {
@@ -479,9 +315,9 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/iot-package-devices/qa/1489079539899-2017-03-09T17:12:19.899Z/iot-package-devices.zip"
+          "S3Key": "serverless/iot-pkg-devices/qa/1489338484608-2017-03-12T17:08:04.608Z/iot-pkg-devices.zip"
         },
-        "FunctionName": "iot-package-devices-qa-lookupDevice",
+        "FunctionName": "iot-pkg-devices-qa-lookupDevice",
         "Handler": "handler/device-lookup.lookupDevice",
         "MemorySize": 1024,
         "Role": {
@@ -495,7 +331,7 @@
         "Description": "lookup device",
         "Environment": {
           "Variables": {
-            "DYNAMODB_TABLE": "qa-iot-package-devices"
+            "DYNAMODB_TABLE": "qa-iot-pkg-devices"
           }
         }
       },
@@ -503,14 +339,178 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "LookupDeviceLambdaVersionUV12JrXQujcz4Bvfb4nZ3XSI3faUPyIHU5W0g9tELs": {
+    "LookupDeviceLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "LookupDeviceLambdaFunction"
         },
-        "CodeSha256": "UV12JrXQujcz4Bvfb4nZ3XSI3faUPyIHU5W0g9t+ELs="
+        "CodeSha256": "0/Ws41o5u99xmVZPQYG04XnK+1WaPKid3VBdG5g1jvc="
+      }
+    },
+    "CreateSensorLambdaFunction": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "ServerlessDeploymentBucket"
+          },
+          "S3Key": "serverless/iot-pkg-devices/qa/1489338484608-2017-03-12T17:08:04.608Z/iot-pkg-devices.zip"
+        },
+        "FunctionName": "iot-pkg-devices-qa-createSensor",
+        "Handler": "handler/sensor-create.createSensor",
+        "MemorySize": 1024,
+        "Role": {
+          "Fn::GetAtt": [
+            "IamRoleLambdaExecution",
+            "Arn"
+          ]
+        },
+        "Runtime": "nodejs4.3",
+        "Timeout": 6,
+        "Description": "create device",
+        "Environment": {
+          "Variables": {
+            "DYNAMODB_TABLE": "qa-iot-pkg-devices"
+          }
+        }
+      },
+      "DependsOn": [
+        "IamRoleLambdaExecution"
+      ]
+    },
+    "CreateSensorLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc": {
+      "Type": "AWS::Lambda::Version",
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "CreateSensorLambdaFunction"
+        },
+        "CodeSha256": "0/Ws41o5u99xmVZPQYG04XnK+1WaPKid3VBdG5g1jvc="
+      }
+    },
+    "DeleteSensorLambdaFunction": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "ServerlessDeploymentBucket"
+          },
+          "S3Key": "serverless/iot-pkg-devices/qa/1489338484608-2017-03-12T17:08:04.608Z/iot-pkg-devices.zip"
+        },
+        "FunctionName": "iot-pkg-devices-qa-deleteSensor",
+        "Handler": "handler/sensor-delete.deleteSensor",
+        "MemorySize": 1024,
+        "Role": {
+          "Fn::GetAtt": [
+            "IamRoleLambdaExecution",
+            "Arn"
+          ]
+        },
+        "Runtime": "nodejs4.3",
+        "Timeout": 6,
+        "Description": "delete sensor",
+        "Environment": {
+          "Variables": {
+            "DYNAMODB_TABLE": "qa-iot-pkg-devices"
+          }
+        }
+      },
+      "DependsOn": [
+        "IamRoleLambdaExecution"
+      ]
+    },
+    "DeleteSensorLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc": {
+      "Type": "AWS::Lambda::Version",
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "DeleteSensorLambdaFunction"
+        },
+        "CodeSha256": "0/Ws41o5u99xmVZPQYG04XnK+1WaPKid3VBdG5g1jvc="
+      }
+    },
+    "LookupSensorLambdaFunction": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "ServerlessDeploymentBucket"
+          },
+          "S3Key": "serverless/iot-pkg-devices/qa/1489338484608-2017-03-12T17:08:04.608Z/iot-pkg-devices.zip"
+        },
+        "FunctionName": "iot-pkg-devices-qa-lookupSensor",
+        "Handler": "handler/sensor-lookup.lookupSensor",
+        "MemorySize": 1024,
+        "Role": {
+          "Fn::GetAtt": [
+            "IamRoleLambdaExecution",
+            "Arn"
+          ]
+        },
+        "Runtime": "nodejs4.3",
+        "Timeout": 6,
+        "Description": "lookup sensor",
+        "Environment": {
+          "Variables": {
+            "DYNAMODB_TABLE": "qa-iot-pkg-devices"
+          }
+        }
+      },
+      "DependsOn": [
+        "IamRoleLambdaExecution"
+      ]
+    },
+    "LookupSensorLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc": {
+      "Type": "AWS::Lambda::Version",
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "LookupSensorLambdaFunction"
+        },
+        "CodeSha256": "0/Ws41o5u99xmVZPQYG04XnK+1WaPKid3VBdG5g1jvc="
+      }
+    },
+    "UpdateSensorLambdaFunction": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "ServerlessDeploymentBucket"
+          },
+          "S3Key": "serverless/iot-pkg-devices/qa/1489338484608-2017-03-12T17:08:04.608Z/iot-pkg-devices.zip"
+        },
+        "FunctionName": "iot-pkg-devices-qa-updateSensor",
+        "Handler": "handler/sensor-update.updateSensor",
+        "MemorySize": 1024,
+        "Role": {
+          "Fn::GetAtt": [
+            "IamRoleLambdaExecution",
+            "Arn"
+          ]
+        },
+        "Runtime": "nodejs4.3",
+        "Timeout": 6,
+        "Description": "update sensor",
+        "Environment": {
+          "Variables": {
+            "DYNAMODB_TABLE": "qa-iot-pkg-devices"
+          }
+        }
+      },
+      "DependsOn": [
+        "IamRoleLambdaExecution"
+      ]
+    },
+    "UpdateSensorLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc": {
+      "Type": "AWS::Lambda::Version",
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "UpdateSensorLambdaFunction"
+        },
+        "CodeSha256": "0/Ws41o5u99xmVZPQYG04XnK+1WaPKid3VBdG5g1jvc="
       }
     },
     "DeleteUserLambdaFunction": {
@@ -520,9 +520,9 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/iot-package-devices/qa/1489079539899-2017-03-09T17:12:19.899Z/iot-package-devices.zip"
+          "S3Key": "serverless/iot-pkg-devices/qa/1489338484608-2017-03-12T17:08:04.608Z/iot-pkg-devices.zip"
         },
-        "FunctionName": "iot-package-devices-qa-deleteUser",
+        "FunctionName": "iot-pkg-devices-qa-deleteUser",
         "Handler": "handler/user-delete.deleteUser",
         "MemorySize": 1024,
         "Role": {
@@ -536,7 +536,7 @@
         "Description": "delete user",
         "Environment": {
           "Variables": {
-            "DYNAMODB_TABLE": "qa-iot-package-devices"
+            "DYNAMODB_TABLE": "qa-iot-pkg-devices"
           }
         }
       },
@@ -544,20 +544,20 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "DeleteUserLambdaVersionUV12JrXQujcz4Bvfb4nZ3XSI3faUPyIHU5W0g9tELs": {
+    "DeleteUserLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DeleteUserLambdaFunction"
         },
-        "CodeSha256": "UV12JrXQujcz4Bvfb4nZ3XSI3faUPyIHU5W0g9t+ELs="
+        "CodeSha256": "0/Ws41o5u99xmVZPQYG04XnK+1WaPKid3VBdG5g1jvc="
       }
     },
     "ApiGatewayRestApi": {
       "Type": "AWS::ApiGateway::RestApi",
       "Properties": {
-        "Name": "qa-iot-package-devices"
+        "Name": "qa-iot-pkg-devices"
       }
     },
     "ApiGatewayResourceDevices": {
@@ -575,6 +575,36 @@
         }
       }
     },
+    "ApiGatewayResourceSensor": {
+      "Type": "AWS::ApiGateway::Resource",
+      "Properties": {
+        "ParentId": {
+          "Fn::GetAtt": [
+            "ApiGatewayRestApi",
+            "RootResourceId"
+          ]
+        },
+        "PathPart": "sensor",
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
+    "ApiGatewayResourceUser": {
+      "Type": "AWS::ApiGateway::Resource",
+      "Properties": {
+        "ParentId": {
+          "Fn::GetAtt": [
+            "ApiGatewayRestApi",
+            "RootResourceId"
+          ]
+        },
+        "PathPart": "user",
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
     "ApiGatewayResourceDevicesDidVar": {
       "Type": "AWS::ApiGateway::Resource",
       "Properties": {
@@ -587,11 +617,11 @@
         }
       }
     },
-    "ApiGatewayResourceDevicesDidVarSidVar": {
+    "ApiGatewayResourceSensorSidVar": {
       "Type": "AWS::ApiGateway::Resource",
       "Properties": {
         "ParentId": {
-          "Ref": "ApiGatewayResourceDevicesDidVar"
+          "Ref": "ApiGatewayResourceSensor"
         },
         "PathPart": "{sid}",
         "RestApiId": {
@@ -599,93 +629,13 @@
         }
       }
     },
-    "ApiGatewayMethodDevicesDidVarSidVarOptions": {
-      "Type": "AWS::ApiGateway::Method",
+    "ApiGatewayResourceUserUidVar": {
+      "Type": "AWS::ApiGateway::Resource",
       "Properties": {
-        "AuthorizationType": "NONE",
-        "HttpMethod": "OPTIONS",
-        "MethodResponses": [
-          {
-            "StatusCode": "200",
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true,
-              "method.response.header.Access-Control-Allow-Headers": true,
-              "method.response.header.Access-Control-Allow-Methods": true,
-              "method.response.header.Access-Control-Allow-Credentials": true
-            },
-            "ResponseModels": {}
-          }
-        ],
-        "RequestParameters": {},
-        "Integration": {
-          "Type": "MOCK",
-          "RequestTemplates": {
-            "application/json": "{statusCode:200}"
-          },
-          "IntegrationResponses": [
-            {
-              "StatusCode": "200",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'",
-                "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,PUT,GET,DELETE'",
-                "method.response.header.Access-Control-Allow-Credentials": "'false'"
-              },
-              "ResponseTemplates": {
-                "application/json": ""
-              }
-            }
-          ]
+        "ParentId": {
+          "Ref": "ApiGatewayResourceUser"
         },
-        "ResourceId": {
-          "Ref": "ApiGatewayResourceDevicesDidVarSidVar"
-        },
-        "RestApiId": {
-          "Ref": "ApiGatewayRestApi"
-        }
-      }
-    },
-    "ApiGatewayMethodDevicesOptions": {
-      "Type": "AWS::ApiGateway::Method",
-      "Properties": {
-        "AuthorizationType": "NONE",
-        "HttpMethod": "OPTIONS",
-        "MethodResponses": [
-          {
-            "StatusCode": "200",
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Origin": true,
-              "method.response.header.Access-Control-Allow-Headers": true,
-              "method.response.header.Access-Control-Allow-Methods": true,
-              "method.response.header.Access-Control-Allow-Credentials": true
-            },
-            "ResponseModels": {}
-          }
-        ],
-        "RequestParameters": {},
-        "Integration": {
-          "Type": "MOCK",
-          "RequestTemplates": {
-            "application/json": "{statusCode:200}"
-          },
-          "IntegrationResponses": [
-            {
-              "StatusCode": "200",
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Origin": "'*'",
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'",
-                "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,DELETE,POST'",
-                "method.response.header.Access-Control-Allow-Credentials": "'false'"
-              },
-              "ResponseTemplates": {
-                "application/json": ""
-              }
-            }
-          ]
-        },
-        "ResourceId": {
-          "Ref": "ApiGatewayResourceDevices"
-        },
+        "PathPart": "{uid}",
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
         }
@@ -737,156 +687,142 @@
         }
       }
     },
-    "ApiGatewayMethodDevicesDidVarSidVarDelete": {
+    "ApiGatewayMethodSensorOptions": {
       "Type": "AWS::ApiGateway::Method",
       "Properties": {
-        "HttpMethod": "DELETE",
+        "AuthorizationType": "NONE",
+        "HttpMethod": "OPTIONS",
+        "MethodResponses": [
+          {
+            "StatusCode": "200",
+            "ResponseParameters": {
+              "method.response.header.Access-Control-Allow-Origin": true,
+              "method.response.header.Access-Control-Allow-Headers": true,
+              "method.response.header.Access-Control-Allow-Methods": true,
+              "method.response.header.Access-Control-Allow-Credentials": true
+            },
+            "ResponseModels": {}
+          }
+        ],
         "RequestParameters": {},
+        "Integration": {
+          "Type": "MOCK",
+          "RequestTemplates": {
+            "application/json": "{statusCode:200}"
+          },
+          "IntegrationResponses": [
+            {
+              "StatusCode": "200",
+              "ResponseParameters": {
+                "method.response.header.Access-Control-Allow-Origin": "'*'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'",
+                "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,POST'",
+                "method.response.header.Access-Control-Allow-Credentials": "'false'"
+              },
+              "ResponseTemplates": {
+                "application/json": ""
+              }
+            }
+          ]
+        },
         "ResourceId": {
-          "Ref": "ApiGatewayResourceDevicesDidVarSidVar"
+          "Ref": "ApiGatewayResourceSensor"
         },
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
-        },
-        "AuthorizationType": "NONE",
-        "Integration": {
-          "IntegrationHttpMethod": "POST",
-          "Type": "AWS_PROXY",
-          "Uri": {
-            "Fn::Join": [
-              "",
-              [
-                "arn:aws:apigateway:",
-                {
-                  "Ref": "AWS::Region"
-                },
-                ":lambda:path/2015-03-31/functions/",
-                {
-                  "Fn::GetAtt": [
-                    "DeleteConfigLambdaFunction",
-                    "Arn"
-                  ]
-                },
-                "/invocations"
-              ]
-            ]
-          }
-        },
-        "MethodResponses": []
+        }
       }
     },
-    "ApiGatewayMethodDevicesDidVarSidVarGet": {
+    "ApiGatewayMethodSensorSidVarOptions": {
       "Type": "AWS::ApiGateway::Method",
       "Properties": {
-        "HttpMethod": "GET",
+        "AuthorizationType": "NONE",
+        "HttpMethod": "OPTIONS",
+        "MethodResponses": [
+          {
+            "StatusCode": "200",
+            "ResponseParameters": {
+              "method.response.header.Access-Control-Allow-Origin": true,
+              "method.response.header.Access-Control-Allow-Headers": true,
+              "method.response.header.Access-Control-Allow-Methods": true,
+              "method.response.header.Access-Control-Allow-Credentials": true
+            },
+            "ResponseModels": {}
+          }
+        ],
         "RequestParameters": {},
+        "Integration": {
+          "Type": "MOCK",
+          "RequestTemplates": {
+            "application/json": "{statusCode:200}"
+          },
+          "IntegrationResponses": [
+            {
+              "StatusCode": "200",
+              "ResponseParameters": {
+                "method.response.header.Access-Control-Allow-Origin": "'*'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'",
+                "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,PUT,GET,DELETE'",
+                "method.response.header.Access-Control-Allow-Credentials": "'false'"
+              },
+              "ResponseTemplates": {
+                "application/json": ""
+              }
+            }
+          ]
+        },
         "ResourceId": {
-          "Ref": "ApiGatewayResourceDevicesDidVarSidVar"
+          "Ref": "ApiGatewayResourceSensorSidVar"
         },
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
-        },
-        "AuthorizationType": "NONE",
-        "Integration": {
-          "IntegrationHttpMethod": "POST",
-          "Type": "AWS_PROXY",
-          "Uri": {
-            "Fn::Join": [
-              "",
-              [
-                "arn:aws:apigateway:",
-                {
-                  "Ref": "AWS::Region"
-                },
-                ":lambda:path/2015-03-31/functions/",
-                {
-                  "Fn::GetAtt": [
-                    "LookupConfigLambdaFunction",
-                    "Arn"
-                  ]
-                },
-                "/invocations"
-              ]
-            ]
-          }
-        },
-        "MethodResponses": []
+        }
       }
     },
-    "ApiGatewayMethodDevicesDidVarSidVarPut": {
+    "ApiGatewayMethodUserUidVarOptions": {
       "Type": "AWS::ApiGateway::Method",
       "Properties": {
-        "HttpMethod": "PUT",
+        "AuthorizationType": "NONE",
+        "HttpMethod": "OPTIONS",
+        "MethodResponses": [
+          {
+            "StatusCode": "200",
+            "ResponseParameters": {
+              "method.response.header.Access-Control-Allow-Origin": true,
+              "method.response.header.Access-Control-Allow-Headers": true,
+              "method.response.header.Access-Control-Allow-Methods": true,
+              "method.response.header.Access-Control-Allow-Credentials": true
+            },
+            "ResponseModels": {}
+          }
+        ],
         "RequestParameters": {},
+        "Integration": {
+          "Type": "MOCK",
+          "RequestTemplates": {
+            "application/json": "{statusCode:200}"
+          },
+          "IntegrationResponses": [
+            {
+              "StatusCode": "200",
+              "ResponseParameters": {
+                "method.response.header.Access-Control-Allow-Origin": "'*'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'",
+                "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,DELETE'",
+                "method.response.header.Access-Control-Allow-Credentials": "'false'"
+              },
+              "ResponseTemplates": {
+                "application/json": ""
+              }
+            }
+          ]
+        },
         "ResourceId": {
-          "Ref": "ApiGatewayResourceDevicesDidVarSidVar"
+          "Ref": "ApiGatewayResourceUserUidVar"
         },
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
-        },
-        "AuthorizationType": "NONE",
-        "Integration": {
-          "IntegrationHttpMethod": "POST",
-          "Type": "AWS_PROXY",
-          "Uri": {
-            "Fn::Join": [
-              "",
-              [
-                "arn:aws:apigateway:",
-                {
-                  "Ref": "AWS::Region"
-                },
-                ":lambda:path/2015-03-31/functions/",
-                {
-                  "Fn::GetAtt": [
-                    "UpdateConfigLambdaFunction",
-                    "Arn"
-                  ]
-                },
-                "/invocations"
-              ]
-            ]
-          }
-        },
-        "MethodResponses": []
-      }
-    },
-    "ApiGatewayMethodDevicesPost": {
-      "Type": "AWS::ApiGateway::Method",
-      "Properties": {
-        "HttpMethod": "POST",
-        "RequestParameters": {},
-        "ResourceId": {
-          "Ref": "ApiGatewayResourceDevices"
-        },
-        "RestApiId": {
-          "Ref": "ApiGatewayRestApi"
-        },
-        "AuthorizationType": "NONE",
-        "Integration": {
-          "IntegrationHttpMethod": "POST",
-          "Type": "AWS_PROXY",
-          "Uri": {
-            "Fn::Join": [
-              "",
-              [
-                "arn:aws:apigateway:",
-                {
-                  "Ref": "AWS::Region"
-                },
-                ":lambda:path/2015-03-31/functions/",
-                {
-                  "Fn::GetAtt": [
-                    "CreateDeviceLambdaFunction",
-                    "Arn"
-                  ]
-                },
-                "/invocations"
-              ]
-            ]
-          }
-        },
-        "MethodResponses": []
+        }
       }
     },
     "ApiGatewayMethodDevicesDidVarDelete": {
@@ -965,13 +901,165 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayMethodDevicesDelete": {
+    "ApiGatewayMethodSensorPost": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "POST",
+        "RequestParameters": {},
+        "ResourceId": {
+          "Ref": "ApiGatewayResourceSensor"
+        },
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:aws:apigateway:",
+                {
+                  "Ref": "AWS::Region"
+                },
+                ":lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "CreateSensorLambdaFunction",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        },
+        "MethodResponses": []
+      }
+    },
+    "ApiGatewayMethodSensorSidVarDelete": {
       "Type": "AWS::ApiGateway::Method",
       "Properties": {
         "HttpMethod": "DELETE",
         "RequestParameters": {},
         "ResourceId": {
-          "Ref": "ApiGatewayResourceDevices"
+          "Ref": "ApiGatewayResourceSensorSidVar"
+        },
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:aws:apigateway:",
+                {
+                  "Ref": "AWS::Region"
+                },
+                ":lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "DeleteSensorLambdaFunction",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        },
+        "MethodResponses": []
+      }
+    },
+    "ApiGatewayMethodSensorSidVarGet": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "GET",
+        "RequestParameters": {},
+        "ResourceId": {
+          "Ref": "ApiGatewayResourceSensorSidVar"
+        },
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:aws:apigateway:",
+                {
+                  "Ref": "AWS::Region"
+                },
+                ":lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "LookupSensorLambdaFunction",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        },
+        "MethodResponses": []
+      }
+    },
+    "ApiGatewayMethodSensorSidVarPut": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "PUT",
+        "RequestParameters": {},
+        "ResourceId": {
+          "Ref": "ApiGatewayResourceSensorSidVar"
+        },
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:aws:apigateway:",
+                {
+                  "Ref": "AWS::Region"
+                },
+                ":lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "UpdateSensorLambdaFunction",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        },
+        "MethodResponses": []
+      }
+    },
+    "ApiGatewayMethodUserUidVarDelete": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "DELETE",
+        "RequestParameters": {},
+        "ResourceId": {
+          "Ref": "ApiGatewayResourceUserUidVar"
         },
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
@@ -1003,7 +1091,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1489079539973": {
+    "ApiGatewayDeployment1489338484684": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -1012,146 +1100,14 @@
         "StageName": "qa"
       },
       "DependsOn": [
-        "ApiGatewayMethodDevicesDidVarSidVarDelete",
-        "ApiGatewayMethodDevicesDidVarSidVarGet",
-        "ApiGatewayMethodDevicesDidVarSidVarPut",
-        "ApiGatewayMethodDevicesPost",
         "ApiGatewayMethodDevicesDidVarDelete",
         "ApiGatewayMethodDevicesDidVarGet",
-        "ApiGatewayMethodDevicesDelete"
+        "ApiGatewayMethodSensorPost",
+        "ApiGatewayMethodSensorSidVarDelete",
+        "ApiGatewayMethodSensorSidVarGet",
+        "ApiGatewayMethodSensorSidVarPut",
+        "ApiGatewayMethodUserUidVarDelete"
       ]
-    },
-    "DeleteConfigLambdaPermissionApiGateway": {
-      "Type": "AWS::Lambda::Permission",
-      "Properties": {
-        "FunctionName": {
-          "Fn::GetAtt": [
-            "DeleteConfigLambdaFunction",
-            "Arn"
-          ]
-        },
-        "Action": "lambda:InvokeFunction",
-        "Principal": "apigateway.amazonaws.com",
-        "SourceArn": {
-          "Fn::Join": [
-            "",
-            [
-              "arn:aws:execute-api:",
-              {
-                "Ref": "AWS::Region"
-              },
-              ":",
-              {
-                "Ref": "AWS::AccountId"
-              },
-              ":",
-              {
-                "Ref": "ApiGatewayRestApi"
-              },
-              "/*/*"
-            ]
-          ]
-        }
-      }
-    },
-    "LookupConfigLambdaPermissionApiGateway": {
-      "Type": "AWS::Lambda::Permission",
-      "Properties": {
-        "FunctionName": {
-          "Fn::GetAtt": [
-            "LookupConfigLambdaFunction",
-            "Arn"
-          ]
-        },
-        "Action": "lambda:InvokeFunction",
-        "Principal": "apigateway.amazonaws.com",
-        "SourceArn": {
-          "Fn::Join": [
-            "",
-            [
-              "arn:aws:execute-api:",
-              {
-                "Ref": "AWS::Region"
-              },
-              ":",
-              {
-                "Ref": "AWS::AccountId"
-              },
-              ":",
-              {
-                "Ref": "ApiGatewayRestApi"
-              },
-              "/*/*"
-            ]
-          ]
-        }
-      }
-    },
-    "UpdateConfigLambdaPermissionApiGateway": {
-      "Type": "AWS::Lambda::Permission",
-      "Properties": {
-        "FunctionName": {
-          "Fn::GetAtt": [
-            "UpdateConfigLambdaFunction",
-            "Arn"
-          ]
-        },
-        "Action": "lambda:InvokeFunction",
-        "Principal": "apigateway.amazonaws.com",
-        "SourceArn": {
-          "Fn::Join": [
-            "",
-            [
-              "arn:aws:execute-api:",
-              {
-                "Ref": "AWS::Region"
-              },
-              ":",
-              {
-                "Ref": "AWS::AccountId"
-              },
-              ":",
-              {
-                "Ref": "ApiGatewayRestApi"
-              },
-              "/*/*"
-            ]
-          ]
-        }
-      }
-    },
-    "CreateDeviceLambdaPermissionApiGateway": {
-      "Type": "AWS::Lambda::Permission",
-      "Properties": {
-        "FunctionName": {
-          "Fn::GetAtt": [
-            "CreateDeviceLambdaFunction",
-            "Arn"
-          ]
-        },
-        "Action": "lambda:InvokeFunction",
-        "Principal": "apigateway.amazonaws.com",
-        "SourceArn": {
-          "Fn::Join": [
-            "",
-            [
-              "arn:aws:execute-api:",
-              {
-                "Ref": "AWS::Region"
-              },
-              ":",
-              {
-                "Ref": "AWS::AccountId"
-              },
-              ":",
-              {
-                "Ref": "ApiGatewayRestApi"
-              },
-              "/*/*"
-            ]
-          ]
-        }
-      }
     },
     "DeleteDeviceLambdaPermissionApiGateway": {
       "Type": "AWS::Lambda::Permission",
@@ -1219,6 +1175,138 @@
         }
       }
     },
+    "CreateSensorLambdaPermissionApiGateway": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "CreateSensorLambdaFunction",
+            "Arn"
+          ]
+        },
+        "Action": "lambda:InvokeFunction",
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:aws:execute-api:",
+              {
+                "Ref": "AWS::Region"
+              },
+              ":",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "ApiGatewayRestApi"
+              },
+              "/*/*"
+            ]
+          ]
+        }
+      }
+    },
+    "DeleteSensorLambdaPermissionApiGateway": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "DeleteSensorLambdaFunction",
+            "Arn"
+          ]
+        },
+        "Action": "lambda:InvokeFunction",
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:aws:execute-api:",
+              {
+                "Ref": "AWS::Region"
+              },
+              ":",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "ApiGatewayRestApi"
+              },
+              "/*/*"
+            ]
+          ]
+        }
+      }
+    },
+    "LookupSensorLambdaPermissionApiGateway": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "LookupSensorLambdaFunction",
+            "Arn"
+          ]
+        },
+        "Action": "lambda:InvokeFunction",
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:aws:execute-api:",
+              {
+                "Ref": "AWS::Region"
+              },
+              ":",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "ApiGatewayRestApi"
+              },
+              "/*/*"
+            ]
+          ]
+        }
+      }
+    },
+    "UpdateSensorLambdaPermissionApiGateway": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "UpdateSensorLambdaFunction",
+            "Arn"
+          ]
+        },
+        "Action": "lambda:InvokeFunction",
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:aws:execute-api:",
+              {
+                "Ref": "AWS::Region"
+              },
+              ":",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "ApiGatewayRestApi"
+              },
+              "/*/*"
+            ]
+          ]
+        }
+      }
+    },
     "DeleteUserLambdaPermissionApiGateway": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
@@ -1258,25 +1346,25 @@
       "Properties": {
         "AttributeDefinitions": [
           {
-            "AttributeName": "did",
-            "AttributeType": "S"
-          },
-          {
             "AttributeName": "sid",
             "AttributeType": "S"
           },
           {
             "AttributeName": "uid",
             "AttributeType": "S"
+          },
+          {
+            "AttributeName": "did",
+            "AttributeType": "S"
           }
         ],
         "KeySchema": [
           {
-            "AttributeName": "did",
+            "AttributeName": "sid",
             "KeyType": "HASH"
           },
           {
-            "AttributeName": "sid",
+            "AttributeName": "uid",
             "KeyType": "RANGE"
           }
         ],
@@ -1284,16 +1372,34 @@
           "ReadCapacityUnits": 1,
           "WriteCapacityUnits": 1
         },
-        "GlobalSecondaryIndexes": [
+        "LocalSecondaryIndexes": [
           {
-            "IndexName": "uid-sid-index",
+            "IndexName": "sid-did-index",
             "KeySchema": [
               {
-                "AttributeName": "uid",
+                "AttributeName": "sid",
                 "KeyType": "HASH"
               },
               {
-                "AttributeName": "sid",
+                "AttributeName": "did",
+                "KeyType": "RANGE"
+              }
+            ],
+            "Projection": {
+              "ProjectionType": "ALL"
+            }
+          }
+        ],
+        "GlobalSecondaryIndexes": [
+          {
+            "IndexName": "did-uid-index",
+            "KeySchema": [
+              {
+                "AttributeName": "did",
+                "KeyType": "HASH"
+              },
+              {
+                "AttributeName": "uid",
                 "KeyType": "RANGE"
               }
             ],
@@ -1306,7 +1412,7 @@
             }
           }
         ],
-        "TableName": "qa-iot-package-devices"
+        "TableName": "qa-iot-pkg-devices"
       }
     }
   },
@@ -1316,46 +1422,46 @@
         "Ref": "ServerlessDeploymentBucket"
       }
     },
-    "DeleteConfigLambdaFunctionQualifiedArn": {
-      "Description": "Current Lambda function version",
-      "Value": {
-        "Ref": "DeleteConfigLambdaVersionUV12JrXQujcz4Bvfb4nZ3XSI3faUPyIHU5W0g9tELs"
-      }
-    },
-    "LookupConfigLambdaFunctionQualifiedArn": {
-      "Description": "Current Lambda function version",
-      "Value": {
-        "Ref": "LookupConfigLambdaVersionUV12JrXQujcz4Bvfb4nZ3XSI3faUPyIHU5W0g9tELs"
-      }
-    },
-    "UpdateConfigLambdaFunctionQualifiedArn": {
-      "Description": "Current Lambda function version",
-      "Value": {
-        "Ref": "UpdateConfigLambdaVersionUV12JrXQujcz4Bvfb4nZ3XSI3faUPyIHU5W0g9tELs"
-      }
-    },
-    "CreateDeviceLambdaFunctionQualifiedArn": {
-      "Description": "Current Lambda function version",
-      "Value": {
-        "Ref": "CreateDeviceLambdaVersionUV12JrXQujcz4Bvfb4nZ3XSI3faUPyIHU5W0g9tELs"
-      }
-    },
     "DeleteDeviceLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DeleteDeviceLambdaVersionUV12JrXQujcz4Bvfb4nZ3XSI3faUPyIHU5W0g9tELs"
+        "Ref": "DeleteDeviceLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc"
       }
     },
     "LookupDeviceLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "LookupDeviceLambdaVersionUV12JrXQujcz4Bvfb4nZ3XSI3faUPyIHU5W0g9tELs"
+        "Ref": "LookupDeviceLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc"
+      }
+    },
+    "CreateSensorLambdaFunctionQualifiedArn": {
+      "Description": "Current Lambda function version",
+      "Value": {
+        "Ref": "CreateSensorLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc"
+      }
+    },
+    "DeleteSensorLambdaFunctionQualifiedArn": {
+      "Description": "Current Lambda function version",
+      "Value": {
+        "Ref": "DeleteSensorLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc"
+      }
+    },
+    "LookupSensorLambdaFunctionQualifiedArn": {
+      "Description": "Current Lambda function version",
+      "Value": {
+        "Ref": "LookupSensorLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc"
+      }
+    },
+    "UpdateSensorLambdaFunctionQualifiedArn": {
+      "Description": "Current Lambda function version",
+      "Value": {
+        "Ref": "UpdateSensorLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc"
       }
     },
     "DeleteUserLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DeleteUserLambdaVersionUV12JrXQujcz4Bvfb4nZ3XSI3faUPyIHU5W0g9tELs"
+        "Ref": "DeleteUserLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc"
       }
     },
     "ServiceEndpoint": {

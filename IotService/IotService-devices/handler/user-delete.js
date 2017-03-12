@@ -1,37 +1,21 @@
 'use strict';
 
 const consts = require('../common/consts');
+const dbHelper = require('../common/db-helper');
 const utils = require('../common/utils');
-const AWS = require('aws-sdk'); // eslint-disable-line import/no-extraneous-dependencies
 
-const dynamoDb = new AWS.DynamoDB.DocumentClient();
-const TAG = consts.PREFIX + ':deleteUser';
+const TAG = consts.PREFIX + ':deleteUser]';
 
 // need to call RC Legacy
 // unregister user
 module.exports.deleteUser = (event, context, callback) => {
+    if (typeof event.body === 'string') event.body = JSON.parse(event.body);
     utils.logEvent(TAG, event);
 
-    if (!utils.isValidUserBody(TAG, event, callback)) return;
+    const data = event.body;
+    const source = data.params.source;
 
-    const params = {
-        TableName: process.env.DYNAMODB_TABLE,
-        Key: {
-            uid: data.uid
-        }
-    };
-
-    dynamoDb.delete(params, (error) => {
-        if (error) {
-            console.error(error);
-            callback(new Error('Couldn\'t remove the todo item.'));
-            return;
-        }
-
-        const response = {
-            statusCode: 200,
-            body: JSON.stringify({}),
-        };
-        callback(null, response);
-    });
+    dbHelper.deleteBulkWithSource(TAG, source)
+        .then(() => callback(null, {statusCode: 200, body: consts.OKMessage}))
+        .catch(reason => callback(new Error(reason)));
 };
