@@ -4,4 +4,4 @@ exports.PREFIX = 'IotPackage';
 exports.URL_DATAPOINTS = `https://f47086fn4d.execute-api.ap-northeast-1.amazonaws.com/datapoint`;
 
 
-exports.OKMessage = JSON.stringify({result: "ok"});
+exports.OKMessage = JSON.stringify({result: "1"});

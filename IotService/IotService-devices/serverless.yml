@@ -61,7 +61,7 @@ functions:
     description: create device
     events:
       - http:
-          path: sensor
+          path: sensors
           method: post
           cors: true
 
@@ -70,7 +70,7 @@ functions:
     description: delete sensor
     events:
       - http:
-          path: sensor/{sid}
+          path: sensors/{sid}
           method: delete
           cors: true
 
@@ -79,7 +79,7 @@ functions:
     description: lookup sensor
     events:
       - http:
-          path: sensor/{sid}
+          path: sensors/{sid}
           method: get
           cors: true
 
@@ -88,7 +88,7 @@ functions:
     description: update sensor
     events:
       - http:
-          path: sensor/{sid}
+          path: sensors/{sid}
           method: put
           cors: true
 
@@ -97,7 +97,7 @@ functions:
     description: delete user
     events:
       - http:
-          path: user/{uid}
+          path: users/{uid}
           method: delete
           cors: true
 

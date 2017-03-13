@@ -1,0 +1,1 @@
+sls invoke local --function lookup --path template/lookup-sensor-config.json

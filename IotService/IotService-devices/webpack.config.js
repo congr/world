@@ -20,7 +20,7 @@ module.exports = {
         filename: '[name].js'
     },
     externals: [nodeExternals()],
-    plugins: [ new UglifyJsPlugin({
+    plugins: [new UglifyJsPlugin({
         mangle: {
             except: ['$super', '$', 'exports', 'require']
         },

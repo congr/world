@@ -11,7 +11,7 @@ module.exports.queryWithSource = (TAG, source) => {
         dynamoDb.query(params, (error, result) => {
             console.log(TAG, "dynamo result", JSON.stringify(result, null, " "));
             if (error) reject(error);
-            resolve(result.Items);
+            resolve(result ? result['Items']: '');
         });
     });
 }

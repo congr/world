@@ -24,7 +24,7 @@ module.exports.updateSensor = (event, context, callback) => {
             return updateDynamo(orgSettings);
         })
         .then(result => {
-            callback(null, {statusCode: 200, body: JSON.stringify(result)});
+            callback(null, {statusCode: 200, body: consts.OKMessage});
         })
         .catch(reason => {
             console.error(reason);

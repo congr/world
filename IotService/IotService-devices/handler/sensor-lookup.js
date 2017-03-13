@@ -10,10 +10,7 @@ module.exports.lookupSensor = (event, context, callback) => {
     if (typeof event.body === 'string') event.body = JSON.parse(event.body);
     utils.logEvent(TAG, event);
 
-    const data = event.body;
-    const source = data.params.source;
-
-    dbHelper.queryWithSource(TAG, source)
-        .then(Items => callback(null, {statusCode: 200, body: JSON.stringify(Items[0])})) // return 1 sensor
+    dbHelper.queryWithSource(TAG, utils.getSource(TAG, event))
+        .then(Items => callback(null, {statusCode: 200, body: utils.toSettingsResult(Items[0])})) // return 1 sensor
         .catch(reason => callback(new Error(reason)));
 };

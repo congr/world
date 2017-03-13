@@ -1,8 +1,8 @@
 {
   "name": "IotService-devices",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Serverless Iot service",
-  "author": "cecilia.cho",
+  "author": "cecilia.cho@lge.com",
   "license": "MIT",
   "dependencies": {
     "fbgraph": "^1.3.0",

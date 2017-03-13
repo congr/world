@@ -1,25 +1,5 @@
 {
-  "body": {
-    "JSON-rpc":"2.0",
-    "method":"create_sensor_sensor",
-    "uuid":"uniquemessageId",
-    "phase":"dv",
-    "region":"kic",
-    "country_code":"kr",
-    "params":{
-      "version":"11234",
-      "mid":"messageId",
-      "source":{
-        "did":"did000",
-        "uid":"cecil1",
-        "tz":"Asia/Seoul",
-        "ts":"1234"
-      },
-      "settings": {
 
-      }
-    }
-  },
   "resource": "/{proxy+}",
   "requestContext": {
     "resourceId": "123456",
@@ -44,7 +24,7 @@
     "stage": "prod"
   },
   "queryStringParameters": {
-
+    "uid":"uid027"
   },
   "headers": {
     "Via": "1.1 08f323deadbeefa7af34d5feb414ce27.cloudfront.net (CloudFront)",
@@ -67,10 +47,10 @@
     "CloudFront-Forwarded-Proto": "https",
     "Accept-Encoding": "gzip, deflate, sdch"
   },
-  "pathParameters": {"did": "did555"},
+  "pathParameters": {"did": "027_gateway"},
   "httpMethod": "GET",
   "stageVariables": {
     "baz": "qux"
   },
-  "path": "/device"
+  "path": "/devices"
 }
