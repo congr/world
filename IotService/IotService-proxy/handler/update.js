@@ -28,13 +28,15 @@ module.exports.update = (event, context, callback) => {
 
     function requestLegacy() {
         const URL_LEGACY = consts.URL_LEGACY_QA + '/update';
+
         return new Promise((resolve, reject) => {
             console.log(TAG, 'requestLegacy', URL_LEGACY);
             Requestify.post(URL_LEGACY, data).then(response => {
                 console.log(TAG, 'legacy response:', response.body);
                 const body = JSON.parse(response.body);
-                if (body.result !== '-1') resolve(consts.OKMessage);
+                if (body.result === '1') resolve(consts.OKMessage);
                 else reject(body);
+
             }).fail(response => {
                 console.log(TAG, 'legacy response:', response);
                 reject(response.body);
@@ -49,6 +51,7 @@ module.exports.update = (event, context, callback) => {
                 const body = JSON.parse(response.body);
                 if (body.result === '1') resolve(consts.OKMessage);
                 else reject(body);
+
             }).fail(response => {
                 console.log(TAG, 'rest response:', response);
                 reject(response.body);
@@ -60,7 +63,8 @@ module.exports.update = (event, context, callback) => {
                 const URL_REST = consts.URL_REST + '/sensors';
                 console.log(TAG, 'postRest', URL_REST);
                 return Requestify.post(URL_REST, data);
-            }else if (data.method === 'update_sensor_config') {
+
+            } else if (data.method === 'update_sensor_config') {
                 const URL_REST = consts.URL_REST + '/sensors/' + source.sid;
                 console.log(TAG, 'putRest', URL_REST);
                 return Requestify.put(URL_REST, data);

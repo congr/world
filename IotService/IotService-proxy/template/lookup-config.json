@@ -3,15 +3,15 @@
     "JSON-rpc":"2.0",
     "method":"lookup_config",
     "uuid":"uniquemessageid",
-    "phase":"dv",
+    "phase":"pkg1.6",
     "region":"kic",
     "country_code":"kr",
     "params":{
       "version":"123",
       "mid":"messageId",
       "source":{
-        "did":"did8",
-        "uid":"postman",
+        "did":"did027",
+
         "tz":"Asia/Seoul",
         "ts":"1489395776610"
       }

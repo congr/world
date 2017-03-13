@@ -79,9 +79,15 @@ module.exports.getSource = (TAG, event) => {
     let queryString = event.queryStringParameters;
     if (typeof queryString === 'string') queryString = JSON.parse(queryString);
 
-    let source = queryString;
-    let key = Object.keys(event.pathParameters)[0];
-    source[key] = event.pathParameters[key];
+    let pathParam = event.pathParameters;
+    if (typeof pathParam === 'string') pathParam = JSON.parse(pathParam);
+
+    let source = {};
+    if (queryString)
+        for (let key of Object.keys(queryString)) source[key] = queryString[key]; // copy query string
+    if (pathParam)
+        for (let key of Object.keys(pathParam)) source[key] = pathParam[key]; // copy pathParam
+
     console.log(TAG, "source", source);
     return source;
 };

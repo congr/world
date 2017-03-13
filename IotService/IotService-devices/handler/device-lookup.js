@@ -12,7 +12,6 @@ module.exports.lookupDevice = (event, context, callback) => {
     if (typeof event.body === 'string') event.body = JSON.parse(event.body);
     utils.logEvent(TAG, event);
 
-
     const data = event.body;
     // const source = data.params.source;
     //const source = event.querystring;

@@ -24,7 +24,6 @@
     "stage": "prod"
   },
   "queryStringParameters": {
-    "uid":"uid027"
   },
   "headers": {
     "Via": "1.1 08f323deadbeefa7af34d5feb414ce27.cloudfront.net (CloudFront)",
@@ -47,7 +46,7 @@
     "CloudFront-Forwarded-Proto": "https",
     "Accept-Encoding": "gzip, deflate, sdch"
   },
-  "pathParameters": {"did": "027_gateway"},
+  "pathParameters": {"did": "did027"},
   "httpMethod": "GET",
   "stageVariables": {
     "baz": "qux"

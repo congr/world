@@ -10,9 +10,9 @@
       "version":"11234",
       "mid":"messageId",
       "source":{
-        "did":"did9",
-        "sid":"did9_sid9",
-        "uid":"proxy1",
+        "did":"did027",
+        "sid":"did027_sid029",
+        "uid":"uid027",
         "tz":"Asia/Seoul",
         "ts":""
       },

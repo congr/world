@@ -274,7 +274,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/iot-pkg-devices/qa/1489338484608-2017-03-12T17:08:04.608Z/iot-pkg-devices.zip"
+          "S3Key": "serverless/iot-pkg-devices/qa/1489421536205-2017-03-13T16:12:16.205Z/iot-pkg-devices.zip"
         },
         "FunctionName": "iot-pkg-devices-qa-deleteDevice",
         "Handler": "handler/device-delete.deleteDevice",
@@ -298,14 +298,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "DeleteDeviceLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc": {
+    "DeleteDeviceLambdaVersionN3KYua8P19HzB571CYu3k1Sy5shs5wk0d6Tssrsc77M": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DeleteDeviceLambdaFunction"
         },
-        "CodeSha256": "0/Ws41o5u99xmVZPQYG04XnK+1WaPKid3VBdG5g1jvc="
+        "CodeSha256": "N3KYua8P19HzB571CYu3k1Sy5shs5wk0d6Tssrsc77M="
       }
     },
     "LookupDeviceLambdaFunction": {
@@ -315,7 +315,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/iot-pkg-devices/qa/1489338484608-2017-03-12T17:08:04.608Z/iot-pkg-devices.zip"
+          "S3Key": "serverless/iot-pkg-devices/qa/1489421536205-2017-03-13T16:12:16.205Z/iot-pkg-devices.zip"
         },
         "FunctionName": "iot-pkg-devices-qa-lookupDevice",
         "Handler": "handler/device-lookup.lookupDevice",
@@ -339,14 +339,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "LookupDeviceLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc": {
+    "LookupDeviceLambdaVersionN3KYua8P19HzB571CYu3k1Sy5shs5wk0d6Tssrsc77M": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "LookupDeviceLambdaFunction"
         },
-        "CodeSha256": "0/Ws41o5u99xmVZPQYG04XnK+1WaPKid3VBdG5g1jvc="
+        "CodeSha256": "N3KYua8P19HzB571CYu3k1Sy5shs5wk0d6Tssrsc77M="
       }
     },
     "CreateSensorLambdaFunction": {
@@ -356,7 +356,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/iot-pkg-devices/qa/1489338484608-2017-03-12T17:08:04.608Z/iot-pkg-devices.zip"
+          "S3Key": "serverless/iot-pkg-devices/qa/1489421536205-2017-03-13T16:12:16.205Z/iot-pkg-devices.zip"
         },
         "FunctionName": "iot-pkg-devices-qa-createSensor",
         "Handler": "handler/sensor-create.createSensor",
@@ -380,14 +380,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "CreateSensorLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc": {
+    "CreateSensorLambdaVersionN3KYua8P19HzB571CYu3k1Sy5shs5wk0d6Tssrsc77M": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "CreateSensorLambdaFunction"
         },
-        "CodeSha256": "0/Ws41o5u99xmVZPQYG04XnK+1WaPKid3VBdG5g1jvc="
+        "CodeSha256": "N3KYua8P19HzB571CYu3k1Sy5shs5wk0d6Tssrsc77M="
       }
     },
     "DeleteSensorLambdaFunction": {
@@ -397,7 +397,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/iot-pkg-devices/qa/1489338484608-2017-03-12T17:08:04.608Z/iot-pkg-devices.zip"
+          "S3Key": "serverless/iot-pkg-devices/qa/1489421536205-2017-03-13T16:12:16.205Z/iot-pkg-devices.zip"
         },
         "FunctionName": "iot-pkg-devices-qa-deleteSensor",
         "Handler": "handler/sensor-delete.deleteSensor",
@@ -421,14 +421,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "DeleteSensorLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc": {
+    "DeleteSensorLambdaVersionN3KYua8P19HzB571CYu3k1Sy5shs5wk0d6Tssrsc77M": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DeleteSensorLambdaFunction"
         },
-        "CodeSha256": "0/Ws41o5u99xmVZPQYG04XnK+1WaPKid3VBdG5g1jvc="
+        "CodeSha256": "N3KYua8P19HzB571CYu3k1Sy5shs5wk0d6Tssrsc77M="
       }
     },
     "LookupSensorLambdaFunction": {
@@ -438,7 +438,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/iot-pkg-devices/qa/1489338484608-2017-03-12T17:08:04.608Z/iot-pkg-devices.zip"
+          "S3Key": "serverless/iot-pkg-devices/qa/1489421536205-2017-03-13T16:12:16.205Z/iot-pkg-devices.zip"
         },
         "FunctionName": "iot-pkg-devices-qa-lookupSensor",
         "Handler": "handler/sensor-lookup.lookupSensor",
@@ -462,14 +462,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "LookupSensorLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc": {
+    "LookupSensorLambdaVersionN3KYua8P19HzB571CYu3k1Sy5shs5wk0d6Tssrsc77M": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "LookupSensorLambdaFunction"
         },
-        "CodeSha256": "0/Ws41o5u99xmVZPQYG04XnK+1WaPKid3VBdG5g1jvc="
+        "CodeSha256": "N3KYua8P19HzB571CYu3k1Sy5shs5wk0d6Tssrsc77M="
       }
     },
     "UpdateSensorLambdaFunction": {
@@ -479,7 +479,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/iot-pkg-devices/qa/1489338484608-2017-03-12T17:08:04.608Z/iot-pkg-devices.zip"
+          "S3Key": "serverless/iot-pkg-devices/qa/1489421536205-2017-03-13T16:12:16.205Z/iot-pkg-devices.zip"
         },
         "FunctionName": "iot-pkg-devices-qa-updateSensor",
         "Handler": "handler/sensor-update.updateSensor",
@@ -503,14 +503,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "UpdateSensorLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc": {
+    "UpdateSensorLambdaVersionN3KYua8P19HzB571CYu3k1Sy5shs5wk0d6Tssrsc77M": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "UpdateSensorLambdaFunction"
         },
-        "CodeSha256": "0/Ws41o5u99xmVZPQYG04XnK+1WaPKid3VBdG5g1jvc="
+        "CodeSha256": "N3KYua8P19HzB571CYu3k1Sy5shs5wk0d6Tssrsc77M="
       }
     },
     "DeleteUserLambdaFunction": {
@@ -520,7 +520,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/iot-pkg-devices/qa/1489338484608-2017-03-12T17:08:04.608Z/iot-pkg-devices.zip"
+          "S3Key": "serverless/iot-pkg-devices/qa/1489421536205-2017-03-13T16:12:16.205Z/iot-pkg-devices.zip"
         },
         "FunctionName": "iot-pkg-devices-qa-deleteUser",
         "Handler": "handler/user-delete.deleteUser",
@@ -544,14 +544,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "DeleteUserLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc": {
+    "DeleteUserLambdaVersionN3KYua8P19HzB571CYu3k1Sy5shs5wk0d6Tssrsc77M": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DeleteUserLambdaFunction"
         },
-        "CodeSha256": "0/Ws41o5u99xmVZPQYG04XnK+1WaPKid3VBdG5g1jvc="
+        "CodeSha256": "N3KYua8P19HzB571CYu3k1Sy5shs5wk0d6Tssrsc77M="
       }
     },
     "ApiGatewayRestApi": {
@@ -575,7 +575,7 @@
         }
       }
     },
-    "ApiGatewayResourceSensor": {
+    "ApiGatewayResourceSensors": {
       "Type": "AWS::ApiGateway::Resource",
       "Properties": {
         "ParentId": {
@@ -584,13 +584,13 @@
             "RootResourceId"
           ]
         },
-        "PathPart": "sensor",
+        "PathPart": "sensors",
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
         }
       }
     },
-    "ApiGatewayResourceUser": {
+    "ApiGatewayResourceUsers": {
       "Type": "AWS::ApiGateway::Resource",
       "Properties": {
         "ParentId": {
@@ -599,7 +599,7 @@
             "RootResourceId"
           ]
         },
-        "PathPart": "user",
+        "PathPart": "users",
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
         }
@@ -617,11 +617,11 @@
         }
       }
     },
-    "ApiGatewayResourceSensorSidVar": {
+    "ApiGatewayResourceSensorsSidVar": {
       "Type": "AWS::ApiGateway::Resource",
       "Properties": {
         "ParentId": {
-          "Ref": "ApiGatewayResourceSensor"
+          "Ref": "ApiGatewayResourceSensors"
         },
         "PathPart": "{sid}",
         "RestApiId": {
@@ -629,11 +629,11 @@
         }
       }
     },
-    "ApiGatewayResourceUserUidVar": {
+    "ApiGatewayResourceUsersUidVar": {
       "Type": "AWS::ApiGateway::Resource",
       "Properties": {
         "ParentId": {
-          "Ref": "ApiGatewayResourceUser"
+          "Ref": "ApiGatewayResourceUsers"
         },
         "PathPart": "{uid}",
         "RestApiId": {
@@ -687,7 +687,7 @@
         }
       }
     },
-    "ApiGatewayMethodSensorOptions": {
+    "ApiGatewayMethodSensorsOptions": {
       "Type": "AWS::ApiGateway::Method",
       "Properties": {
         "AuthorizationType": "NONE",
@@ -726,14 +726,14 @@
           ]
         },
         "ResourceId": {
-          "Ref": "ApiGatewayResourceSensor"
+          "Ref": "ApiGatewayResourceSensors"
         },
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
         }
       }
     },
-    "ApiGatewayMethodSensorSidVarOptions": {
+    "ApiGatewayMethodSensorsSidVarOptions": {
       "Type": "AWS::ApiGateway::Method",
       "Properties": {
         "AuthorizationType": "NONE",
@@ -772,14 +772,14 @@
           ]
         },
         "ResourceId": {
-          "Ref": "ApiGatewayResourceSensorSidVar"
+          "Ref": "ApiGatewayResourceSensorsSidVar"
         },
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
         }
       }
     },
-    "ApiGatewayMethodUserUidVarOptions": {
+    "ApiGatewayMethodUsersUidVarOptions": {
       "Type": "AWS::ApiGateway::Method",
       "Properties": {
         "AuthorizationType": "NONE",
@@ -818,7 +818,7 @@
           ]
         },
         "ResourceId": {
-          "Ref": "ApiGatewayResourceUserUidVar"
+          "Ref": "ApiGatewayResourceUsersUidVar"
         },
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
@@ -901,13 +901,13 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayMethodSensorPost": {
+    "ApiGatewayMethodSensorsPost": {
       "Type": "AWS::ApiGateway::Method",
       "Properties": {
         "HttpMethod": "POST",
         "RequestParameters": {},
         "ResourceId": {
-          "Ref": "ApiGatewayResourceSensor"
+          "Ref": "ApiGatewayResourceSensors"
         },
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
@@ -939,13 +939,13 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayMethodSensorSidVarDelete": {
+    "ApiGatewayMethodSensorsSidVarDelete": {
       "Type": "AWS::ApiGateway::Method",
       "Properties": {
         "HttpMethod": "DELETE",
         "RequestParameters": {},
         "ResourceId": {
-          "Ref": "ApiGatewayResourceSensorSidVar"
+          "Ref": "ApiGatewayResourceSensorsSidVar"
         },
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
@@ -977,13 +977,13 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayMethodSensorSidVarGet": {
+    "ApiGatewayMethodSensorsSidVarGet": {
       "Type": "AWS::ApiGateway::Method",
       "Properties": {
         "HttpMethod": "GET",
         "RequestParameters": {},
         "ResourceId": {
-          "Ref": "ApiGatewayResourceSensorSidVar"
+          "Ref": "ApiGatewayResourceSensorsSidVar"
         },
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
@@ -1015,13 +1015,13 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayMethodSensorSidVarPut": {
+    "ApiGatewayMethodSensorsSidVarPut": {
       "Type": "AWS::ApiGateway::Method",
       "Properties": {
         "HttpMethod": "PUT",
         "RequestParameters": {},
         "ResourceId": {
-          "Ref": "ApiGatewayResourceSensorSidVar"
+          "Ref": "ApiGatewayResourceSensorsSidVar"
         },
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
@@ -1053,13 +1053,13 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayMethodUserUidVarDelete": {
+    "ApiGatewayMethodUsersUidVarDelete": {
       "Type": "AWS::ApiGateway::Method",
       "Properties": {
         "HttpMethod": "DELETE",
         "RequestParameters": {},
         "ResourceId": {
-          "Ref": "ApiGatewayResourceUserUidVar"
+          "Ref": "ApiGatewayResourceUsersUidVar"
         },
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
@@ -1091,7 +1091,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1489338484684": {
+    "ApiGatewayDeployment1489421536573": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -1102,11 +1102,11 @@
       "DependsOn": [
         "ApiGatewayMethodDevicesDidVarDelete",
         "ApiGatewayMethodDevicesDidVarGet",
-        "ApiGatewayMethodSensorPost",
-        "ApiGatewayMethodSensorSidVarDelete",
-        "ApiGatewayMethodSensorSidVarGet",
-        "ApiGatewayMethodSensorSidVarPut",
-        "ApiGatewayMethodUserUidVarDelete"
+        "ApiGatewayMethodSensorsPost",
+        "ApiGatewayMethodSensorsSidVarDelete",
+        "ApiGatewayMethodSensorsSidVarGet",
+        "ApiGatewayMethodSensorsSidVarPut",
+        "ApiGatewayMethodUsersUidVarDelete"
       ]
     },
     "DeleteDeviceLambdaPermissionApiGateway": {
@@ -1425,43 +1425,43 @@
     "DeleteDeviceLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DeleteDeviceLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc"
+        "Ref": "DeleteDeviceLambdaVersionN3KYua8P19HzB571CYu3k1Sy5shs5wk0d6Tssrsc77M"
       }
     },
     "LookupDeviceLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "LookupDeviceLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc"
+        "Ref": "LookupDeviceLambdaVersionN3KYua8P19HzB571CYu3k1Sy5shs5wk0d6Tssrsc77M"
       }
     },
     "CreateSensorLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CreateSensorLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc"
+        "Ref": "CreateSensorLambdaVersionN3KYua8P19HzB571CYu3k1Sy5shs5wk0d6Tssrsc77M"
       }
     },
     "DeleteSensorLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DeleteSensorLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc"
+        "Ref": "DeleteSensorLambdaVersionN3KYua8P19HzB571CYu3k1Sy5shs5wk0d6Tssrsc77M"
       }
     },
     "LookupSensorLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "LookupSensorLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc"
+        "Ref": "LookupSensorLambdaVersionN3KYua8P19HzB571CYu3k1Sy5shs5wk0d6Tssrsc77M"
       }
     },
     "UpdateSensorLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "UpdateSensorLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc"
+        "Ref": "UpdateSensorLambdaVersionN3KYua8P19HzB571CYu3k1Sy5shs5wk0d6Tssrsc77M"
       }
     },
     "DeleteUserLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DeleteUserLambdaVersion0Ws41o5u99xmVZPQYG04XnK1WaPKid3VBdG5g1jvc"
+        "Ref": "DeleteUserLambdaVersionN3KYua8P19HzB571CYu3k1Sy5shs5wk0d6Tssrsc77M"
       }
     },
     "ServiceEndpoint": {
