@@ -17,5 +17,5 @@ module.exports.deleteUser = (event, context, callback) => {
 
     dbHelper.deleteBulkWithSource(TAG, source)
         .then(() => callback(null, {statusCode: 200, body: consts.OKMessage}))
-        .catch(reason => callback(new Error(reason)));
+        .catch(reason => callback(new Error(JSON.stringify(reason))));
 };

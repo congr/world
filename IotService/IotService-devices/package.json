@@ -1,6 +1,6 @@
 {
   "name": "IotService-devices",
-  "version": "0.1.0",
+  "version": "0.1node .0",
   "description": "Serverless Iot service",
   "author": "cecilia.cho@lge.com",
   "license": "MIT",

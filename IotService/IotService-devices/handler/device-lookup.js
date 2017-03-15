@@ -12,11 +12,7 @@ module.exports.lookupDevice = (event, context, callback) => {
     if (typeof event.body === 'string') event.body = JSON.parse(event.body);
     utils.logEvent(TAG, event);
 
-    const data = event.body;
-    // const source = data.params.source;
-    //const source = event.querystring;
-
     dbHelper.queryWithSource(TAG, utils.getSource(TAG, event))
         .then(Items => callback(null, {statusCode: 200, body: utils.toSensorsResult(Items)}))
-        .catch(reason => callback(new Error(reason)));
+        .catch(reason => callback(new Error(JSON.stringify(reason))));
 };

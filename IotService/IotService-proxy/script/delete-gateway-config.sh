@@ -1,0 +1,1 @@
+sls invoke local --function update --path template/delete-gateway-config.json

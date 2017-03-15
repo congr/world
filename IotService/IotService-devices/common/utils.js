@@ -11,7 +11,7 @@ module.exports.logEvent = (TAG, event) => {
     console.log(TAG, 'event.body', JSON.stringify(event['body'], null, " "));
 };
 
-
+// To make output json format for config
 /*"result": {
     "settings": {
         "th": {
@@ -31,12 +31,13 @@ module.exports.logEvent = (TAG, event) => {
 }*/
 module.exports.toSettingsResult = (value) => {
     let settings = {};
-    settings[value.type] = value.settings;
+    if (value) settings[value.type] = value.settings;
 
     let result = {settings: settings};
     return JSON.stringify({result: result});
 };
 
+// To make output json format for device summary
 /*"result": {
     "sensors": [
         {
@@ -75,6 +76,8 @@ module.exports.toSensorsResult = (values) => {
     return JSON.stringify({result: result});
 };
 
+// make source like {source : {sid: "sid12", did: "did12", uid: "uid12"}}
+// from query string and path parameter
 module.exports.getSource = (TAG, event) => {
     let queryString = event.queryStringParameters;
     if (typeof queryString === 'string') queryString = JSON.parse(queryString);

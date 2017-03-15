@@ -1,7 +1,6 @@
 'use strict';
 
 const consts = require('../common/consts');
-const dbHelper = require('../common/db-helper');
 const utils = require('../common/utils');
 const Requestify = require('requestify');
 
@@ -21,7 +20,7 @@ module.exports.lookup = (event, context, callback) => {
             .then((responses) => { // json
                 return integrate(responses[0], responses[1]);
             })
-            .then(response => callback(null, {statusCode: 200, body: response}))
+            .then(response => callback(null, {statusCode: 200, body: JSON.stringify(response)}))
             .catch(reason => callback(new Error(reason)));
 
     else if (data.method === 'lookup_sensor_config') {
@@ -32,13 +31,13 @@ module.exports.lookup = (event, context, callback) => {
             promise = requestLegacy();
 
         promise
-            .then(response => callback(null, {statusCode: 200, body: response}))
+            .then(response => callback(null, {statusCode: 200, body: JSON.stringify(response)}))
             .catch(reason => callback(new Error(reason)));
     }
 
-    function integrate(a, b) { // string(json + json)
+    function integrate(a, b) { // return json + json
         const result = a.result.sensors.concat(b.result.sensors);
-        return JSON.stringify(result);
+        return result;
     }
 
     function requestLegacy() {
@@ -46,15 +45,16 @@ module.exports.lookup = (event, context, callback) => {
 
         return new Promise((resolve, reject) => {
             console.log(TAG, 'requestLegacy', URL_LEGACY);
+
             Requestify.post(URL_LEGACY, data).then(response => {
-                console.log(TAG, 'legacy response:', JSON.stringify(response.getBody()));
+                console.log(TAG, 'legacy response:', response.body);
 
                 if (response.getBody().result['sensors']) resolve(response.getBody()); // json
-                else reject(response.getBody());
+                else reject(response.body);
 
             }).fail(response => {
                 console.log(TAG, 'legacy response:', response);
-                reject(response.getBody());
+                reject(response.body); // string
             });
         });
     }
@@ -62,30 +62,19 @@ module.exports.lookup = (event, context, callback) => {
     function requestRest() {
         return new Promise((resolve, reject) => {
             getRest().then(response => {
-                console.log(TAG, 'rest response:', JSON.stringify(response.getBody()));
+                console.log(TAG, 'rest response:', response.body); // string
                 resolve(response.getBody()); // json
 
             }).fail(response => {
                 console.log(TAG, 'rest response:', response);
-                reject(response.getCode());
+                reject(response.body);
             });
         });
 
         function getRest() {
-            let url = consts.URL_REST;
-            let query = "";
-
-            if (data.method === 'lookup_config') { // device summary (uid or no uid)
-                query = utils.makeQueryString(query, 'uid', source['uid']);
-                url = url + '/devices/' + source.did + query;
-
-            } else if (data.method === 'lookup_sensor_config') { // sensor config
-                query = utils.makeQueryString(query, 'uid', source['uid']);
-                query = utils.makeQueryString(query, 'did', source['did']);
-                url = url + '/sensors/' + source.sid + query;
-            }
-
+            const url = utils.getUrlwithPathParameter(consts.URL_REST, data, source);
             console.log(TAG, 'getRest', url);
+
             return Requestify.get(url);
         }
     }

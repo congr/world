@@ -29,9 +29,9 @@ module.exports.createSensor = (event, context, callback) => {
             console.log(TAG, 'success');
             callback(null, {statusCode: 200, body: consts.OKMessage});
         })
-        .catch(reason => {
+        .catch(reason => { // string
             console.error(TAG, 'fail', reason);
-            callback(new Error(JSON.stringify(reason)));
+            callback(new Error(reason));
         });
 
     function requestDM() {
@@ -43,11 +43,14 @@ module.exports.createSensor = (event, context, callback) => {
                 'deviceId': source.sid
             };
             console.log(TAG, consts.URL_DATAPOINTS, reqData);
+
             Requestify.post(consts.URL_DATAPOINTS, reqData).then(response => {
                 console.log(TAG, 'datapoints response:', response.body);
-                const body = JSON.parse(response.body);
-                if (body.result === '200') resolve();
-                else reject(body);
+
+                if (response.getBody()['result'] === '200') resolve();
+                else if (response.getBody()['result'] === "Failed! Thing name aleady exist") resolve();
+                else reject(response.body);
+
             }).fail(response => {
                 console.log(TAG, 'datapoints response:', response);
                 reject(response.body);
@@ -76,7 +79,8 @@ module.exports.createSensor = (event, context, callback) => {
 
             dynamoDb.put(params, (error, result) => {
                 console.log(TAG, "dynamo result:", result);
-                if (error) reject(error);
+
+                if (error) reject(JSON.stringify(error));
                 resolve();
             });
         });

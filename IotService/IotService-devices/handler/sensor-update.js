@@ -21,6 +21,7 @@ module.exports.updateSensor = (event, context, callback) => {
         .then(result => {
             const orgSettings = result[0].settings;
             patchSettings(orgSettings, settings[type]);
+
             return updateDynamo(orgSettings);
         })
         .then(result => {
@@ -28,11 +29,12 @@ module.exports.updateSensor = (event, context, callback) => {
         })
         .catch(reason => {
             console.error(reason);
-            callback(new Error(reason));
+            callback(new Error(JSON.stringify(reason)));
         });
 
     function updateDynamo(settingsValue) {
         console.log("settingsvalue:", settingsValue);
+
         const params = {
             TableName: process.env.DYNAMODB_TABLE,
             Key: {
@@ -51,8 +53,10 @@ module.exports.updateSensor = (event, context, callback) => {
 
         return new Promise((resolve, reject) => {
             console.log(TAG, 'dynamoDb.update', JSON.stringify(params, null, " "));
+
             dynamoDb.update(params, (error, result) => {
                 console.log(TAG, "dynamo result", JSON.stringify(result, null, " "));
+
                 if (error) reject(error);
                 resolve(result.Attributes);
             });

@@ -1,7 +1,7 @@
 {
   "body": {
     "JSON-rpc":"2.0",
-    "method":"create_sensor_config",
+    "method":"delete_gateway_config",
     "uuid":"uniquemessageId",
     "phase":"pkg1.6",
     "region":"kic",
@@ -11,10 +11,9 @@
       "mid":"messageId",
       "source":{
         "did":"did027",
-        "sid":"did027_sid0291",
         "uid":"uid027",
         "tz":"Asia/Seoul",
-        "ts":""
+        "ts":"1234"
       },
       "settings": {
         "th": {

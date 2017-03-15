@@ -12,5 +12,5 @@ module.exports.lookupSensor = (event, context, callback) => {
 
     dbHelper.queryWithSource(TAG, utils.getSource(TAG, event))
         .then(Items => callback(null, {statusCode: 200, body: utils.toSettingsResult(Items[0])})) // return 1 sensor
-        .catch(reason => callback(new Error(reason)));
+        .catch(reason => callback(new Error(JSON.stringify(reason))));
 };

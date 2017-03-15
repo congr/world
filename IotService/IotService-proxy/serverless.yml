@@ -42,7 +42,7 @@ provider:
 functions:
   update:
     handler: handler/update.update
-    description: create-sensor-config, update-sensor-config
+    description: create-sensor-config, update-sensor-config, delete-sensor-config
     events:
       - http:
           path: update

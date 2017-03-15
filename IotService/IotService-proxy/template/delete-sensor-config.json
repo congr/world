@@ -1,28 +1,23 @@
 {
   "body": {
     "JSON-rpc":"2.0",
-    "method":"create_sensor_config",
+    "method":"delete_sensor_config",
     "uuid":"uniquemessageId",
     "phase":"pkg1.6",
     "region":"kic",
     "country_code":"kr",
-    "params":{
+    "params": {
       "version":"11234",
       "mid":"messageId",
-      "source":{
-        "did":"did027",
+      "source": {
+        "did":"did9aaa",
         "sid":"did027_sid0291",
-        "uid":"uid027",
+        "uid":"proxy1",
         "tz":"Asia/Seoul",
-        "ts":""
+        "ts":"1234"
       },
       "settings": {
-        "th": {
-          "nick":"from proxy",
-          "euid":"euid1",
-          "model":"ISC61"
-
-        }
+        "target":"th"
       }
     }
   },

@@ -10,7 +10,10 @@
   },
   "devDependencies": {
     "aws-sdk": "^2.24.0",
+    "chakram": "^1.5.0",
     "dynamodb": "^0.3.6",
+    "mocha": "^3.2.0",
+    "mochawesome": "^2.0.4",
     "serverless-webpack": "^1.0.0-rc.4",
     "standard": "^9.0.1",
     "uglify-js": "git+https://github.com/mishoo/UglifyJS2.git#harmony",
