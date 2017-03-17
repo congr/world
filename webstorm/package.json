@@ -1,0 +1,13 @@
+{
+  "name": "IotService-proxy",
+  "version": "0.1.0",
+  "description": "Proxy for Serverless Iot service",
+  "author": "cecilia.cho@lge.com",
+  "license": "MIT",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+
+  }
+}

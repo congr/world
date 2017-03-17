@@ -1,1 +1,0 @@
-sls invoke local --function lookup --path template/lookup-config.json

@@ -1,1 +1,0 @@
-sls invoke local --function lookupDevice --path template/device-lookup.json
