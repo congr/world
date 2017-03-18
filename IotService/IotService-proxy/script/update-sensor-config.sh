@@ -1,1 +1,0 @@
-sls invoke local --function update --path template/update-sensor-config.json

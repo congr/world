@@ -1,0 +1,37 @@
+{
+  "name": "machinepack-hackerrank",
+  "version": "0.1.2",
+  "description": "Communicate with HackerRank API",
+  "scripts": {
+    "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
+  },
+  "keywords": [
+    "HackerRank",
+    "machines",
+    "machinepack"
+  ],
+  "author": "Vishnu Bharathi <vishnubharathi04@gmail.com> (https://twitter.com/scriptnull)",
+  "license": "MIT",
+  "dependencies": {
+    "machine": "^3.0.0"
+  },
+  "devDependencies": {
+    "test-machinepack-mocha": "^0.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scriptnull/machinepack-hackerrank.git"
+  },
+  "bugs": {
+    "url": "https://github.com/scriptnull/machinepack-hackerrank/issues"
+  },
+  "homepage": "https://github.com/scriptnull/machinepack-hackerrank",
+  "machinepack": {
+    "friendlyName": "HackerRank",
+    "machineDir": "machines/",
+    "machines": [
+      "submit",
+      "submit-file"
+    ]
+  }
+}

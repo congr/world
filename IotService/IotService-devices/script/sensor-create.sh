@@ -1,1 +1,0 @@
-sls invoke local --function createSensor --path template/sensor-create.json

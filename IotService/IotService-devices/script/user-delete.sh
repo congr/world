@@ -1,1 +1,0 @@
-sls invoke local --function deleteUser --path template/user-delete.json
