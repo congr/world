@@ -44,4 +44,19 @@ public class BalancedBrackets {
             System.out.println((isBalanced(expression, brackets)) ? "YES" : "NO");
         }
     }
+
+    public static boolean isBalanced(String expression) {
+        Stack<Character> brackets = new Stack<Character>();
+
+        for(int i=0; i<expression.length(); i++){
+            char next = expression.charAt(i);
+            if(next == '{')      brackets.push('}');
+            else if(next == '[') brackets.push(']');
+            else if(next == '(') brackets.push(')');
+            else if(brackets.empty() || brackets.pop() != next) {
+                return false;
+            }
+        }
+        return brackets.empty();
+    }
 }
