@@ -30,7 +30,7 @@ public class ATaleOfTwoStacks {
 
     // If there's no need to need 2 stacks, one stack can simulate queue
     static class MyQueue<Integer> {
-        Integer head, tail;
+        Integer head;
         Stack<Integer> pushStack = new Stack<>();
 
         public void enqueue(Integer i) {
