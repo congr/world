@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/algospot" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/hackerrank" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/team" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/euler" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

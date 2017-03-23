@@ -1,3 +1,4 @@
+/team/*
 /node_modules/
 /.serverless
 *.class

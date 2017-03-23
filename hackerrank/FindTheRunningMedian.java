@@ -30,15 +30,15 @@ public class FindTheRunningMedian {
     static float findRunningMedian() {
         int maxSize = maxHeap.size(), minSize = minHeap.size();
 
-        if (maxSize == minSize + 1) return maxHeap.peek();      // if maxHeap is bigger by 1, then peek from maxHeap
-        else if (maxSize + 1 == minSize) return minHeap.peek();
+        if (maxSize > minSize) return maxHeap.peek();      // if maxHeap is bigger by 1, then peek from maxHeap
+        else if (maxSize < minSize) return minHeap.peek();
         else return (float) (maxHeap.peek() + minHeap.peek()) / 2;
     }
 
     // minHeap, maxHeap size should be same or 1 difference
     // move element until heaps have the same size or 1 difference
     static void adjustHeap() {
-        while (maxHeap.size() - minHeap.size() > 1) minHeap.add(maxHeap.poll()); // maxHeap is bigger, then move elements from maxHeap to minHeap
-        while (minHeap.size() - maxHeap.size() > 1) maxHeap.add(minHeap.poll());
+        while (maxHeap.size() > minHeap.size() + 1) minHeap.add(maxHeap.poll()); // maxHeap is bigger, then move elements from maxHeap to minHeap
+        while (minHeap.size() > maxHeap.size() + 1) maxHeap.add(minHeap.poll());
     }
 }
