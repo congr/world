@@ -3,6 +3,9 @@
 /.serverless
 *.class
 /.settings/
+/out/*
+/.idea/compiler.xml
+/.idea/copyright
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
