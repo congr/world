@@ -1,5 +1,3 @@
-import javafx.util.Pair;
-
 import java.awt.*;
 import java.io.File;
 import java.io.FileWriter;
@@ -13,7 +11,7 @@ import java.util.Scanner;
  */
 public class CJ201608_P1 {
     public static void main(String[] args) throws Exception {
-        String inFilename = (args != null && args.length > 0) ? args[0] : "201608/P1/sample.in"; // path from root
+        String inFilename = (args != null && args.length > 0) ? args[0] : "201608/P1/input005.txt"; // path from root
         File inFile = new File(inFilename);
         File outFile = new File(inFilename.replace("in", "out"));
         FileWriter wr = new FileWriter(outFile);
