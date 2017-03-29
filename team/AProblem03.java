@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -6,19 +7,25 @@ import java.util.Scanner;
 public class AProblem03 {
     public static void main(String[] args) { // class Solution
         Scanner in = new Scanner(System.in);
+        
         int N = in.nextInt();
+        int T = in.nextInt();
+        int[] arr = new int[N];
         for (int i = 0; i < N; i++) {
-            
+            arr[i] = in.nextInt();
         }
         
-        class Sol {
-            int solve() {
-                int result = 0;
-                return result;
+        int cnt = 0;
+        for (int i = 0; i < N; i++) {
+            int t = T - arr[i];
+            int res = Arrays.binarySearch(arr, t);
+            if (res >= 0) {// found
+                cnt++;
             }
         }
         
-        System.out.println(new Sol().solve());
+        System.out.println(cnt/2);
     }
+    
     
 }

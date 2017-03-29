@@ -6,16 +6,22 @@ import java.util.Scanner;
 public class AProblem01 {
     public static void main(String[] args) { // class Solution
         Scanner in = new Scanner(System.in);
+        
         int N = in.nextInt();
-        for (int i = 0; i < N; i++) {
+        for (int i = 1; i <= N; i++) {
+            if (i % 3 == 0 && i % 5 == 0)
+                System.out.println("FizzBuzz");
+            else if (i % 3 == 0)
+                System.out.println("Fizz");
             
+            else if (i % 5 == 0)
+                System.out.println("Buzz");
+            else
+                System.out.println(i);
         }
         
-        System.out.println(solve());
+        
     }
     
-    static int solve() {
-        int result = 0;
-        return result;
-    }
+    
 }
