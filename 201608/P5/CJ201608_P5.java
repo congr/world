@@ -9,9 +9,9 @@ import java.util.Scanner;
 /**
  * Created by cutececil on 2017. 3. 29..
  */
-public class CJ201608_P1 {
+public class CJ201608_P5 {
     public static void main(String[] args) throws Exception {
-        String inFilename = (args != null && args.length > 0) ? args[0] : "201608/P1/input005.txt"; // path from root
+        String inFilename = (args != null && args.length > 0) ? args[0] : "201608/P5/input001.txt"; // path from root
         File inFile = new File(inFilename);
         File outFile = new File(inFilename.replace("in", "out"));
         FileWriter wr = new FileWriter(outFile);
