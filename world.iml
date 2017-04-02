@@ -9,7 +9,10 @@
       <sourceFolder url="file://$MODULE_DIR$/hackerrank" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/team" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/euler" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/201608/P1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/201608/P5" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BOJ" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/201606" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/201606/P4" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
