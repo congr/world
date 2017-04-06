@@ -14,78 +14,69 @@ public class BOJ1420 {
         int N = in.nextInt(); // 세로
         int M = in.nextInt(); // 가로
         
-        FordFulkerson ff = new FordFulkerson(N * M * 2 + 2); // v 넉넉하게...
+        FordFulkerson ff = new FordFulkerson(N * M * 2); // v 개수 - in-out 분할하므로 2배수 필요
+
         char[][] map = new char[N][M];
-        int[][] cell = new int[N][M];
-        int index = 0;
         for (int i = 0; i < N; i++) {
             String row = in.next();
             map[i] = row.toCharArray();
-            for (int j = 0; j < M; j++) {
-                cell[i][j] = index + 2;
-                index += 2;
-            }
-        }
-        
-        for (int i = 0; i < N; i++) {
-            for (int j = 0; j < M; j++) {
-                if (map[i][j] != 'K' && map[i][j] != 'H' && map[i][j] != '#') // source 와 sink가 아닌 경우, capa 1인
-                    ff.setCapa(cell[i][j], cell[i][j] + 1, 1); // u -> u' 간선을 미리 연결
-            }
         }
         
         class Sol {
+            int cell(int y, int x) {
+                return x * 2 + y * 2 * M; // M - x개수, y = 0일 경우 0, 2, 4, 6, 8, y = 1일 경우 10, 12 ...
+            }
+            
             boolean insideGrid(int y, int x, int Y, int X) {
                 if ((x >= 0 && y >= 0) && (x < X && y < Y)) return true;
                 else return false;
             }
             
-            void set(int y, int x) {
+            int source = -1, sink = -1;
+            
+            // y, x 현재 지점에서 상하좌우 나가는 간선 연결
+            // 현 지점에서 나가는 간선이 필요한 경우 K와 .이다. H는 sink이라서 나가는 간선은 없다 (K는 source, .은 빈칸)
+            void setOutCapa(int y, int x) {
                 char here = map[y][x];
-                if (here == 'K' || here == '.') {   // 현 지점에서 나가는 간선이 필요한 경우 K: source
+                if (here == 'K') source = cell(y, x);          // source
+                else if (here == 'H') {                             // sink - 나가는 간선 없음 return
+                    sink = cell(y, x);
+                    return;
+                } else if (here == '.') {                           // min-vertex-cut을 위해 in-out 간선간 연결 - capa는 1
+                    ff.setCapa(cell(y, x), cell(y, x) + 1, 1);// u -> u' 간선을 미리 연결
+                }
+                
+                // 상하좌우 빈칸이나 싱크를 찾아서 capa set
+                int dx[] = new int[]{-1, 0, 1, 0};
+                int dy[] = new int[]{0, -1, 0, 1};
+                
+                for (int i = 0; i < 4; i++) {
+                    int px = x + dx[i];                             // point to that position
+                    int py = y + dy[i];
                     
-                    int dx[] = new int[]{-1, 0, 1, 0};
-                    int dy[] = new int[]{0, -1, 0, 1};
+                    // if same position or out of grid, skip it
+                    if ((px == x && py == y) || insideGrid(py, px, N, M) == false) continue;
                     
-                    for (int i = 0; i < 4; i++) { //y
-                        
-                        int px = x + dx[i]; // point to that position
-                        int py = y + dy[i];
-                        if ((px == x && py == y) || insideGrid(py, px, N, M) == false)
-                            continue; // same position or out of grid
-                        
-                        char there = map[py][px]; // out v : num[i][j] + 1, in v : num[i][j]
-                        if (there == 'H' || there == '.') { // H : sink, . : 빈칸
-                            if (here == 'K') // source
-                                ff.setCapa(cell[y][x], cell[py][px], 1); // out v : there 의  셀번호 + 1, in : here의 셀번호
-                            else if (there == 'H') {
-                                ff.setCapa(cell[y][x] + 1, cell[py][px], 1); // out v : there 의  셀번호 + 1, in : here의 셀번호
-                            }
-                            else {
-                                ff.setCapa(cell[y][x] + 1, cell[py][px], 1); // out v : there 의  셀번호 + 1, in : here의 셀번호
-                                //ff.setCapa(cell[py][px] + 1, cell[y][x], 1);
-                            }
-                        }
-                    }
+                    char there = map[py][px];                       // out v : num[i][j] + 1, in v : num[i][j]
+                    if (there == 'K' || there == '#') continue;     // 소스로 들어오는 간선이 없어야 함
+                    
+                    if (here == 'K')                                // source일 경우 out v가 따로 없어서 + 1 하면 안됨
+                        ff.setCapa(cell(y, x), cell(py, px), 987654321);        // capa를 무한대로 세팅함, 그래야 in-out 간선이 끊어짐
+                    else
+                        ff.setCapa(cell(y, x) + 1, cell(py, px), 987654321); // here -> there 로 간선 연결
                 }
             }
         }
         
-        int source = -1, sink = -1;
         Sol sol = new Sol();
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < M; j++) {
                 if (map[i][j] == '#') continue;
-                
-                sol.set(i, j);
-                if (map[i][j] == 'K') // source
-                    source = cell[i][j];
-                else if (map[i][j] == 'H') // sink
-                    sink = cell[i][j];
+                sol.setOutCapa(i, j); // 현 지점에서 나가는 간선의 capa를 세팅
             }
         }
         
-        int result = ff.networkFlow(source, sink);
+        int result = ff.networkFlow(sol.source, sol.sink);
         if (result >= 987654321) result = -1;
         System.out.println(result);
     }
@@ -109,7 +100,7 @@ public class BOJ1420 {
         }
         
         void setCapa(int u, int v, int c) {
-            capa[u][v] += c; // u -> v 로 가는 간선이 여러개 일 수 있음
+            capa[u][v] = c; // u -> v 로 가는 간선이 여러개 일 수 있음
         }
         
         // 미리 정해진 capa에 따라 flow[u][v]를 계산하고 총 유량 totalFlow을 반환한다
