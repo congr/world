@@ -19,13 +19,13 @@ public class BISHOPS {
 
             char[][] map = new char[N][N];
             for (int i = 0; i < N; ++i) {
-                map[i] = br.readLine().toCharArray();
+                map[i] = br.readLine().trim().toCharArray();
             }
 
             class Sol {
                 int dx[] = new int[]{-1, 1}; // 대각선만 이동 가능
                 int dy[] = new int[]{1, 1};
-                int id[][][] = new int[2][8][8];
+                int id[][][] = new int[2][N][N];
 
                 boolean insideGrid(int y, int x) {
                     if ((x >= 0 && y >= 0) && (x < N && y < N)) return true;
@@ -33,8 +33,9 @@ public class BISHOPS {
                 }
 
                 int placeBishops() {
-                    for (int i = 0; i < 8; i++) {
+                    for (int i = 0; i < N; i++) {
                         Arrays.fill(id[0][i], -1);
+                        Arrays.fill(id[1][i], -1);
                     }
                     int[] count = new int[2];
 
@@ -84,11 +85,12 @@ public class BISHOPS {
         int N, M;
         boolean[][] adjMatrix;
         boolean[] visited;
+        int V = 64;
 
         Bipartite(int n, int m) {
             this.N = n;
             this.M = m;
-            adjMatrix = new boolean[N][M];
+            adjMatrix = new boolean[V][V];
             aMatch = new int[N];
             bMatch = new int[M];
 
