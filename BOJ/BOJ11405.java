@@ -25,7 +25,7 @@ public class BOJ11405 {
         for (int i = 0; i < M; i++) { // 각 서점 i에서 -> j 사람에게 책을 보내는 배송비
             for (int j = 0; j < N; j++) {
                 int x = in.nextInt();
-                mcmf.addEdge(i, j + M, 100, x);
+                mcmf.addEdge(i, j + M, 100, x); // capa는 최대치로 (책의 개수 최대치는 100)
             }
         }
         
