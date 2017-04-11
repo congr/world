@@ -10,28 +10,24 @@ public class BeautifulWord {
         Scanner in = new Scanner(System.in);
         String w = in.next();
 
-        boolean isBeautiful = true;
-        boolean bVowel = isVowel(w.charAt(0)); // 모음이면 true
+        System.out.println(isBeautiful(w) ? "Yes" : "No");
+    }
+
+    static boolean isBeautiful(String w) {
+        boolean bVowel = isVowel(w.charAt(0)); // true if c is vowel
         for (int i = 1; i < w.length(); i++) {
             char c = w.charAt(i);
 
-            if (isVowel(c)) {// 모음
-                if (bVowel == true) {
-                    isBeautiful = false;
-                    break;
-                }
+            if (isVowel(c)) {
+                if (bVowel == true) return false;
                 bVowel = true;
 
             } else {
-                if (c == w.charAt(i - 1)) {
-                    isBeautiful = false;
-                    break;
-                }
+                if (c == w.charAt(i - 1)) return false;
                 bVowel = false;
             }
         }
-
-        System.out.println(isBeautiful ? "Yes" : "No");
+        return true;
     }
 
     static boolean isVowel(char c) {
@@ -40,11 +36,5 @@ public class BeautifulWord {
             if (c == vowel[i]) return true;
         }
         return false;
-    }
-
-    static int solve() {
-        int result = 0;
-
-        return result;
     }
 }
