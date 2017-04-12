@@ -5,10 +5,10 @@ import java.util.*;
 /**
  * Created by cutececil on 2017. 4. 12..
  */
-// MCMF - 열혈강호5 (한사람은 한번에 한가지 일만 할 수 있다)
+// MCMF - 열혈강호6 (최소 비용이 아니고 -> 최대 비용)
 // https://www.acmicpc.net/problem/11408
-public class BOJ11408 {
-    public static void main(String[] args) { // class Solution
+public class BOJ11409 {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         int N = sc.nextInt();
@@ -24,7 +24,7 @@ public class BOJ11408 {
             for (int j = 0; j < A; j++) {
                 int work = sc.nextInt(); // i 사람이 할 수 있는 일 번호
                 int cost = sc.nextInt(); // i 사람이 일을 하고 받을 월급
-                mcmf.addEdge(i, work + N - 1, 1, cost); // 한사람은 한가지 일만 할 수 있다
+                mcmf.addEdge(i, work + N - 1, 1, -cost); // 한사람은 한가지 일만 할 수 있다 - 최대비용을 찾는 문제
             }
         }
 
@@ -35,7 +35,7 @@ public class BOJ11408 {
 
         Pair<Integer, Integer> result = mcmf.flow();
         System.out.println(result.getKey());
-        System.out.println(result.getValue());
+        System.out.println(result.getValue() * -1); // 음수 비용에 * -1 을 해서 최대비용으로 출력
     }
 
     static class MCMF { // BOJ
@@ -98,6 +98,7 @@ public class BOJ11408 {
         }
 
         // shortest path faster algorithm
+        // shortest path faster algorithm
         boolean spfa() {
             Arrays.fill(check, false);
             Arrays.fill(distance, INF);
@@ -119,6 +120,53 @@ public class BOJ11408 {
                         if (!check[y]) {
                             check[y] = true;
                             q.add(y);
+                        }
+                    }
+                }
+            }
+
+            if (distance[sink] == INF) return false;
+
+            int x = sink;
+            int c = graph[from[x].getKey()].get(from[x].getValue()).capacity;
+            while (from[x].getKey() != -1) {
+                if (c > graph[from[x].getKey()].get(from[x].getValue()).capacity) {
+                    c = graph[from[x].getKey()].get(from[x].getValue()).capacity;
+                }
+                x = from[x].getKey();
+            }
+
+            x = sink;
+            while (from[x].getKey() != -1) {
+                Edge edge = graph[from[x].getKey()].get(from[x].getValue());
+                edge.capacity -= c;
+                edge.rev.capacity += c;
+                x = from[x].getKey();
+            }
+
+            totalFlow += c;
+            totalCost += c * distance[sink];
+            return true;
+        }
+
+        boolean bellman() {
+            Arrays.fill(check, false);
+            Arrays.fill(distance, INF);
+            Arrays.fill(from, new Pair<>(-1, -1));
+
+            distance[source] = 0;
+
+            for (int step = 0; step < n - 1; step++) {
+                for (int i = 0; i < n; i++) {
+                    for (int j = 0; j < graph[i].size(); j++) {
+                        Edge edge = graph[i].get(j);
+                        if (edge.capacity == 0) continue;
+                        int x = i;
+                        int y = edge.to;
+                        if (distance[x] == INF) continue;
+                        if (distance[y] > distance[x] + edge.cost) {
+                            distance[y] = distance[x] + edge.cost;
+                            from[y] = new Pair<>(i, j);
                         }
                     }
                 }
