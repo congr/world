@@ -1,3 +1,6 @@
+.idea/codeStyleSettings.xml
+.idea/misc.xml
+.idea/kotlinc.xml
 /team/*
 /node_modules/
 /.serverless
