@@ -7,11 +7,15 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 public class SpanningTreeFraction {
+    static long as = 0, bs = 0;
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int m = in.nextInt();
+
+        as = 0;
+        bs = 0;
         Graph graph = new Graph(n, m);
         for (int i = 0; i < m; i++) {
             int u = in.nextInt();
@@ -23,11 +27,17 @@ public class SpanningTreeFraction {
             graph.edge[i].dest = v;
             graph.edge[i].a = a;
             graph.edge[i].b = b;
-            //graph.edge[i].weight = a - b;
+            as += a;
+            bs += b;
+
+            graph.edge[i].weight = 0;
         }
 
-        graph.KruskalMST();
+        System.out.println("as: " + as+ " bs: "+ bs);
+        int [] ans = graph.KruskalMST();
+
     }
+
 
     public static int[] reduceFraction(int bunja, int bunmo) {
         int[] frac = new int[2];
@@ -64,33 +74,45 @@ public class SpanningTreeFraction {
         class Edge implements Comparable<Edge> {
             int src, dest;
             int a, b;
-            float weight;
+            long weight;
+
+            @Override
+            public String toString() {
+                return a + " " + b;
+            }
 
             // Comparator function used for sorting edges based on
             // their weight
-//            public int compareTo(Edge compareEdge) {
-//                if (this.weight - compareEdge.weight > 0) return 1;
-//                else if (this.weight - compareEdge.weight < 0) return -1;
-//                else return 0;
-//            }
-
             public int compareTo(Edge that) {
-//                int thisDv = this.a / this.b;
-//                int thatDv = that.a / that.b;
-//
-//                return -(thisDv - thatDv);
-                return that.a - this.a;
-            }
-        }
+                //float ab = as / bs;
+                float thisFrac = ((float) as - this.a) / ((float) bs - this.b);
+                float thatFrac = ((float) as - that.a) / ((float) bs - that.b);
 
-        ;
+                if (thisFrac - thatFrac > 0) return 1;//
+                else if (thisFrac - thatFrac < 0) return -1;
+                else {
+                    return 0;
+//                    float thisSub = this.a / this.b;
+//                    float thatSub = that.a / that.b;
+//                    return thatSub - thisSub;
+                }
+                //return compareEdge.weight - weight;// descending
+//                if (this.weight - compareEdge.weight > 0) return -1;
+//                else if (this.weight - compareEdge.weight < 0) return 1;
+//                else return 0;
+            }
+
+//            public int compareTo(Edge that) {
+//                int thisSub = this.a - this.b;
+//                int thatSub = that.a - that.b;
+//                return  thatSub - thisSub;
+//            }
+        }
 
         // A class to represent a subset for union-find
         class subset {
             int parent, rank;
         }
-
-        ;
 
         int V, E;    // V-> no. of vertices & E->no.of edges
         Edge edge[]; // collection of all edges
@@ -136,7 +158,7 @@ public class SpanningTreeFraction {
         }
 
         // The main function to construct MST using Kruskal's algorithm
-        void KruskalMST() {
+        int[] KruskalMST() {
             Edge result[] = new Edge[V];  // Tnis will store the resultant MST
             int e = 0;  // An index variable, used for result[]
             int i = 0;  // An index variable, used for sorted edges
@@ -147,13 +169,14 @@ public class SpanningTreeFraction {
             // weight.  If we are not allowed to change the given graph, we
             // can create a copy of array of edges
             Arrays.sort(edge);
+            System.out.println(Arrays.toString(edge));
 
-            Arrays.sort(edge, new Comparator<Edge>() {
-                @Override
-                public int compare(Edge o1, Edge o2) {
-                    return o1.b - o2.b;
-                }
-            });
+//            Arrays.sort(edge, new Comparator<Edge>() {
+//                @Override
+//                public int compare(Edge o1, Edge o2) {
+//                    return o1.b - o2.b;
+//                }
+//            });
 
             // Allocate memory for creating V ssubsets
             subset subsets[] = new subset[V];
@@ -191,14 +214,14 @@ public class SpanningTreeFraction {
             // System.out.println("Following are the edges in the constructed MST");
             int aSum = 0, bSum = 0;
             for (i = 0; i < e; ++i) {
-                //System.out.println(result[i].src + " -- " + result[i].dest + " == " + result[i].weight + "(" + result[i].a + " " + result[i].b + ")");
+                System.out.println(result[i].src + " -- " + result[i].dest + " == " + result[i].weight + "(" + result[i].a + " " + result[i].b + ")");
                 aSum += result[i].a;
                 bSum += result[i].b;
             }
 
             int[] ans = reduceFraction(Math.abs(aSum), Math.abs(bSum));
             System.out.println(ans[0] + "/" + ans[1]);
-            //System.out.println(aSum + "/" + bSum);
+            return ans;
         }
     }
 }
