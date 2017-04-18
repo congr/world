@@ -10,9 +10,8 @@ public class BOJ1717 {
 
         int N = in.nextInt();
         int M = in.nextInt();
-
         DisjointSet ds = new DisjointSet(N + 1);
-        int[] arr = new int[N];
+
         for (int i = 0; i < M; i++) {
             int op = in.nextInt();
             int a = in.nextInt();
