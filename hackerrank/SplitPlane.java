@@ -10,6 +10,7 @@ public class SplitPlane {
         for (int a0 = 0; a0 < q; a0++) { // tc
 
             int N = in.nextInt();
+            ArrayList<SegmentHV> vsegments = new ArrayList<>();
             SegmentHV[] segments = new SegmentHV[N];
             PriorityQueue<Event> pq = new PriorityQueue<>();
             for (int i = 0; i < N; i++) {
@@ -24,9 +25,27 @@ public class SplitPlane {
                     segments[i] = new SegmentHV(x1, y1, x2, y2);
 
                 if (segments[i].isVertical()) {
-                    Event e = new Event(segments[i].x1, segments[i]);
-                    pq.add(e);
-                } else if (segments[i].isHorizontal()) {
+                    if (vsegments.size() == 0) vsegments.add(segments[i]);
+
+                    boolean updated = false;
+                    for (int j = 0; j < vsegments.size(); j++) {
+                        SegmentHV test = vsegments.get(j);
+                        if (test.x1 == segments[i].x1) {
+                            updated = true;
+                            if (test.y1 > segments[i].y1) {
+                                test.y1 = segments[i].y1;
+                            }
+
+                            if (test.y2 < segments[i].y2) {
+                                test.y2 = segments[i].y2;
+                            }
+                        }
+                    }
+
+                    if (updated == false)
+                        vsegments.add(segments[i]);
+                }
+                else if (segments[i].isHorizontal()) {
                     Event e1 = new Event(segments[i].x1, segments[i]);
                     Event e2 = new Event(segments[i].x2, segments[i]);
                     pq.add(e1);
@@ -34,8 +53,14 @@ public class SplitPlane {
                 }
             }
 
+
+            for (int j = 0; j < vsegments.size(); j++) {
+                Event e = new Event(vsegments.get(j).x1, vsegments.get(j));
+                pq.add(e);
+            }
+
             int result = solve(pq);
-            System.out.println(result > 0 ? result : 1);
+            System.out.println(result > 0 ? result+1 : 1);
         }
     }
 
@@ -44,7 +69,9 @@ public class SplitPlane {
 
         // run sweep-line algorithm
         RangeSearch<SegmentHV> st = new RangeSearch<SegmentHV>();
-        TreeSet<Integer> verticalDiv = new TreeSet<>();
+        RangeSearch<SegmentHV> vdiv = new RangeSearch<>();
+        ArrayList<SegmentHV> keep = new ArrayList<>();
+
         int total = 0;
         while (!pq.isEmpty()) {
             Event e = pq.remove();
@@ -57,27 +84,26 @@ public class SplitPlane {
                 SegmentHV seg1 = new SegmentHV(-INFINITY, segment.y1, -INFINITY, segment.y1);
                 SegmentHV seg2 = new SegmentHV(+INFINITY, segment.y2, +INFINITY, segment.y2);
                 Iterable<SegmentHV> list = st.range(seg1, seg2);
-                ArrayList<Integer> thisDiv = new ArrayList<>();
-                System.out.println("Intersection:  " + segment);
-                for (SegmentHV seg : list) {
-                    System.out.println("               " + seg);
-                    thisDiv.add(seg.y1);
-                    //thisDiv.add(seg.y2);
-                }
 
+                ArrayList<SegmentHV> curradd = new ArrayList<>();
+                //System.out.println("Intersection:  " + segment);
+                for (SegmentHV seg : list) {
+                //    System.out.println("               " + seg);
+                    curradd.add(seg);// hor
+                }
                 int cnt = 0;
-                for (Integer a : thisDiv) {
-                    if (verticalDiv.contains(a)) {
-                        verticalDiv.remove(a);
+                for (SegmentHV curr : curradd) {
+                    if (keep.contains(curr)) {
+                        keep.remove(curr);
                         cnt++;
                     }
                 }
+                //ystem.out.println("cnt " + cnt);
+                if (cnt >= 2) total += cnt - 1;
 
-                for (Integer a : thisDiv)
-                    verticalDiv.add(a);
-
-                total += (cnt / 2);
-
+                for (SegmentHV curr : curradd) {
+                    keep.add(curr);
+                }
             }
 
             // next event is left endpoint of horizontal h-v segment
@@ -87,8 +113,9 @@ public class SplitPlane {
 
             // next event is right endpoint of horizontal h-v segment
             else if (sweep == segment.x2) {
-                System.out.println("remove" + segment);
+            //    System.out.println("remove " + segment);
                 st.remove(segment);
+                keep.remove(segment);
             }
         }
 
@@ -107,15 +134,29 @@ class Event implements Comparable<Event> {
     }
 
     public int compareTo(Event that) {
-        if (this.time < that.time) return -1;
-        else if (this.time > that.time) return +1;
-        else return 0;
+        if (this.time < that.time)
+            return -1;
+        else if (this.time > that.time)
+            return +1;
+        else {
+            if (this.segment.x1 == that.segment.x1) {
+                if (this.segment.isHorizontal() && that.segment.isVertical()) return -1;
+            } else if (this.segment.x2 == that.segment.x1) {
+                if (this.segment.isHorizontal() && that.segment.isVertical()) return 1;
+            }
+            return 0;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return segment.toString();
     }
 }
 
 class SegmentHV implements Comparable<SegmentHV> {
-    public final int x1, y1;  // lower left
-    public final int x2, y2;  // upper right
+    public int x1, y1;  // lower left
+    public int x2, y2;  // upper right
 
     // precondition: x1 <= x2, y1 <= y2 and either x1 == x2 or y1 == y2
     public SegmentHV(int x1, int y1, int x2, int y2) {

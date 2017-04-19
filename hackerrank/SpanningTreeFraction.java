@@ -1,11 +1,10 @@
+import java.util.Arrays;
+import java.util.Scanner;
 /**
  * Created by cutececil on 2017. 4. 13..
  */
-
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Scanner;
-
+// Kruskal - hill climbing
+// https://www.hackerrank.com/contests/w31/challenges/spanning-tree-fraction
 public class SpanningTreeFraction {
     static long as = 0, bs = 0;
 
@@ -33,9 +32,26 @@ public class SpanningTreeFraction {
             graph.edge[i].weight = 0;
         }
 
-        System.out.println("as: " + as+ " bs: "+ bs);
-        int [] ans = graph.KruskalMST();
+        float best = 0;
+        while (true) {
+            long keepa = as;
+            long keepb = bs;
 
+            int[] ans = graph.KruskalMST();
+            as = ans[0];
+            bs = ans[1];
+
+            best = Math.max(best, (float) ans[0] / ans[1]);
+
+            System.out.println(ans[0] + "/" + ans[1]);
+            System.out.println(best);
+
+            if (keepa == ans[0] && keepb == ans[1]) {
+                break;
+            }
+        }
+
+        System.out.println(as + "/" + bs);
     }
 
 
@@ -85,28 +101,13 @@ public class SpanningTreeFraction {
             // their weight
             public int compareTo(Edge that) {
                 //float ab = as / bs;
-                float thisFrac = ((float) as - this.a) / ((float) bs - this.b);
-                float thatFrac = ((float) as - that.a) / ((float) bs - that.b);
+                float thisFrac = ((float) as + this.a) / ((float) bs + this.b);
+                float thatFrac = ((float) as + that.a) / ((float) bs + that.b);
 
-                if (thisFrac - thatFrac > 0) return 1;//
-                else if (thisFrac - thatFrac < 0) return -1;
-                else {
-                    return 0;
-//                    float thisSub = this.a / this.b;
-//                    float thatSub = that.a / that.b;
-//                    return thatSub - thisSub;
-                }
-                //return compareEdge.weight - weight;// descending
-//                if (this.weight - compareEdge.weight > 0) return -1;
-//                else if (this.weight - compareEdge.weight < 0) return 1;
-//                else return 0;
+                if (thisFrac - thatFrac > 0) return -1;//
+                else if (thisFrac - thatFrac < 0) return 1;
+                else return 0;
             }
-
-//            public int compareTo(Edge that) {
-//                int thisSub = this.a - this.b;
-//                int thatSub = that.a - that.b;
-//                return  thatSub - thisSub;
-//            }
         }
 
         // A class to represent a subset for union-find
@@ -169,7 +170,7 @@ public class SpanningTreeFraction {
             // weight.  If we are not allowed to change the given graph, we
             // can create a copy of array of edges
             Arrays.sort(edge);
-            System.out.println(Arrays.toString(edge));
+            //System.out.println(Arrays.toString(edge));
 
 //            Arrays.sort(edge, new Comparator<Edge>() {
 //                @Override
@@ -214,13 +215,13 @@ public class SpanningTreeFraction {
             // System.out.println("Following are the edges in the constructed MST");
             int aSum = 0, bSum = 0;
             for (i = 0; i < e; ++i) {
-                System.out.println(result[i].src + " -- " + result[i].dest + " == " + result[i].weight + "(" + result[i].a + " " + result[i].b + ")");
+                // System.out.println(result[i].src + " -- " + result[i].dest + " == " + result[i].weight + "(" + result[i].a + " " + result[i].b + ")");
                 aSum += result[i].a;
                 bSum += result[i].b;
             }
 
             int[] ans = reduceFraction(Math.abs(aSum), Math.abs(bSum));
-            System.out.println(ans[0] + "/" + ans[1]);
+
             return ans;
         }
     }
