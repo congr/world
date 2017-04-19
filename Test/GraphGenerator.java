@@ -379,6 +379,7 @@ public class GraphGenerator {
         return G;
     }
 
+
     /**
      * Unit tests the {@code GraphGenerator} library.
      *
@@ -444,5 +445,34 @@ public class GraphGenerator {
         StdOut.println(wheel(V));
         StdOut.println();
     }
-
+    static String toGraphviz(String str) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("graph { \n").append(str).append(";");
+        return sb.toString();
+    }
+    /*
+    graph {
+		rankdir=LR; // Left to Right, instead of Top to Bottom
+		a -- { b c d };
+		b -- { c e };
+		c -- { e f };
+		d -- { f g };
+		e -- h;
+		f -- { h i j g };
+		g -- k;
+		h -- { o l };
+		i -- { l m j };
+		j -- { m n k };
+		k -- { n r };
+		l -- { o m };
+		m -- { o p n };
+		n -- { q r };
+		o -- { s p };
+		p -- { s t q };
+		q -- { t r };
+		r -- t;
+		s -- z;
+		t -- z;
+	}
+    * */
 }
