@@ -1,6 +1,6 @@
 /******************************************************************************
- *  Compilation:  javac Point2DRandom.java
- *  Execution:    java Point2DRandom x0 y0 n
+ *  Compilation:  javac Point2D.java
+ *  Execution:    java Point2D x0 y0 n
  *  Dependencies: StdDraw.java StdRandom.java
  *
  *  Immutable point data type for points in the plane.
