@@ -12,7 +12,7 @@ import java.util.Scanner;
 // 볼록 사각형이 최소가 되도록 4개점을 뽑고, 그 넓이를 구하라.
 public class CJ201609_P3 {
     public static void main(String[] args) throws Exception {
-        String inFilename = (args != null && args.length > 0) ? args[0] : "201609/P5/input005.txt"; // path from root
+        String inFilename = (args != null && args.length > 0) ? args[0] : "201609/P3/sample.in"; // path from root
         File inFile = new File(inFilename);
         File outFile = new File(inFilename.replace("in", "out"));
         FileWriter wr = new FileWriter(outFile);
@@ -32,6 +32,7 @@ public class CJ201609_P3 {
                 pts[i] = new Point2D(x, y);
             }
             Arrays.sort(pts); //x -> y 
+            System.out.println("sorted at first");
             System.out.println(Arrays.toString(pts));
 
             for (int i = 1; i < N; i++) {
@@ -41,14 +42,35 @@ public class CJ201609_P3 {
 
             graphM.floydWarshall();
 
+            double bestArea = 0.0d;
             // 0 혹은 INF 제외하고 ArrayList에 넣고 CCW 돌려서 최소값을 기록해라
             for (int i = 0; i < N; i++) { // pts[i]
                 ArrayList<Pair<Double, Point2D>> pairs = new ArrayList<>();
                 for (int j = 0; j < N; j++) {
-                    pairs.add(new Pair(graphM.distTo[i][j], pts[j]));
+                    if (graphM.distTo[i][j] != 0 && graphM.distTo[i][j] != Double.MAX_VALUE)
+                        pairs.add(new Pair(graphM.distTo[i][j], pts[j]));
                 }
 
-                pairs.sort((d1,d2) -> d1.getKey().compareTo(d2.getKey()));
+                pairs.sort((d1, d2) -> d1.getKey().compareTo(d2.getKey()));
+
+                int n = pairs.size();
+                Point2D[] points = new Point2D[n + 1];
+                points[0] = pts[i];
+                for (int j = 1; j < n + 1; j++) {
+                    points[j] = pairs.get(j).getValue();
+                }
+
+                // 근접점 4개 넣고 convex hull 체크, 다음 근접점 하나씩 더 넣어가며 convex hull이 될때 까지.
+                // convex hull이 되면 넓이 계산, 최소 넓이 업데이트
+                for (int k = 4; k < n + 1; k++) {
+                    GrahamScan gs = new GrahamScan(Arrays.copyOf(points, k));
+                    if (gs.size() == k) {
+                        // 넓이
+                        System.out.println(gs);
+                        break;
+                    }
+                }
+
                 // ccw
             }
 
@@ -72,6 +94,8 @@ public class CJ201609_P3 {
 
             adjMatrix = new double[V][V];
             for (double[] a : adjMatrix) Arrays.fill(a, Double.POSITIVE_INFINITY); // 초기값을 무한대로 세팅
+
+            distTo = new double[V][V];
         }
 
         // 간선에만 weight가 있고 정점에는 없는 경우

@@ -46,6 +46,9 @@ public class TestPoint2D {
 
         System.out.println("Count of Points: " + n);
         System.out.println(Arrays.toString(points));
+        for (Point2D p : points) {
+            System.out.println((int) p.x() + " " + (int)p.y());
+        }
 
         // draw point in red
         Point2D p = points[0];
@@ -178,6 +181,10 @@ class GrahamScan {
             }
         }
         return true;
+    }
+
+    public int size() {
+        return hull.size();
     }
 
     /**
