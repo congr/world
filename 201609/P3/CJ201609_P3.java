@@ -12,7 +12,7 @@ import java.util.Scanner;
 // 볼록 사각형이 최소가 되도록 4개점을 뽑고, 그 넓이를 구하라.
 public class CJ201609_P3 {
     public static void main(String[] args) throws Exception {
-        String inFilename = (args != null && args.length > 0) ? args[0] : "201609/P3/input1.txt"; // path from root
+        String inFilename = (args != null && args.length > 0) ? args[0] : "201609/P3/sample.in"; // path from root
         File inFile = new File(inFilename);
         File outFile = new File(inFilename.replace("in", "out"));
         FileWriter wr = new FileWriter(outFile);
@@ -31,32 +31,35 @@ public class CJ201609_P3 {
                 int y = sc.nextInt();
                 pts[i] = new Point2D(x, y);
             }
+            System.out.println(Arrays.toString(pts));
+
             Arrays.sort(pts); //x -> y 
 //            System.out.println("sorted at first");
 //            System.out.println(Arrays.toString(pts));
-
 
             for (int i = 0; i < N; i++) {
                 for (int j = 0; j < N; j++) {
                     graphM.addEdge(i, j, pts[i].distanceSquaredTo(pts[j]));
                 }
             }
+//            graphM.printGraph(graphM.adjMatrix);
 
-            graphM.floydWarshall();
+//            graphM.floydWarshall();
+//            graphM.printGraph(graphM.distTo);
 
             double bestArea = Double.MAX_VALUE;
             // 0 혹은 INF 제외하고 ArrayList에 넣고 convex hull 인지 확인.
             for (int i = 0; i < N; i++) { // pts[i]
                 ArrayList<Pair<Double, Point2D>> pairs = new ArrayList<>();
                 for (int j = 0; j < N; j++) {
-                    if (graphM.distTo[i][j] != 0 && graphM.distTo[i][j] != Double.MAX_VALUE)
-                        pairs.add(new Pair(graphM.distTo[i][j], pts[j]));
+                    if (graphM.adjMatrix[i][j] != 0 && graphM.adjMatrix[i][j] != Double.MAX_VALUE)
+                        pairs.add(new Pair(graphM.adjMatrix[i][j], pts[j]));
                 }
-                //System.out.println(pts[i] + " 거리순 소팅전 - ");
-                //System.out.println(Arrays.toString(pairs.toArray()));
-                pairs.sort((d1, d2) -> d1.getKey().compareTo(d2.getKey()));
-                //System.out.println(pts[i] + "거리순 소팅후 - ");
-                //System.out.println(Arrays.toString(pairs.toArray()));
+//                System.out.print(pts[i] + " 거리순 소팅전 - ");
+//                System.out.println(Arrays.toString(pairs.toArray()));
+                //pairs.sort((d1, d2) -> d1.getKey().compareTo(d2.getKey()));
+                System.out.print(pts[i] + " 거리순 소팅후 - ");
+                System.out.println(Arrays.toString(pairs.toArray()));
 
                 int n = pairs.size();
                 Point2D[] points = new Point2D[n + 1];
@@ -69,22 +72,16 @@ public class CJ201609_P3 {
                 // convex hull이 되면 넓이 계산, 최소 넓이 업데이트
                 for (int k = 4; k < n + 1; k++) {
                     GrahamScan gs = new GrahamScan(Arrays.copyOf(points, k));
-                    if (gs.size() == k) {
+                    if (gs.size() >= 4) {
                         // 넓이
 
-                        double areaTriangle = 0;
-                        double areaSum = 0;
                         Point2D[] ha = gs.hullArrayCW(); // cw 방향
-                        for (int j = 1; j < ha.length - 1; j++) {
-                            areaTriangle = Point2D.area2(ha[0], ha[j+1], ha[j]);
-                            areaSum += areaTriangle;
-                            //System.out.println("what is ha" + ha[0] + "" + ha[j] + "" + ha[j + 1] + " areaTriangle: " + areaTriangle);
-                        }
-
-                        bestArea = Math.min(areaSum/2, bestArea);
-//                        System.out.println(Arrays.toString(ha));
-//                        System.out.println("areaSum: " + areaSum + " best: " + bestArea);
-                        break;
+                        double area = Point2D.polygonArea(ha);
+                        bestArea = Math.min(area, bestArea);
+                        System.out.println("ha----");
+                        System.out.println(Arrays.toString(ha));
+                        System.out.println("area: " + area + " best: " + bestArea);
+                        //break;
                     }
                 }
             }
@@ -138,9 +135,10 @@ public class CJ201609_P3 {
             adjMatrix[v][u] = w;
         }
 
-        void printGraph() {
+        void printGraph(double[][] array) {
+            System.out.println("print array");
             for (int i = 0; i < V; i++) {
-                for (int j = 0; j < V; j++) System.out.print(adjMatrix[i][j]);
+                for (int j = 0; j < V; j++) System.out.print(array[i][j] + " ");
                 System.out.println();
             }
         }

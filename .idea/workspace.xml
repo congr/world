@@ -2,13 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b96e934b-436a-4cae-8b33-c30c33496cf5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/input1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/input2.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/input3.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/input4.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/input5.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set1/input1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set1/output1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set1/output2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set1/output3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set1/output4.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set1/output5.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set2/input1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set2/input2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set2/input3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set2/input4.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set2/input5.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set2/output1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set2/output2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set2/output3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set2/output4.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set2/output5.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/main.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test/sample.in" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/201609/P3/input2.txt" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set1/input2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/201609/P3/input3.txt" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set1/input3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/201609/P3/input4.txt" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set1/input4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/201609/P3/input5.txt" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set1/input5.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/201609/P3/CJ201609_P3.java" afterPath="$PROJECT_DIR$/201609/P3/CJ201609_P3.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/201609/P3/output1.txt" afterPath="$PROJECT_DIR$/201609/P3/output1.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/201609/P3/sample.in" afterPath="$PROJECT_DIR$/201609/P3/sample.in" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/201609/P3/sample.out" afterPath="$PROJECT_DIR$/201609/P3/sample.out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/TestPoint2D.java" afterPath="$PROJECT_DIR$/Test/TestPoint2D.java" />
@@ -33,51 +51,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GraphGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/GraphGenerator.java">
+      <file leaf-file-name="pointdata.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Test/pointdata.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            <state relative-caret-position="240">
+              <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClosestPair.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/algs4.jar!/edu/princeton/cs/algs4/ClosestPair.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2131">
-              <caret line="179" column="0" lean-forward="false" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CJ201609_P3.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CJ201609_P3.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/201609/P3/CJ201609_P3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-235">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="281">
+              <caret line="44" column="50" lean-forward="true" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="input1.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/201609/P3/input1.txt">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/201609/P3/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="298">
+              <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+      <file leaf-file-name="sample.in" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/201609/P3/sample.in">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="428" column="0" lean-forward="false" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Problem3_suboptimal.cp" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Documents/코딩/LGCodeJam/2016/2016 final/Problem3_suboptimal.cp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="63" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -86,51 +104,51 @@
       <file leaf-file-name="TestPoint2D.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test/TestPoint2D.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="350" column="25" lean-forward="false" selection-start-line="350" selection-start-column="25" selection-end-line="350" selection-end-column="25" />
+            <state relative-caret-position="-133">
+              <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
               <folding>
-                <element signature="e#3290#3299#0" expanded="true" />
-                <element signature="e#5726#5735#0" expanded="true" />
-                <element signature="e#6569#6570#0" expanded="true" />
-                <element signature="e#6603#6604#0" expanded="true" />
-                <marker date="1492746949000" expanded="false" signature="9454:9465" ph=" { " />
-                <marker date="1492746949000" expanded="false" signature="9474:9480" ph=" }" />
-                <marker date="1492746949000" expanded="false" signature="9591:9602" ph=" { " />
-                <marker date="1492746949000" expanded="false" signature="9611:9617" ph=" }" />
-                <marker date="1492746949000" expanded="false" signature="9794:9805" ph=" { " />
-                <marker date="1492746949000" expanded="false" signature="9837:9843" ph=" }" />
-                <marker date="1492746949000" expanded="false" signature="10056:10067" ph=" { " />
-                <marker date="1492746949000" expanded="false" signature="10091:10097" ph=" }" />
-                <marker date="1492746949000" expanded="false" signature="13115:13126" ph=" { " />
-                <marker date="1492746949000" expanded="false" signature="13150:13156" ph=" }" />
-                <marker date="1492746949000" expanded="false" signature="13351:13362" ph=" { " />
-                <marker date="1492746949000" expanded="false" signature="13386:13392" ph=" }" />
-                <marker date="1492746949000" expanded="false" signature="13549:13560" ph=" { " />
-                <marker date="1492746949000" expanded="false" signature="13589:13595" ph=" }" />
-                <marker date="1492746949000" expanded="false" signature="16969:16980" ph=" { " />
-                <marker date="1492746949000" expanded="false" signature="17012:17018" ph=" }" />
-                <marker date="1492746949000" expanded="false" signature="17402:17413" ph=" { " />
-                <marker date="1492746949000" expanded="false" signature="17433:17439" ph=" }" />
+                <element signature="e#3424#3433#0" expanded="true" />
+                <element signature="e#5860#5869#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="sample.in" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/201609/P3/sample.in">
+        <entry file="file://$PROJECT_DIR$/Test/sample.in">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+            <state relative-caret-position="105">
+              <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Point2D.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/awt/geom/Point2D.java">
+      <file leaf-file-name="Arrays.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5159">
-              <caret line="41" column="22" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+            <state relative-caret-position="141">
+              <caret line="1245" column="0" lean-forward="false" selection-start-line="1245" selection-start-column="0" selection-end-line="1245" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Scanner.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/Scanner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="610" column="0" lean-forward="false" selection-start-line="610" selection-start-column="0" selection-end-line="610" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="input1.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/201609/P3/input1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="280" column="0" lean-forward="false" selection-start-line="280" selection-start-column="0" selection-end-line="300" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -147,22 +165,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Floy</find>
-      <find>Floyd</find>
-      <find>d</find>
-      <find>a</find>
-      <find>adj</find>
-      <find>adjMa</find>
-      <find>adjMat</find>
-      <find>adjMatr</find>
-      <find>adjMatrix</find>
-      <find>E</find>
-      <find>Edge</find>
-      <find>EdgeW</find>
-      <find>EdgeWe</find>
-      <find>EdgeWei</find>
-      <find>EdgeWeigh</find>
-      <find>EdgeWeight</find>
       <find>EdgeWeighte</find>
       <find>EdgeWeighted</find>
       <find>EdgeWeightedG</find>
@@ -174,8 +176,24 @@
       <find>P</find>
       <find>Pai</find>
       <find>Pair</find>
-      <find>area2</find>
       <find>EdgeWeightedGraphM</find>
+      <find>p</find>
+      <find>pl</find>
+      <find>plo</find>
+      <find>ploy</find>
+      <find>ployg</find>
+      <find>ploygo</find>
+      <find>ploygon</find>
+      <find>plogon</find>
+      <find>plgon</find>
+      <find>pgon</find>
+      <find>pogon</find>
+      <find>polgon</find>
+      <find>area2</find>
+      <find>print array</find>
+      <find>3951.5</find>
+      <find>polygon</find>
+      <find>-301</find>
       <find>println</find>
     </findStrings>
     <replaceStrings>
@@ -241,9 +259,11 @@
         <option value="$PROJECT_DIR$/Test/RectDraw.java" />
         <option value="$PROJECT_DIR$/201609/CJ201609_P3.java" />
         <option value="$PROJECT_DIR$/algospot/DRUNKEN.java" />
+        <option value="$PROJECT_DIR$/Test/sample.in" />
         <option value="$PROJECT_DIR$/Test/TestPoint2D.java" />
         <option value="$PROJECT_DIR$/201609/P3/sample.in" />
         <option value="$PROJECT_DIR$/201609/P3/CJ201609_P3.java" />
+        <option value="$PROJECT_DIR$/201609/P3/main.cpp" />
       </list>
     </option>
   </component>
@@ -596,38 +616,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hackerrank" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hackerrank" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SplitPlane.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="201609" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -662,7 +650,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -673,8 +661,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/201609/P3" />
       <recent name="$PROJECT_DIR$/Test" />
+      <recent name="$PROJECT_DIR$/201609/P3" />
       <recent name="$PROJECT_DIR$/201606/P4" />
       <recent name="$PROJECT_DIR$/201608/P1" />
     </key>
@@ -1229,15 +1217,16 @@
       <workItem from="1491953005106" duration="232000" />
       <workItem from="1491953829984" duration="21389000" />
       <workItem from="1492017591579" duration="25572000" />
-      <workItem from="1492570781229" duration="24693000" />
+      <workItem from="1492570781229" duration="34759000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165283000" />
+    <option name="totallyTimeSpent" value="175349000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="38" y="23" width="1397" height="860" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1249,12 +1238,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30078125" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41145834" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.53255206" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5364583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1904059" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24428044" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1331,8 +1320,14 @@
           <properties />
           <option name="timeStamp" value="154" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Test/TestPoint2D.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="155" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="155" />
+      <option name="time" value="156" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -1351,131 +1346,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hackerrank/BeautifulWord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="68" lean-forward="false" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BOJ/BOJ11407.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="148" column="27" lean-forward="false" selection-start-line="148" selection-start-column="27" selection-end-line="148" selection-end-column="27" />
-          <folding>
-            <element signature="e#2786#2787#0" expanded="false" />
-            <element signature="e#2840#2841#0" expanded="false" />
-            <element signature="e#2905#2906#0" expanded="false" />
-            <element signature="e#2957#2958#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algospot/MATCHFIX.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-55">
-          <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BOJ/BOJ11405.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1830">
-          <caret line="126" column="28" lean-forward="false" selection-start-line="126" selection-start-column="28" selection-end-line="126" selection-end-column="28" />
-          <folding>
-            <element signature="e#2045#2046#0" expanded="false" />
-            <element signature="e#2091#2092#0" expanded="false" />
-            <element signature="e#2148#2149#0" expanded="false" />
-            <element signature="e#2192#2193#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="190" column="4" lean-forward="true" selection-start-line="190" selection-start-column="4" selection-end-line="190" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BOJ/BOJ11408.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2205">
-          <caret line="151" column="22" lean-forward="false" selection-start-line="151" selection-start-column="22" selection-end-line="151" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BOJ/BOJ11409.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="70" column="9" lean-forward="false" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
-          <folding>
-            <element signature="e#2663#2664#0" expanded="false" />
-            <element signature="e#2717#2718#0" expanded="false" />
-            <element signature="e#2774#2775#0" expanded="false" />
-            <element signature="e#2826#2827#0" expanded="false" />
-            <marker date="1491978758000" expanded="true" signature="6059:6356" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/AbstractList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1995">
-          <caret line="160" column="0" lean-forward="false" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26981#0" expanded="false" />
-            <element signature="e#4449#4450#0" expanded="false" />
-            <element signature="e#4506#4507#0" expanded="false" />
-            <element signature="e#4990#4991#0" expanded="false" />
-            <element signature="e#5047#5048#0" expanded="false" />
-            <element signature="e#7627#7628#0" expanded="false" />
-            <element signature="e#7665#7666#0" expanded="false" />
-            <element signature="e#9661#9662#0" expanded="false" />
-            <element signature="e#9693#9694#0" expanded="false" />
-            <element signature="e#9883#9884#0" expanded="false" />
-            <element signature="e#9921#9922#0" expanded="false" />
-            <element signature="e#11802#11803#0" expanded="false" />
-            <element signature="e#11849#11850#0" expanded="false" />
-            <element signature="e#13024#13025#0" expanded="false" />
-            <element signature="e#13062#13063#0" expanded="false" />
-            <element signature="e#13102#13103#0" expanded="false" />
-            <element signature="e#13144#13145#0" expanded="false" />
-            <element signature="e#13579#13580#0" expanded="false" />
-            <element signature="e#13616#13617#0" expanded="false" />
-            <element signature="e#13654#13655#0" expanded="false" />
-            <element signature="e#13693#13694#0" expanded="false" />
-            <element signature="e#22195#22196#0" expanded="false" />
-            <element signature="e#22251#22252#0" expanded="false" />
-            <element signature="e#24063#24064#0" expanded="false" />
-            <element signature="e#24101#24102#0" expanded="false" />
-            <element signature="e#24472#24473#0" expanded="false" />
-            <element signature="e#24509#24510#0" expanded="false" />
-            <element signature="e#24792#24793#0" expanded="false" />
-            <element signature="e#24849#24850#0" expanded="false" />
-            <element signature="e#25083#25084#0" expanded="false" />
-            <element signature="e#25142#25143#0" expanded="false" />
-            <element signature="e#25382#25383#0" expanded="false" />
-            <element signature="e#25443#25444#0" expanded="false" />
-            <element signature="e#25485#25486#0" expanded="false" />
-            <element signature="e#25550#25551#0" expanded="false" />
-            <element signature="e#25740#25741#0" expanded="false" />
-            <element signature="e#25780#25781#0" expanded="false" />
-            <element signature="e#26007#26008#0" expanded="false" />
-            <element signature="e#26069#26070#0" expanded="false" />
-            <element signature="e#26442#26443#0" expanded="false" />
-            <element signature="e#26496#26497#0" expanded="false" />
-            <element signature="e#26798#26799#0" expanded="false" />
-            <element signature="e#26845#26846#0" expanded="false" />
-            <element signature="e#26903#26904#0" expanded="false" />
-            <element signature="e#26977#26978#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7800">
@@ -1484,70 +1354,6 @@
             <element signature="e#0#33182#0" expanded="false" />
             <element signature="e#33104#33105#0" expanded="false" />
             <element signature="e#33178#33179#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56145">
-          <caret line="3798" column="30" lean-forward="false" selection-start-line="3798" selection-start-column="30" selection-end-line="3798" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#227755#0" expanded="false" />
-            <element signature="e#3370#3371#0" expanded="false" />
-            <element signature="e#3446#3447#0" expanded="false" />
-            <element signature="e#5027#5028#0" expanded="false" />
-            <element signature="e#5098#5099#0" expanded="false" />
-            <element signature="e#6903#6904#0" expanded="false" />
-            <element signature="e#6974#6975#0" expanded="false" />
-            <element signature="e#8781#8782#0" expanded="false" />
-            <element signature="e#8852#8853#0" expanded="false" />
-            <element signature="e#10659#10660#0" expanded="false" />
-            <element signature="e#10730#10731#0" expanded="false" />
-            <element signature="e#12536#12537#0" expanded="false" />
-            <element signature="e#12595#12596#0" expanded="false" />
-            <element signature="e#14928#14929#0" expanded="false" />
-            <element signature="e#14999#15000#0" expanded="false" />
-            <element signature="e#17889#17890#0" expanded="false" />
-            <element signature="e#17960#17961#0" expanded="false" />
-            <element signature="e#84738#84739#0" expanded="false" />
-            <element signature="e#84795#84796#0" expanded="false" />
-            <element signature="e#88329#88330#0" expanded="false" />
-            <element signature="e#88386#88387#0" expanded="false" />
-            <element signature="e#91921#91922#0" expanded="false" />
-            <element signature="e#91978#91979#0" expanded="false" />
-            <element signature="e#95523#95524#0" expanded="false" />
-            <element signature="e#95580#95581#0" expanded="false" />
-            <element signature="e#99118#99119#0" expanded="false" />
-            <element signature="e#99175#99176#0" expanded="false" />
-            <element signature="e#102793#102794#0" expanded="false" />
-            <element signature="e#102850#102851#0" expanded="false" />
-            <element signature="e#107069#107070#0" expanded="false" />
-            <element signature="e#107126#107127#0" expanded="false" />
-            <element signature="e#111724#111725#0" expanded="false" />
-            <element signature="e#111781#111782#0" expanded="false" />
-            <element signature="e#177353#177354#0" expanded="false" />
-            <element signature="e#177410#177411#0" expanded="false" />
-            <element signature="e#177457#177458#0" expanded="false" />
-            <element signature="e#177496#177497#0" expanded="false" />
-            <element signature="e#177551#177552#0" expanded="false" />
-            <element signature="e#177591#177592#0" expanded="false" />
-            <element signature="e#178082#178083#0" expanded="false" />
-            <element signature="e#178121#178122#0" expanded="false" />
-            <element signature="e#178785#178786#0" expanded="false" />
-            <element signature="e#178832#178833#0" expanded="false" />
-            <element signature="e#178897#178898#0" expanded="false" />
-            <element signature="e#178976#178977#0" expanded="false" />
-            <element signature="e#179525#179526#0" expanded="false" />
-            <element signature="e#179566#179567#0" expanded="false" />
-            <element signature="e#223144#223145#0" expanded="false" />
-            <element signature="e#223197#223198#0" expanded="false" />
-            <element signature="e#224394#224395#0" expanded="false" />
-            <element signature="e#224447#224448#0" expanded="false" />
-            <element signature="e#225606#225607#0" expanded="false" />
-            <element signature="e#225659#225660#0" expanded="false" />
-            <element signature="e#226830#226831#0" expanded="false" />
-            <element signature="e#226883#226884#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1701,14 +1507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/pointdata.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hackerrank/SplitPlane.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2040">
@@ -1813,59 +1611,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/awt/geom/Point2D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5159">
-          <caret line="41" column="22" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/algs4.jar!/edu/princeton/cs/algs4/FloydWarshall.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="215" column="0" lean-forward="true" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="428" column="0" lean-forward="false" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/TestPoint2D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="350" column="25" lean-forward="false" selection-start-line="350" selection-start-column="25" selection-end-line="350" selection-end-column="25" />
-          <folding>
-            <element signature="e#3290#3299#0" expanded="true" />
-            <element signature="e#5726#5735#0" expanded="true" />
-            <element signature="e#6569#6570#0" expanded="true" />
-            <element signature="e#6603#6604#0" expanded="true" />
-            <marker date="1492746949000" expanded="false" signature="9454:9465" ph=" { " />
-            <marker date="1492746949000" expanded="false" signature="9474:9480" ph=" }" />
-            <marker date="1492746949000" expanded="false" signature="9591:9602" ph=" { " />
-            <marker date="1492746949000" expanded="false" signature="9611:9617" ph=" }" />
-            <marker date="1492746949000" expanded="false" signature="9794:9805" ph=" { " />
-            <marker date="1492746949000" expanded="false" signature="9837:9843" ph=" }" />
-            <marker date="1492746949000" expanded="false" signature="10056:10067" ph=" { " />
-            <marker date="1492746949000" expanded="false" signature="10091:10097" ph=" }" />
-            <marker date="1492746949000" expanded="false" signature="13115:13126" ph=" { " />
-            <marker date="1492746949000" expanded="false" signature="13150:13156" ph=" }" />
-            <marker date="1492746949000" expanded="false" signature="13351:13362" ph=" { " />
-            <marker date="1492746949000" expanded="false" signature="13386:13392" ph=" }" />
-            <marker date="1492746949000" expanded="false" signature="13549:13560" ph=" { " />
-            <marker date="1492746949000" expanded="false" signature="13589:13595" ph=" }" />
-            <marker date="1492746949000" expanded="false" signature="16969:16980" ph=" { " />
-            <marker date="1492746949000" expanded="false" signature="17012:17018" ph=" }" />
-            <marker date="1492746949000" expanded="false" signature="17402:17413" ph=" { " />
-            <marker date="1492746949000" expanded="false" signature="17433:17439" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -1878,14 +1629,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/201609/P3/sample.in">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/algs4.jar!/edu/princeton/cs/algs4/Stack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -1894,7 +1637,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/201609/P3/input1.txt">
+    <entry file="file://$PROJECT_DIR$/201609/P3/Problem3_set2/output1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/201609/P3/output1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1902,7 +1653,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/201609/P3/output1.txt">
+    <entry file="file://$PROJECT_DIR$/201609/P3/Problem3_set1/output1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
@@ -1910,10 +1661,117 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/201609/P3/Problem3_set1/input1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="429" column="0" lean-forward="true" selection-start-line="429" selection-start-column="0" selection-end-line="429" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/awt/geom/Point2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5159">
+          <caret line="41" column="22" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/pointdata.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/Scanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="610" column="0" lean-forward="false" selection-start-line="610" selection-start-column="0" selection-end-line="610" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/ComparableTimSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="319" column="0" lean-forward="false" selection-start-line="319" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="1245" column="0" lean-forward="false" selection-start-line="1245" selection-start-column="0" selection-end-line="1245" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/201609/P3/input1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="280" column="0" lean-forward="false" selection-start-line="280" selection-start-column="0" selection-end-line="300" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/sample.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/TestPoint2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-133">
+          <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+          <folding>
+            <element signature="e#3424#3433#0" expanded="true" />
+            <element signature="e#5860#5869#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/코딩/LGCodeJam/2016/2016 final/Problem3_suboptimal.cp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/201609/P3/sample.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/201609/P3/CJ201609_P3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-235">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="281">
+          <caret line="44" column="50" lean-forward="true" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/201609/P3/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -17,10 +17,11 @@ public class TestPoint2D {
         StdDraw.setPenRadius(0.005);
         StdDraw.enableDoubleBuffering();
 
-        int option = 0; // 0: Random, 1: system.in, 2: file
-        int n = 20;
-        Point2D[] points = new Point2D[n];
+        int option = 2; // 0: Random, 1: system.in, 2: file
+        Point2D[] points;
         if (option == 0) {  // generate random points
+            int n = 6;
+            points = new Point2D[n];
             for (int i = 0; i < n; i++) {
                 int x = StdRandom.uniform(10);
                 int y = StdRandom.uniform(10);
@@ -28,14 +29,16 @@ public class TestPoint2D {
                 points[i].draw();
             }
         } else if (option == 1) {
-            n = StdIn.readInt();
+            int n = StdIn.readInt();
+            points = new Point2D[n];
             for (int i = 0; i < n; i++) {
                 points[i] = new Point2D(StdIn.readInt(), StdIn.readInt());
                 points[i].draw();
             }
         } else {
-            Scanner sc = new Scanner(new File("/test/xxx"));
-            n = sc.nextInt();
+            Scanner sc = new Scanner(new File("Test/sample.in"));
+            int n = sc.nextInt();
+            points = new Point2D[n];
             for (int i = 0; i < n; i++) {
                 points[i] = new Point2D(sc.nextInt(), sc.nextInt());
                 points[i].draw();
@@ -44,7 +47,7 @@ public class TestPoint2D {
 
         Arrays.sort(points); // Compares two points by y-coordinate, breaking ties by x-coordinate.
 
-        System.out.println("Count of Points: " + n);
+        System.out.println("Count of Points: " + points.length);
         System.out.println(Arrays.toString(points));
         for (Point2D p : points) {
             System.out.println((int) p.x() + " " + (int)p.y());
@@ -60,7 +63,7 @@ public class TestPoint2D {
         StdDraw.setPenRadius();
         StdDraw.setPenColor(StdDraw.LIGHT_GRAY);
         Arrays.sort(points, p.polarOrder());
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < points.length; i++) {
             p.drawTo(points[i]);
             StdDraw.show();
             StdDraw.pause(100);
@@ -350,6 +353,27 @@ class Point2D implements Comparable<Point2D> {
      */
     public static double area2(Point2D a, Point2D b, Point2D c) {
         return (b.x - a.x) * (c.y - a.y) - (b.y - a.y) * (c.x - a.x);
+    }
+
+    // 벡터의 외적을 이용한 볼록 다각형의 면적
+    // extreme point에서 뻗어가는 대각선을 모든 점에 긋고 삼각형의 넓이를 구하여 더한다
+    public static double polygonArea(Point2D[] points) {
+//        double sum = 0;
+//        Point2D s = points[0];
+//        for (int i = 1; i < points.length-1; i++) {
+//            double area = area2(s, points[i], points[i+1]);
+//            area = Math.abs(area)/2;
+//            sum += area;
+//        }
+//        return sum;
+
+        double area = 0.0d;
+        int n = points.length;
+        for (int i = 0; i < n; i++) {
+            int i1 = (i + 1) % n;
+            area += (points[i].y + points[i1].y) * (points[i1].x - points[i].x) / 2.0;
+        }
+        return area;
     }
 
     /**
