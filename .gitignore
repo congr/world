@@ -41,7 +41,6 @@ hs_err_pid*
 *.iso
 *.rar
 *.tar
-*.zip
 
 # Logs and databases #
 ######################

@@ -22,8 +22,8 @@ public class TestPoint2D {
         Point2D[] points = new Point2D[n];
         if (option == 0) {  // generate random points
             for (int i = 0; i < n; i++) {
-                int x = StdRandom.uniform(100);
-                int y = StdRandom.uniform(100);
+                int x = StdRandom.uniform(10);
+                int y = StdRandom.uniform(10);
                 points[i] = new Point2D(x, y);
                 points[i].draw();
             }
@@ -162,6 +162,17 @@ class GrahamScan {
         Stack<Point2D> s = new Stack<Point2D>();
         for (Point2D p : hull) s.push(p);
         return s;
+    }
+
+    // ccw가 아닌 cw 방향의 결과
+    public Point2D[] hullArrayCW() {
+        Point2D[] array = new Point2D[hull.size()];
+        int i=0;
+        for(Point2D p : hull) {
+            array[i] = p;
+            i++;
+        }
+        return array;
     }
 
     // check that boundary of hull is strictly convex

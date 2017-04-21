@@ -12,7 +12,7 @@ import java.util.Scanner;
 // 볼록 사각형이 최소가 되도록 4개점을 뽑고, 그 넓이를 구하라.
 public class CJ201609_P3 {
     public static void main(String[] args) throws Exception {
-        String inFilename = (args != null && args.length > 0) ? args[0] : "201609/P3/sample.in"; // path from root
+        String inFilename = (args != null && args.length > 0) ? args[0] : "201609/P3/input1.txt"; // path from root
         File inFile = new File(inFilename);
         File outFile = new File(inFilename.replace("in", "out"));
         FileWriter wr = new FileWriter(outFile);
@@ -32,32 +32,37 @@ public class CJ201609_P3 {
                 pts[i] = new Point2D(x, y);
             }
             Arrays.sort(pts); //x -> y 
-            System.out.println("sorted at first");
-            System.out.println(Arrays.toString(pts));
+//            System.out.println("sorted at first");
+//            System.out.println(Arrays.toString(pts));
 
-            for (int i = 1; i < N; i++) {
-                Point2D pre = pts[i - 1];
-                graphM.addEdge(i, i - 1, pre.distanceSquaredTo(pts[i]));
+
+            for (int i = 0; i < N; i++) {
+                for (int j = 0; j < N; j++) {
+                    graphM.addEdge(i, j, pts[i].distanceSquaredTo(pts[j]));
+                }
             }
 
             graphM.floydWarshall();
 
-            double bestArea = 0.0d;
-            // 0 혹은 INF 제외하고 ArrayList에 넣고 CCW 돌려서 최소값을 기록해라
+            double bestArea = Double.MAX_VALUE;
+            // 0 혹은 INF 제외하고 ArrayList에 넣고 convex hull 인지 확인.
             for (int i = 0; i < N; i++) { // pts[i]
                 ArrayList<Pair<Double, Point2D>> pairs = new ArrayList<>();
                 for (int j = 0; j < N; j++) {
                     if (graphM.distTo[i][j] != 0 && graphM.distTo[i][j] != Double.MAX_VALUE)
                         pairs.add(new Pair(graphM.distTo[i][j], pts[j]));
                 }
-
+                //System.out.println(pts[i] + " 거리순 소팅전 - ");
+                //System.out.println(Arrays.toString(pairs.toArray()));
                 pairs.sort((d1, d2) -> d1.getKey().compareTo(d2.getKey()));
+                //System.out.println(pts[i] + "거리순 소팅후 - ");
+                //System.out.println(Arrays.toString(pairs.toArray()));
 
                 int n = pairs.size();
                 Point2D[] points = new Point2D[n + 1];
                 points[0] = pts[i];
-                for (int j = 1; j < n + 1; j++) {
-                    points[j] = pairs.get(j).getValue();
+                for (int j = 0; j < n; j++) {
+                    points[j + 1] = pairs.get(j).getValue();
                 }
 
                 // 근접점 4개 넣고 convex hull 체크, 다음 근접점 하나씩 더 넣어가며 convex hull이 될때 까지.
@@ -66,16 +71,25 @@ public class CJ201609_P3 {
                     GrahamScan gs = new GrahamScan(Arrays.copyOf(points, k));
                     if (gs.size() == k) {
                         // 넓이
-                        System.out.println(gs);
+
+                        double areaTriangle = 0;
+                        double areaSum = 0;
+                        Point2D[] ha = gs.hullArrayCW(); // cw 방향
+                        for (int j = 1; j < ha.length - 1; j++) {
+                            areaTriangle = Point2D.area2(ha[0], ha[j+1], ha[j]);
+                            areaSum += areaTriangle;
+                            //System.out.println("what is ha" + ha[0] + "" + ha[j] + "" + ha[j + 1] + " areaTriangle: " + areaTriangle);
+                        }
+
+                        bestArea = Math.min(areaSum/2, bestArea);
+//                        System.out.println(Arrays.toString(ha));
+//                        System.out.println("areaSum: " + areaSum + " best: " + bestArea);
                         break;
                     }
                 }
-
-                // ccw
             }
 
-            int result = 0;
-
+            String result = String.format("%.1f", bestArea); // 100.25 -> 100.3
             System.out.println(result);
             wr.write(result + "\n");
         }
