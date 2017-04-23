@@ -7,6 +7,8 @@ import java.util.Stack;
 /**
  * Created by cutececil on 2017. 4. 21..
  */
+// 볼록 사각형이 최소가 되도록 4개점을 뽑고, 그 넓이를 구하라.
+// 모든 경우의 수 200개중 4개의 점을 찾아서 넓이 비교 200 * 199 * 198 * 197 최적화 필요
 public class CJ201609_P3_BF {
     public static void main(String[] args) throws Exception {
         String inFilename = (args != null && args.length > 0) ? args[0] : "201609/P3/sample.in"; // path from root

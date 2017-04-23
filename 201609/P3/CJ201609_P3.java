@@ -70,20 +70,20 @@ public class CJ201609_P3 {
 
                 // 근접점 4개 넣고 convex hull 체크, 다음 근접점 하나씩 더 넣어가며 convex hull이 될때 까지.
                 // convex hull이 되면 넓이 계산, 최소 넓이 업데이트
-                for (int k = 4; k < n + 1; k++) {
-                    GrahamScan gs = new GrahamScan(Arrays.copyOf(points, k));
-                    if (gs.size() >= 4) {
-                        // 넓이
-
-                        Point2D[] ha = gs.hullArrayCW(); // cw 방향
-                        double area = Point2D.polygonArea(ha);
-                        bestArea = Math.min(area, bestArea);
-                        System.out.println("ha----");
-                        System.out.println(Arrays.toString(ha));
-                        System.out.println("area: " + area + " best: " + bestArea);
-                        //break;
-                    }
-                }
+                //for (int k = 4; k < n + 1; k++) {
+                //    GrahamScan gs = new GrahamScan(Arrays.copyOf(points, k));
+                //    if (gs.size() >= 4) {
+                //        // 넓이
+                //
+                //        Point2D[] ha = gs.hullArrayCW(); // cw 방향
+                //        double area = Point2D.polygonArea(ha);
+                //        bestArea = Math.min(area, bestArea);
+                //        System.out.println("ha----");
+                //        System.out.println(Arrays.toString(ha));
+                //        System.out.println("area: " + area + " best: " + bestArea);
+                //        //break;
+                //    }
+                //}
             }
 
             String result = String.format("%.1f", bestArea); // 100.25 -> 100.3
