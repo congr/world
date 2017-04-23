@@ -2,10 +2,10 @@ import edu.princeton.cs.algs4.Stack;
 import edu.princeton.cs.algs4.StdDraw;
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.Point2D;
 
 import java.io.File;
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.Scanner;
 
 public class TestPoint2D {

@@ -19,25 +19,25 @@ import java.util.Stack;
  * @author Kevin Wayne
  */
 class Point2D implements Comparable<Point2D> {
-
+    
     /**
      * Compares two points by x-coordinate.
      */
     public static final Comparator<Point2D> X_ORDER = new XOrder();
-
+    
     /**
      * Compares two points by y-coordinate.
      */
     public static final Comparator<Point2D> Y_ORDER = new YOrder();
-
+    
     /**
      * Compares two points by polar radius.
      */
     public static final Comparator<Point2D> R_ORDER = new ROrder();
-
+    
     private final double x;    // x coordinate
     private final double y;    // y coordinate
-
+    
     /**
      * Initializes a new point (x, y).
      *
@@ -54,11 +54,11 @@ class Point2D implements Comparable<Point2D> {
             throw new IllegalArgumentException("Coordinates cannot be NaN");
         if (x == 0.0) this.x = 0.0;  // convert -0.0 to +0.0
         else this.x = x;
-
+        
         if (y == 0.0) this.y = 0.0;  // convert -0.0 to +0.0
         else this.y = y;
     }
-
+    
     /**
      * Returns the x-coordinate.
      *
@@ -67,7 +67,7 @@ class Point2D implements Comparable<Point2D> {
     public double x() {
         return x;
     }
-
+    
     /**
      * Returns the y-coordinate.
      *
@@ -76,7 +76,7 @@ class Point2D implements Comparable<Point2D> {
     public double y() {
         return y;
     }
-
+    
     /**
      * Returns the polar radius of this point.
      *
@@ -85,7 +85,7 @@ class Point2D implements Comparable<Point2D> {
     public double r() {
         return Math.sqrt(x * x + y * y);
     }
-
+    
     /**
      * Returns the angle of this point in polar coordinates.
      *
@@ -94,7 +94,7 @@ class Point2D implements Comparable<Point2D> {
     public double theta() {
         return Math.atan2(y, x);
     }
-
+    
     /**
      * Returns the angle between this point and that point.
      *
@@ -105,7 +105,7 @@ class Point2D implements Comparable<Point2D> {
         double dy = that.y - this.y;
         return Math.atan2(dy, dx);
     }
-
+    
     /**
      * Returns true if a→b→c is a counterclockwise turn.
      *
@@ -120,7 +120,7 @@ class Point2D implements Comparable<Point2D> {
         else if (area2 > 0) return +1;
         else return 0;
     }
-
+    
     /**
      * Returns twice the signed area of the triangle a-b-c.
      *
@@ -132,52 +132,48 @@ class Point2D implements Comparable<Point2D> {
     public static double area2(Point2D a, Point2D b, Point2D c) {
         return (b.x - a.x) * (c.y - a.y) - (b.y - a.y) * (c.x - a.x);
     }
-
+    
     // 벡터의 외적을 이용한 볼록 다각형의 면적
-    // extreme point에서 뻗어가는 대각선을 모든 점에 긋고 삼각형의 넓이를 구하여 더한다
+    // extreme point에서 뻗어가는 대각선을 모든 점에 긋고 삼각형의 넓이를 구하는 방법과 평행사변형을 구해서 /2 하는 방법
+    // 현재 평행사변형을 이용
     public static double polygonArea(Point2D[] points) {
-//        double sum = 0;
-//        Point2D s = points[0];
-//        for (int i = 1; i < points.length - 1; i++) {
-//            double area = area2(s, points[i], points[i + 1]);
-//            area = Math.abs(area) / 2;
-//            sum += area;
-//        }
-//        return sum;
-
+        // double sum = 0;
+        // for (int i = 2; i < points.length; i++) {
+        //    double area = area2(points[0], points[i - 1], points[i]);
+        //    area = Math.abs(area) / 2;
+        //    sum += area;
+        //}
+        // return sum;
+        
         double area = 0.0d;
         int n = points.length;
+        if (n <= 2) return 0;
         for (int i = 0; i < n; i++) {
             int i1 = (i + 1) % n;
             area += (points[i].y + points[i1].y) * (points[i1].x - points[i].x) / 2.0;
         }
         return area;
     }
-
+    
     public static double polygonArea(Stack<Point2D> stack) {
-        double sum = 0;
         int n = stack.size();
         if (n <= 2) return 0;
         Point2D[] points = new Point2D[n];
         int top = 0;
         while (!stack.isEmpty()) points[top++] = stack.pop();
-
-        for (int i = 2; i < points.length; i++) {
-            double area = area2(points[0], points[i - 1], points[i]);
-            area = Math.abs(area) / 2;
-            sum += area;
-        }
-        return sum;
-
-//        double area = 0.0d;
-//        int n = points.length;
-//        for (int i = 0; i < n; i++) {
-//            int i1 = (i + 1) % n;
-//            area += (points[i].y + points[i1].y) * (points[i1].x - points[i].x) / 2.0;
-//        }
-//        return area;
+        
+        return polygonArea(points);
     }
-
+    
+    // 다각형의 둘레 길이를 계산
+    public static double polygonPerimeter(Point2D[] points) {
+        int n = points.length;
+        double sum = 0.0;
+        for (int i = 0; i < n; i++)
+            sum = sum + points[i].distanceTo(points[(i + 1) % n]);
+        return sum;
+    }
+    
     /**
      * Returns the Euclidean distance between this point and that point.
      *
@@ -189,7 +185,7 @@ class Point2D implements Comparable<Point2D> {
         double dy = this.y - that.y;
         return Math.sqrt(dx * dx + dy * dy);
     }
-
+    
     /**
      * Returns the square of the Euclidean distance between this point and that point.
      *
@@ -201,7 +197,7 @@ class Point2D implements Comparable<Point2D> {
         double dy = this.y - that.y;
         return dx * dx + dy * dy;
     }
-
+    
     /**
      * Compares two points by y-coordinate, breaking ties by x-coordinate.
      * Formally, the invoking point (x0, y0) is less than the argument point (x1, y1)
@@ -221,7 +217,7 @@ class Point2D implements Comparable<Point2D> {
         if (this.x > that.x) return +1;
         return 0;
     }
-
+    
     /**
      * Compares two points by polar angle (between 0 and 2&pi;) with respect to this point.
      *
@@ -230,7 +226,7 @@ class Point2D implements Comparable<Point2D> {
     public Comparator<Point2D> polarOrder() {
         return new PolarOrder();
     }
-
+    
     /**
      * Compares two points by atan2() angle (between –&pi; and &pi;) with respect to this point.
      *
@@ -239,7 +235,7 @@ class Point2D implements Comparable<Point2D> {
     public Comparator<Point2D> atan2Order() {
         return new Atan2Order();
     }
-
+    
     /**
      * Compares two points by distance to this point.
      *
@@ -248,7 +244,7 @@ class Point2D implements Comparable<Point2D> {
     public Comparator<Point2D> distanceToOrder() {
         return new DistanceToOrder();
     }
-
+    
     // compare points according to their x-coordinate
     private static class XOrder implements Comparator<Point2D> {
         public int compare(Point2D p, Point2D q) {
@@ -257,7 +253,7 @@ class Point2D implements Comparable<Point2D> {
             return 0;
         }
     }
-
+    
     // compare points according to their y-coordinate
     private static class YOrder implements Comparator<Point2D> {
         public int compare(Point2D p, Point2D q) {
@@ -266,7 +262,7 @@ class Point2D implements Comparable<Point2D> {
             return 0;
         }
     }
-
+    
     // compare points according to their polar radius
     private static class ROrder implements Comparator<Point2D> {
         public int compare(Point2D p, Point2D q) {
@@ -276,7 +272,7 @@ class Point2D implements Comparable<Point2D> {
             return 0;
         }
     }
-
+    
     // compare other points relative to atan2 angle (bewteen -pi/2 and pi/2) they make with this Point
     private class Atan2Order implements Comparator<Point2D> {
         public int compare(Point2D q1, Point2D q2) {
@@ -287,7 +283,7 @@ class Point2D implements Comparable<Point2D> {
             else return 0;
         }
     }
-
+    
     // compare other points relative to polar angle (between 0 and 2pi) they make with this Point
     private class PolarOrder implements Comparator<Point2D> {
         public int compare(Point2D q1, Point2D q2) {
@@ -295,7 +291,7 @@ class Point2D implements Comparable<Point2D> {
             double dy1 = q1.y - y;
             double dx2 = q2.x - x;
             double dy2 = q2.y - y;
-
+            
             if (dy1 >= 0 && dy2 < 0) return -1;    // q1 above; q2 below
             else if (dy2 >= 0 && dy1 < 0) return +1;    // q1 below; q2 above
             else if (dy1 == 0 && dy2 == 0) {            // 3-collinear and horizontal
@@ -303,11 +299,11 @@ class Point2D implements Comparable<Point2D> {
                 else if (dx2 >= 0 && dx1 < 0) return +1;
                 else return 0;
             } else return -ccw(Point2D.this, q1, q2);     // both above or below
-
+            
             // Note: ccw() recomputes dx1, dy1, dx2, and dy2
         }
     }
-
+    
     // compare points according to their distance to this point
     private class DistanceToOrder implements Comparator<Point2D> {
         public int compare(Point2D p, Point2D q) {
@@ -318,8 +314,8 @@ class Point2D implements Comparable<Point2D> {
             else return 0;
         }
     }
-
-
+    
+    
     /**
      * Compares this point to the specified point.
      *
@@ -335,7 +331,7 @@ class Point2D implements Comparable<Point2D> {
         Point2D that = (Point2D) other;
         return this.x == that.x && this.y == that.y;
     }
-
+    
     /**
      * Return a string representation of this point.
      *
@@ -345,7 +341,7 @@ class Point2D implements Comparable<Point2D> {
     public String toString() {
         return "[" + x + ", " + y + "]";
     }
-
+    
     /**
      * Returns an integer hash code for this point.
      *
@@ -357,14 +353,14 @@ class Point2D implements Comparable<Point2D> {
         int hashY = ((Double) y).hashCode();
         return 31 * hashX + hashY;
     }
-
+    
     /**
      * Plot this point using standard draw.
      */
     public void draw() {
         StdDraw.point(x, y);
     }
-
+    
     /**
      * Plot a line from this point to that point using standard draw.
      *
@@ -373,5 +369,5 @@ class Point2D implements Comparable<Point2D> {
     public void drawTo(Point2D that) {
         StdDraw.line(this.x, this.y, that.x, that.y);
     }
-
+    
 }
