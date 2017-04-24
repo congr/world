@@ -139,6 +139,7 @@ class Event implements Comparable<Event> {
         else if (this.time > that.time)
             return +1;
         else {
+            // 세로줄과 가로줄이 겹치는데, 세로줄이 겹치는 지점이 시작점 x1일 때는 horizontal 먼저 add하고 끝점 x2일때는 horizontal 나중에 remove하도록
             if (this.segment.x1 == that.segment.x1) {
                 if (this.segment.isHorizontal() && that.segment.isVertical()) return -1;
             } else if (this.segment.x2 == that.segment.x1) {

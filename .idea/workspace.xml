@@ -2,34 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b96e934b-436a-4cae-8b33-c30c33496cf5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set1/input1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set1/output1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set1/output2.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set1/output3.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set1/output4.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set1/output5.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set2/input1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set2/input2.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set2/input3.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set2/input4.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set2/input5.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set2/output1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set2/output2.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set2/output3.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set2/output4.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set2/output5.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P3/main.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test/sample.in" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/201609/P3/input2.txt" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set1/input2.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/201609/P3/input3.txt" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set1/input3.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/201609/P3/input4.txt" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set1/input4.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/201609/P3/input5.txt" afterPath="$PROJECT_DIR$/201609/P3/Problem3_set1/input5.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201608/P4/Main.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P2/CJ201609_IdeaMeeting.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/201609/P2/sample.in" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/201609/P3/CJ201609_P3_BF.java" afterPath="$PROJECT_DIR$/201609/P3/CJ201609_ConvexQuadrilateral.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/201609/P3/CJ201609_P3.java" afterPath="$PROJECT_DIR$/201609/P3/CJ201609_P3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/201609/P3/output1.txt" afterPath="$PROJECT_DIR$/201609/P3/output1.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/201609/P3/sample.in" afterPath="$PROJECT_DIR$/201609/P3/sample.in" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/201609/P3/sample.out" afterPath="$PROJECT_DIR$/201609/P3/sample.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/TestPoint2D.java" afterPath="$PROJECT_DIR$/Test/TestPoint2D.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/Point2D.java" afterPath="$PROJECT_DIR$/Test/Point2D.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackerrank/SplitPlane.java" afterPath="$PROJECT_DIR$/hackerrank/SplitPlane.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/world.iml" afterPath="$PROJECT_DIR$/world.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,31 +31,130 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pointdata.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/pointdata.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CJ201609_P3.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/201609/P3/CJ201609_P3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="44" column="50" lean-forward="true" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
+            <state relative-caret-position="615">
+              <caret line="41" column="28" lean-forward="false" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/201609/P3/main.cpp">
+      <file leaf-file-name="Point2D.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Test/Point2D.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+            <state relative-caret-position="150">
+              <caret line="10" column="69" lean-forward="true" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SplitPlane.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hackerrank/SplitPlane.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="83" column="16" lean-forward="false" selection-start-line="83" selection-start-column="16" selection-end-line="84" selection-end-column="93" />
+              <folding>
+                <element signature="e#7491#7492#0" expanded="true" />
+                <element signature="e#7533#7534#0" expanded="true" />
+                <element signature="e#8024#8025#0" expanded="true" />
+                <element signature="e#8061#8062#0" expanded="true" />
+                <element signature="e#9873#9874#0" expanded="true" />
+                <element signature="e#9913#9914#0" expanded="true" />
+                <element signature="e#11458#11459#0" expanded="true" />
+                <element signature="e#11491#11492#0" expanded="true" />
+                <element signature="e#11660#11661#0" expanded="true" />
+                <element signature="e#11695#11696#0" expanded="true" />
+                <element signature="e#12882#12883#0" expanded="true" />
+                <element signature="e#12928#12929#0" expanded="true" />
+                <element signature="e#13003#13004#0" expanded="true" />
+                <element signature="e#13042#13043#0" expanded="true" />
+                <element signature="e#13309#13310#0" expanded="true" />
+                <element signature="e#13357#13358#0" expanded="true" />
+                <element signature="e#13922#13923#0" expanded="true" />
+                <element signature="e#13965#13966#0" expanded="true" />
+                <element signature="e#14008#14009#0" expanded="true" />
+                <element signature="e#14052#14053#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/201608/P4/Main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="115" column="32" lean-forward="true" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CJ201609_IdeaMeeting.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/201609/P2/CJ201609_IdeaMeeting.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="93" column="2" lean-forward="true" selection-start-line="93" selection-start-column="2" selection-end-line="93" selection-end-column="2" />
+              <folding>
+                <element signature="e#961#968#0" expanded="true" />
+                <marker date="1493014474000" expanded="false" signature="5437:5452" ph=" { " />
+                <marker date="1493014474000" expanded="false" signature="5478:5488" ph=" }" />
+                <marker date="1493014474000" expanded="false" signature="6156:6171" ph=" { " />
+                <marker date="1493014474000" expanded="false" signature="6189:6199" ph=" }" />
+                <marker date="1493014474000" expanded="false" signature="6236:6251" ph=" { " />
+                <marker date="1493014474000" expanded="false" signature="6269:6279" ph=" }" />
+                <marker date="1493014474000" expanded="false" signature="7792:7807" ph=" { " />
+                <marker date="1493014474000" expanded="false" signature="7834:7844" ph=" }" />
+                <marker date="1493014474000" expanded="false" signature="8377:8392" ph=" { " />
+                <marker date="1493014474000" expanded="false" signature="8414:8424" ph=" }" />
+                <marker date="1493014474000" expanded="false" signature="10454:10469" ph=" { " />
+                <marker date="1493014474000" expanded="false" signature="10494:10504" ph=" }" />
+                <marker date="1493014474000" expanded="false" signature="12199:12214" ph=" { " />
+                <marker date="1493014474000" expanded="false" signature="12232:12242" ph=" }" />
+                <marker date="1493014474000" expanded="false" signature="12433:12448" ph=" { " />
+                <marker date="1493014474000" expanded="false" signature="12468:12478" ph=" }" />
+                <marker date="1493014474000" expanded="false" signature="13803:13818" ph=" { " />
+                <marker date="1493014474000" expanded="false" signature="13849:13859" ph=" }" />
+                <marker date="1493014474000" expanded="false" signature="13940:13955" ph=" { " />
+                <marker date="1493014474000" expanded="false" signature="13979:13989" ph=" }" />
+                <marker date="1493014474000" expanded="false" signature="14278:14293" ph=" { " />
+                <marker date="1493014474000" expanded="false" signature="14326:14336" ph=" }" />
+                <marker date="1493014474000" expanded="false" signature="14939:14954" ph=" { " />
+                <marker date="1493014474000" expanded="false" signature="14982:14992" ph=" }" />
+                <marker date="1493014474000" expanded="false" signature="15037:15052" ph=" { " />
+                <marker date="1493014474000" expanded="false" signature="15081:15091" ph=" }" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PriorityQueue.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/PriorityQueue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="81" column="13" lean-forward="false" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sample.in" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/201609/P2/sample.in">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Interval2D.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Test/Interval2D.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="32" column="19" lean-forward="true" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -84,18 +163,8 @@
       <file leaf-file-name="sample.in" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/201609/P3/sample.in">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Problem3_suboptimal.cp" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Documents/코딩/LGCodeJam/2016/2016 final/Problem3_suboptimal.cp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="63" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -104,52 +173,14 @@
       <file leaf-file-name="TestPoint2D.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test/TestPoint2D.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-133">
-              <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+            <state relative-caret-position="315">
+              <caret line="58" column="35" lean-forward="true" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
               <folding>
-                <element signature="e#3424#3433#0" expanded="true" />
-                <element signature="e#5860#5869#0" expanded="true" />
+                <element signature="e#3435#3444#0" expanded="true" />
+                <element signature="e#5873#5882#0" expanded="true" />
+                <element signature="e#6719#6720#0" expanded="true" />
+                <element signature="e#6753#6754#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sample.in" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/sample.in">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Arrays.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="1245" column="0" lean-forward="false" selection-start-line="1245" selection-start-column="0" selection-end-line="1245" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Scanner.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/Scanner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="610" column="0" lean-forward="false" selection-start-line="610" selection-start-column="0" selection-end-line="610" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="input1.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/201609/P3/input1.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="280" column="0" lean-forward="false" selection-start-line="280" selection-start-column="0" selection-end-line="300" selection-end-column="9" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -165,20 +196,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>EdgeWeighte</find>
-      <find>EdgeWeighted</find>
-      <find>EdgeWeightedG</find>
-      <find>EdgeWeightedGr</find>
-      <find>EdgeWeightedGra</find>
-      <find>EdgeWeightedGrap</find>
-      <find>EdgeWeightedGraph</find>
-      <find>W</find>
-      <find>P</find>
-      <find>Pai</find>
-      <find>Pair</find>
-      <find>EdgeWeightedGraphM</find>
-      <find>p</find>
-      <find>pl</find>
       <find>plo</find>
       <find>ploy</find>
       <find>ployg</find>
@@ -192,9 +209,23 @@
       <find>area2</find>
       <find>print array</find>
       <find>3951.5</find>
-      <find>polygon</find>
       <find>-301</find>
       <find>println</find>
+      <find>draw</find>
+      <find>polygon</find>
+      <find>r</find>
+      <find>rang</find>
+      <find>range</find>
+      <find>range search</find>
+      <find>addRoot</find>
+      <find>add</find>
+      <find>random</find>
+      <find>event</find>
+      <find>rangeSearch</find>
+      <find>Segment</find>
+      <find>Integer.MAX_VALUE</find>
+      <find>st</find>
+      <find>RangeSearch</find>
     </findStrings>
     <replaceStrings>
       <replace>INF</replace>
@@ -215,10 +246,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/world.iml" />
-        <option value="$PROJECT_DIR$/team/AProblem02.java" />
-        <option value="$PROJECT_DIR$/team/AProblem01.java" />
-        <option value="$PROJECT_DIR$/team/AProblem03.java" />
         <option value="$PROJECT_DIR$/team/AProblem06.java" />
         <option value="$PROJECT_DIR$/team/AProblem05.java" />
         <option value="$PROJECT_DIR$/team/AProblem04.java" />
@@ -249,12 +276,10 @@
         <option value="$PROJECT_DIR$/BOJ/BOJ11408.java" />
         <option value="$PROJECT_DIR$/BOJ/BOJ11409.java" />
         <option value="$PROJECT_DIR$/hackerrank/ZeroOneGame.java" />
-        <option value="$PROJECT_DIR$/hackerrank/SplitPlane.java" />
         <option value="$PROJECT_DIR$/hackerrank/SpanningTreeFraction.java" />
         <option value="$PROJECT_DIR$/Test/GraphClient.java" />
         <option value="$PROJECT_DIR$/Test/GraphGenerator.java" />
         <option value="$PROJECT_DIR$/Test/pointdata.txt" />
-        <option value="$PROJECT_DIR$/Test/Point2D.java" />
         <option value="$PROJECT_DIR$/Test/Point2DRandom.java" />
         <option value="$PROJECT_DIR$/Test/RectDraw.java" />
         <option value="$PROJECT_DIR$/201609/CJ201609_P3.java" />
@@ -264,6 +289,14 @@
         <option value="$PROJECT_DIR$/201609/P3/sample.in" />
         <option value="$PROJECT_DIR$/201609/P3/CJ201609_P3.java" />
         <option value="$PROJECT_DIR$/201609/P3/main.cpp" />
+        <option value="$PROJECT_DIR$/Test/Point2D.java" />
+        <option value="$PROJECT_DIR$/201609/P3/CJ201609_P3_BF.java" />
+        <option value="$PROJECT_DIR$/201609/P3/CJ201609_ConvexRectangle.java" />
+        <option value="$PROJECT_DIR$/201609/P3/CJ201609_ConvexQuadrilateral.java" />
+        <option value="$PROJECT_DIR$/201608/P4/Main.cpp" />
+        <option value="$PROJECT_DIR$/201609/P2/sample.in" />
+        <option value="$PROJECT_DIR$/hackerrank/SplitPlane.java" />
+        <option value="$PROJECT_DIR$/201609/P2/CJ201609_IdeaMeeting.java" />
       </list>
     </option>
   </component>
@@ -416,161 +449,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 1.8 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rt.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 1.8 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rt.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="geom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 1.8 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jfxrt.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 1.8 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jfxrt.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javafx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 1.8 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jfxrt.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javafx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="geometry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algs4.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algs4.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algs4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -587,8 +466,36 @@
               <option name="myItemId" value="Test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="TestPoint2D.java" />
+              <option name="myItemId" value="world" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="world" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackerrank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="world" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="world" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackerrank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SplitPlane.java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -602,20 +509,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="201609" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -634,7 +527,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="P3" />
+              <option name="myItemId" value="P2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -650,7 +543,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -683,45 +576,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CJ201609_P3">
+  <component name="RunManager" selected="Application.CJ201609_IdeaMeeting">
     <configuration default="false" name="Point2DRandom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Point2DRandom" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="world" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="RectDraw" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="RectDraw" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="world" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Point2D (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="edu.princeton.cs.algs4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="edu.princeton.cs.algs4.Point2D" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -752,6 +610,36 @@
     <configuration default="false" name="TestPoint2D" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="TestPoint2D" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="world" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="CJ201609_ConvexQuadrilateral" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="CJ201609_ConvexQuadrilateral" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="world" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="CJ201609_IdeaMeeting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="CJ201609_IdeaMeeting" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1153,18 +1041,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Point2DRandom" />
-      <item index="1" class="java.lang.String" itemvalue="Application.RectDraw" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Point2D (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Application.CJ201609_P3" />
-      <item index="4" class="java.lang.String" itemvalue="Application.TestPoint2D" />
+      <item index="1" class="java.lang.String" itemvalue="Application.CJ201609_P3" />
+      <item index="2" class="java.lang.String" itemvalue="Application.TestPoint2D" />
+      <item index="3" class="java.lang.String" itemvalue="Application.CJ201609_ConvexQuadrilateral" />
+      <item index="4" class="java.lang.String" itemvalue="Application.CJ201609_IdeaMeeting" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.CJ201609_P3" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TestPoint2D" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Point2DRandom" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Point2D (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Application.RectDraw" />
+        <item index="0" class="java.lang.String" itemvalue="Application.CJ201609_IdeaMeeting" />
+        <item index="1" class="java.lang.String" itemvalue="Application.CJ201609_ConvexQuadrilateral" />
+        <item index="2" class="java.lang.String" itemvalue="Application.CJ201609_P3" />
+        <item index="3" class="java.lang.String" itemvalue="Application.TestPoint2D" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Point2DRandom" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -1217,12 +1105,12 @@
       <workItem from="1491953005106" duration="232000" />
       <workItem from="1491953829984" duration="21389000" />
       <workItem from="1492017591579" duration="25572000" />
-      <workItem from="1492570781229" duration="34759000" />
+      <workItem from="1492570781229" duration="50209000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175349000" />
+    <option name="totallyTimeSpent" value="190799000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="38" y="23" width="1397" height="860" extended-state="0" />
@@ -1238,9 +1126,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41145834" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1875" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5364583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3059896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24428044" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1251,7 +1139,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3684896" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23046875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Amazon EC2" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1322,86 +1210,26 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Test/TestPoint2D.java</url>
-          <line>42</line>
+          <line>39</line>
           <properties />
           <option name="timeStamp" value="155" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/201609/P2/CJ201609_IdeaMeeting.java</url>
+          <line>81</line>
+          <properties />
+          <option name="timeStamp" value="173" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="156" />
+      <option name="time" value="174" />
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="K[n][W]" language="JAVA" />
-        <watch expression="capa[i + M][sink]" language="JAVA" />
-        <watch expression="capa" language="JAVA" />
-        <watch expression="flow" language="JAVA" />
-        <watch expression="cell[py][px]" language="JAVA" />
-        <watch expression="cell[y][x]" language="JAVA" />
-        <watch expression="graph" language="JAVA" />
-      </configuration>
-    </watches-manager>
+    <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7800">
-          <caret line="543" column="6" lean-forward="false" selection-start-line="543" selection-start-column="6" selection-end-line="543" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#33182#0" expanded="false" />
-            <element signature="e#33104#33105#0" expanded="false" />
-            <element signature="e#33178#33179#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/PriorityQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5610">
-          <caret line="407" column="19" lean-forward="false" selection-start-line="407" selection-start-column="19" selection-end-line="407" selection-end-column="19" />
-          <folding>
-            <element signature="e#14861#14862#0" expanded="false" />
-            <element signature="e#14900#14901#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackerrank/AccurateSorting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="39" lean-forward="false" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackerrank/BubbleSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackerrank/DFS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackerrank/PrimHeap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GraphClient" />
     <entry file="jar://$PROJECT_DIR$/algs4.jar!/edu/princeton/cs/algs4/GraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
@@ -1503,14 +1331,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="19995" column="23" lean-forward="true" selection-start-line="19995" selection-start-column="23" selection-end-line="19995" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackerrank/SplitPlane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="136" column="34" lean-forward="false" selection-start-line="136" selection-start-column="34" selection-end-line="136" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -1688,7 +1508,7 @@
     <entry file="file://$PROJECT_DIR$/Test/pointdata.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1719,8 +1539,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/201609/P3/input1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="280" column="0" lean-forward="false" selection-start-line="280" selection-start-column="0" selection-end-line="300" selection-end-column="9" />
+        <state relative-caret-position="36202">
+          <caret line="2690" column="0" lean-forward="false" selection-start-line="2690" selection-start-column="0" selection-end-line="2690" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1728,51 +1548,166 @@
     <entry file="file://$PROJECT_DIR$/Test/sample.in">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/TestPoint2D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-          <folding>
-            <element signature="e#3424#3433#0" expanded="true" />
-            <element signature="e#5860#5869#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Documents/코딩/LGCodeJam/2016/2016 final/Problem3_suboptimal.cp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
-          <caret line="63" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <caret line="63" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/201609/P3/sample.in">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/201609/P3/CJ201609_P3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="44" column="50" lean-forward="true" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
+        <state relative-caret-position="210">
+          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/201609/P3/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        <state relative-caret-position="296">
+          <caret line="57" column="36" lean-forward="false" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/201609/P3/CJ201609_P3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="28" lean-forward="false" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/201609/P3/CJ201609_ConvexQuadrilateral.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="908">
+          <caret line="140" column="9" lean-forward="true" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/TestPoint2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="58" column="35" lean-forward="true" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
+          <folding>
+            <element signature="e#3435#3444#0" expanded="true" />
+            <element signature="e#5873#5882#0" expanded="true" />
+            <element signature="e#6719#6720#0" expanded="true" />
+            <element signature="e#6753#6754#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/Interval2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="32" column="19" lean-forward="true" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/Point2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="69" lean-forward="true" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/201608/P4/Main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="115" column="32" lean-forward="true" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/PriorityQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="81" column="13" lean-forward="false" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/201609/P2/sample.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackerrank/SplitPlane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="83" column="16" lean-forward="false" selection-start-line="83" selection-start-column="16" selection-end-line="84" selection-end-column="93" />
+          <folding>
+            <element signature="e#7491#7492#0" expanded="true" />
+            <element signature="e#7533#7534#0" expanded="true" />
+            <element signature="e#8024#8025#0" expanded="true" />
+            <element signature="e#8061#8062#0" expanded="true" />
+            <element signature="e#9873#9874#0" expanded="true" />
+            <element signature="e#9913#9914#0" expanded="true" />
+            <element signature="e#11458#11459#0" expanded="true" />
+            <element signature="e#11491#11492#0" expanded="true" />
+            <element signature="e#11660#11661#0" expanded="true" />
+            <element signature="e#11695#11696#0" expanded="true" />
+            <element signature="e#12882#12883#0" expanded="true" />
+            <element signature="e#12928#12929#0" expanded="true" />
+            <element signature="e#13003#13004#0" expanded="true" />
+            <element signature="e#13042#13043#0" expanded="true" />
+            <element signature="e#13309#13310#0" expanded="true" />
+            <element signature="e#13357#13358#0" expanded="true" />
+            <element signature="e#13922#13923#0" expanded="true" />
+            <element signature="e#13965#13966#0" expanded="true" />
+            <element signature="e#14008#14009#0" expanded="true" />
+            <element signature="e#14052#14053#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/201609/P2/CJ201609_IdeaMeeting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="93" column="2" lean-forward="true" selection-start-line="93" selection-start-column="2" selection-end-line="93" selection-end-column="2" />
+          <folding>
+            <element signature="e#961#968#0" expanded="true" />
+            <marker date="1493014474000" expanded="false" signature="5437:5452" ph=" { " />
+            <marker date="1493014474000" expanded="false" signature="5478:5488" ph=" }" />
+            <marker date="1493014474000" expanded="false" signature="6156:6171" ph=" { " />
+            <marker date="1493014474000" expanded="false" signature="6189:6199" ph=" }" />
+            <marker date="1493014474000" expanded="false" signature="6236:6251" ph=" { " />
+            <marker date="1493014474000" expanded="false" signature="6269:6279" ph=" }" />
+            <marker date="1493014474000" expanded="false" signature="7792:7807" ph=" { " />
+            <marker date="1493014474000" expanded="false" signature="7834:7844" ph=" }" />
+            <marker date="1493014474000" expanded="false" signature="8377:8392" ph=" { " />
+            <marker date="1493014474000" expanded="false" signature="8414:8424" ph=" }" />
+            <marker date="1493014474000" expanded="false" signature="10454:10469" ph=" { " />
+            <marker date="1493014474000" expanded="false" signature="10494:10504" ph=" }" />
+            <marker date="1493014474000" expanded="false" signature="12199:12214" ph=" { " />
+            <marker date="1493014474000" expanded="false" signature="12232:12242" ph=" }" />
+            <marker date="1493014474000" expanded="false" signature="12433:12448" ph=" { " />
+            <marker date="1493014474000" expanded="false" signature="12468:12478" ph=" }" />
+            <marker date="1493014474000" expanded="false" signature="13803:13818" ph=" { " />
+            <marker date="1493014474000" expanded="false" signature="13849:13859" ph=" }" />
+            <marker date="1493014474000" expanded="false" signature="13940:13955" ph=" { " />
+            <marker date="1493014474000" expanded="false" signature="13979:13989" ph=" }" />
+            <marker date="1493014474000" expanded="false" signature="14278:14293" ph=" { " />
+            <marker date="1493014474000" expanded="false" signature="14326:14336" ph=" }" />
+            <marker date="1493014474000" expanded="false" signature="14939:14954" ph=" { " />
+            <marker date="1493014474000" expanded="false" signature="14982:14992" ph=" }" />
+            <marker date="1493014474000" expanded="false" signature="15037:15052" ph=" { " />
+            <marker date="1493014474000" expanded="false" signature="15081:15091" ph=" }" />
+          </folding>
         </state>
       </provider>
     </entry>

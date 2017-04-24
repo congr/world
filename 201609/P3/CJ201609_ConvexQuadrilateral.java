@@ -9,7 +9,7 @@ import java.util.Stack;
  */
 // 볼록 사각형이 최소가 되도록 4개점을 뽑고, 그 넓이를 구하라.
 // 모든 경우의 수 200개중 4개의 점을 찾아서 넓이 비교 200 * 199 * 198 * 197 최적화 필요
-public class CJ201609_P3_BF {
+public class CJ201609_ConvexQuadrilateral {
     public static void main(String[] args) throws Exception {
         String inFilename = (args != null && args.length > 0) ? args[0] : "201609/P3/sample.in"; // path from root
         File inFile = new File(inFilename);
@@ -140,9 +140,14 @@ public class CJ201609_P3_BF {
             hull.push(a[i]);
         }
 
-        Point2D[] result = new Point2D[hull.size()];
+        return stackToArrayLIFO(hull);
+    }
+
+    // stack to array in LIFO order
+    static Point2D[] stackToArrayLIFO(Stack<Point2D> st) {
+        Point2D[] result = new Point2D[st.size()];
         int top = 0;
-        while (!hull.isEmpty()) result[top++] = hull.pop();
+        while (!st.isEmpty()) result[top++] = st.pop();
         return result;
     }
 }
