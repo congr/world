@@ -1,7 +1,4 @@
-import edu.princeton.cs.algs4.Counter;
-import edu.princeton.cs.algs4.Interval1D;
-import edu.princeton.cs.algs4.StdDraw;
-import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.*;
 
 /**
  *  The <tt>Interval2D</tt> class represents a closed two-dimensional interval,
