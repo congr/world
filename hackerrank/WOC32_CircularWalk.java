@@ -32,6 +32,29 @@ public class WOC32_CircularWalk {
         }
     }
     
+    static void bulk(int n, int start, int end, int t) {
+        int time = 0;
+        int left = start, right = start;
+        for (int i = start; i != t; ) {
+            D[i] = time++;
+            for (int j = 1; j <= R[i]; j++) {
+                left = i - j;
+                right = i + j;
+                if (left < 0) left = n + left;
+                if (right >= n) right = right - n + 1;
+                if (Math.abs(left - t) <= R[left] || Math.abs(right - t) <= R[right]) {
+                    D[t] = time;
+                    return;
+                }
+                for (int k = left; k <= right; k++) {
+                    D[k] = time;
+                    if (k == t) return;
+                }
+            }
+            i = left;
+        }
+    }
+    
     static int circularWalk(int n, int s, int t, int r_0, int g, int seed, int p) {
         R = new int[n];
         R[0] = r_0;
