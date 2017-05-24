@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -34,7 +33,7 @@ public static void main(String[] args) { // class Solution
     //System.out.println(Arrays.toString(D));
     System.out.println(D[N]);
 
-    Arrays.fill(R, 987654321);
+    // Top-down
     //System.out.println(solve(N));
 }
 
