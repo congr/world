@@ -19,5 +19,22 @@ public class BOJ11726_2NTile {
 
         //System.out.println(Arrays.toString(D));
         System.out.println(D[N] % 10007);
+
+        //Arrays.fill(D, -1);
+        //System.out.println(solve(N) % 10007);
+    }
+
+    // Bottom-up recursive
+    static int[] D = new int[1001];
+
+    static int solve(int n) {
+        if (n <= 1) return 1;
+        if (n == 2) return 2;
+
+        if (D[n] != -1)
+            return D[n];
+
+        D[n] = (solve(n - 2) + solve(n - 1)) % 10007;
+        return D[n];
     }
 }
