@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -19,23 +20,22 @@ public static void main(String[] args) { // class Solution
     Scanner sc = new Scanner(System.in);
 
     int N = sc.nextInt();
-    //int[] D = new int[1000001];
-    //
-    //D[1] = 0; // 이미 1인 경우 초기화. 근데 이미 0으로 초기화 됨
-    //for (int i = 2; i <= N; i++) { // 2부터 체크 시작
-    //    D[i] = D[i - 1] + 1;  // 이전 연산에 +1 횟수를 더한다. 모든 케이스에 해당한다. N보다 1작은 수는 항상 존재하므로.
-    //    if (i % 3 == 0 && D[i] > D[i / 3] + 1) // D[i]에 -1 한 것 보다 더 작은 케이스가 있다면
-    //        D[i] = D[i / 3] + 1;
-    //    if (i % 2 == 0 && D[i] > D[i / 2] + 1)
-    //        D[i] = D[i / 2] + 1;
-    //}
-    //
-    ////System.out.println(Arrays.toString(D));
-    //System.out.println(D[N]);
+    int[] D = new int[1000001];
 
-    //Arrays.fill(R, 987654321);
+    D[1] = 0; // 이미 1인 경우 초기화. 근데 이미 0으로 초기화 됨
+    for (int i = 2; i <= N; i++) { // 2부터 체크 시작
+        D[i] = D[i - 1] + 1;  // 이전 연산에 +1 횟수를 더한다. 모든 케이스에 해당한다. N보다 1작은 수는 항상 존재하므로.
+        if (i % 3 == 0 && D[i] > D[i / 3] + 1) // D[i]에 -1 한 것 보다 더 작은 케이스가 있다면
+            D[i] = D[i / 3] + 1;
+        if (i % 2 == 0 && D[i] > D[i / 2] + 1)
+            D[i] = D[i / 2] + 1;
+    }
 
-    System.out.println(solve(N));
+    //System.out.println(Arrays.toString(D));
+    System.out.println(D[N]);
+
+    Arrays.fill(R, 987654321);
+    //System.out.println(solve(N));
 }
 
 static int R[] = new int[1000001];
