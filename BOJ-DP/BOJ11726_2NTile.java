@@ -10,7 +10,7 @@ public class BOJ11726_2NTile {
 
         int N = sc.nextInt();
 
-        int[] D = new int[N + 3];
+        int[] D = new int[N + 3]; // D[2] = 2를 쓸려면 0이 입력되었을 때 + 3 되어야 함
 
         D[1] = 1;
         D[2] = 2;
@@ -18,11 +18,9 @@ public class BOJ11726_2NTile {
             D[i] = (D[i - 2] + D[i - 1]) % 10007;
         }
 
-        //System.out.println(Arrays.toString(D));
-        System.out.println(D[N] % 10007);
+        System.out.println(D[N]);
 
-        //Arrays.fill(D, -1);
-        //System.out.println(solve(N) % 10007);
+        //System.out.println(solve(N));
     }
 
     // Bottom-up recursive
@@ -32,7 +30,7 @@ public class BOJ11726_2NTile {
         if (n <= 1) return 1;
         if (n == 2) return 2;
 
-        if (D[n] != -1)
+        if (D[n] > 0) // n 이 3보다 크다면 채우는 방법이 반드시 0보다는 큰 값이 존재한다
             return D[n];
 
         D[n] = (solve(n - 2) + solve(n - 1)) % 10007;
