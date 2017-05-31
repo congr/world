@@ -4,7 +4,7 @@ import java.util.*;
  * Created by cutececil on 2017. 4. 27..
  */
 // crucial link 찾는 문제
-// max flow를 돌린 후에 더이상 u->v로 가는 capa가 남은 간선이 없다면 crucial link이다
+// MAX_VALUE flow를 돌린 후에 더이상 u->v로 가는 capa가 남은 간선이 없다면 crucial link이다
 // flow 돌린 후 dfs로 남은 경로가 있는지 다 확인해서 더이상 capa가 남은 간선이 없는 카운트를 출력한다
 // 이를 위해 edge를 별도로 array나 list에 보관해야한다 edge도 from/to를 받도록 수정
 public class BOJ5651_MaximumFlow {
