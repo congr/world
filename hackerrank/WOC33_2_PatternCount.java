@@ -19,7 +19,7 @@ public class WOC33_2_PatternCount {
                     cnt++;
                     j = i; // another starting point
                 }
-            } else if (a[i] > '1') {
+            } else if (a[i] != '0') { // !!! WA 가 발생  a[i] > '1' 로 하면 안되고 사이에 '0' 이 아니면 j reset 해야함. 즉 11 로 되는 것도 무효임
                 j = -1;
             }
         }
