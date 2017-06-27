@@ -145,7 +145,7 @@ public class FamilyTree {
          */
         public SegmentTree(int[] array) {
             this.array = Arrays.copyOf(array, array.length);
-            //The max size of this array is about 2 * 2 ^ log2(n) + 1
+            //The MAX_VALUE size of this array is about 2 * 2 ^ log2(n) + 1
             size = (int) (2 * Math.pow(2.0, Math.floor((Math.log((double) array.length) / Math.log(2.0)) + 1)));
             heap = new SegmentTree.Node[size];
             build(1, 0, array.length);
@@ -258,7 +258,7 @@ public class FamilyTree {
          *
          * @param from from index
          * @param to   to index
-         * @return max
+         * @return MAX_VALUE
          */
         public int rMaxQ(int from, int to) {
             return rMaxQ(1, from, to);
