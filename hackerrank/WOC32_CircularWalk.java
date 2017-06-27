@@ -36,8 +36,8 @@ public class WOC32_CircularWalk {
                 right = pos + i;
                 
                 if (left < 0) left = n + left;
-                if (right >= n) right = right - n; // 없어도됨
-                if (right < 0) right = n + right;
+                if (right >= n) right = right - n;
+                if (right < 0) right = n + right;// 없어도됨
                 if (left >= n) left = left - n; // 없어도됨
                 
                 if (/*D[left] > time + 1 || */!discovered[left]) { // D값이 더 큰 경우가 올수 없다 discovered는 queue에 한번 들어간 적이 있다는 뜻이고 그렇다면 time이 더 작다는 뜻
