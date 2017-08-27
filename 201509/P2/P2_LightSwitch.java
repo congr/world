@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 public class P2_LightSwitch {
     public static void main(String[] args) throws Exception {
-        String inFilename = (args != null && args.length > 0) ? args[0] : "201509/P2/sample.in"; // path from root
+        String inFilename = (args != null && args.length > 0) ? args[0] : "201509/P2/problem_2_large.in"; // path from root
         File inFile = new File(inFilename);
         File outFile = new File(inFilename.replace("in", "out"));
         FileWriter wr = new FileWriter(outFile);
