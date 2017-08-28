@@ -427,7 +427,7 @@ class RangeSearch<Key extends Comparable<Key>> {
         return isBST(root, min(), max());
     }
 
-    // are all the values in the BST rooted at x between min and max, and recursively?
+    // are all the values in the BST rooted at x between min and MAX_VALUE, and recursively?
     private boolean isBST(Node x, Key min, Key max) {
         if (x == null) return true;
         if (less(x.key, min) || less(max, x.key)) return false;
