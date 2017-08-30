@@ -40,16 +40,14 @@ public class P1_FactorSum {
     public static int factor(int num) {
         int sum = 1; // 소인수 분해하면 항상 1이 포함
 
-        for (int i = 2; i * i <= num; i++) {
-            //test /= 10;
-            if ((num % i) == 0) {
+        for (int i = 2; i * i <= num; i++) { // i는 나누는 수
+            if ((num % i) == 0) { // 나누어 진다면
                 sum += num / i;
                 if (i * i != num) // 1 2 3 6 일때 6은 더하지 않도록
                     sum += i;
             }
         }
 
-        //System.out.println(num + " " + sum);
         return sum;
     }
 }
