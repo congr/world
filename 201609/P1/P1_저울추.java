@@ -30,7 +30,7 @@ public class P1_저울추 {
             
             int ans = -1;
             int last = set(A, D, 1, K, N) - 1;
-            System.out.println("last set " + last);
+            System.out.println("last setWithoutDup " + last);
             if (last == K) ans = 0;//  0인경우는 추가 저울추가 필요없음
             else if (last < K) { // 추를 추가한다
                 int add = 1;
