@@ -127,7 +127,7 @@ class Point2D implements Comparable<Point2D> {
      * @param a first point
      * @param b second point
      * @param c third point
-     * @return twice the signed area of the triangle a-b-c
+     * @return twice    the signed area of the triangle a-b-c
      */
     public static double area2(Point2D a, Point2D b, Point2D c) {
         return (b.x - a.x) * (c.y - a.y) - (b.y - a.y) * (c.x - a.x);
@@ -135,16 +135,18 @@ class Point2D implements Comparable<Point2D> {
 
     // 벡터의 외적을 이용한 볼록 다각형의 면적
     // extreme point에서 뻗어가는 대각선을 모든 점에 긋고 삼각형의 넓이를 구하는 방법과 평행사변형을 구해서 /2 하는 방법
+    public static double polygonArea2(Point2D[] points) { // points가 polar order로 정렬된 상태
+        double sum = 0;
+        for (int i = 2; i < points.length; i++) {
+            double area = area2(points[0], points[i - 1], points[i]);
+            area = Math.abs(area) / 2;
+            sum += area;
+        }
+        return sum;
+    }
+    
     // 현재 평행사변형을 이용
-    public static double polygonArea(Point2D[] points) {
-        // double sum = 0;
-        // for (int i = 2; i < points.length; i++) {
-        //    double area = area2(points[0], points[i - 1], points[i]);
-        //    area = Math.abs(area) / 2;
-        //    sum += area;
-        //}
-        // return sum;
-
+    public static double polygonArea(Point2D[] points) {// scan이후 stack LIFO 순서
         double area = 0.0d;
         int n = points.length;
         if (n <= 2) return 0;
