@@ -38,7 +38,7 @@ public class P3_볼록사각형 {
                             if (isConvexQuad) {
                                 //System.out.println(Arrays.toString(convexQuad));
                                 
-                                double area = Point2D.polygonArea(convexQuad);
+                                double area = Point2D.polygonAreaByPolarOrder(convexQuad);
                                 if (area != 0)
                                     minArea = Math.min(area, minArea);
                             }

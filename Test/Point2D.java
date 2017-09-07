@@ -135,7 +135,7 @@ class Point2D implements Comparable<Point2D> {
 
     // 벡터의 외적을 이용한 볼록 다각형의 면적
     // extreme point에서 뻗어가는 대각선을 모든 점에 긋고 삼각형의 넓이를 구하는 방법과 평행사변형을 구해서 /2 하는 방법
-    public static double polygonArea2(Point2D[] points) { // points가 polar order로 정렬된 상태
+    public static double polygonAreaByPolarOrder(Point2D[] points) { // points가 polar order로 정렬된 상태
         double sum = 0;
         for (int i = 2; i < points.length; i++) {
             double area = area2(points[0], points[i - 1], points[i]);
@@ -144,8 +144,8 @@ class Point2D implements Comparable<Point2D> {
         }
         return sum;
     }
-    
-    // 현재 평행사변형을 이용
+
+    // 평행사변형을 구해서 /2 하는 방법
     public static double polygonArea(Point2D[] points) {// scan이후 stack LIFO 순서
         double area = 0.0d;
         int n = points.length;
@@ -167,13 +167,24 @@ class Point2D implements Comparable<Point2D> {
         return polygonArea(points);
     }
 
-    // 다각형의 둘레 길이를 계산
+    // 다각형의 둘레 길이를 계산 - 점들은 ccw, polar order
     public static double polygonPerimeter(Point2D[] points) {
         int n = points.length;
         double sum = 0.0;
         for (int i = 0; i < n; i++)
             sum = sum + points[i].distanceTo(points[(i + 1) % n]);
         return sum;
+    }
+
+    // 다각형의 둘레 길이를 convex hull stack 입력으로 계산
+    public static double polygonPerimeter(Stack<Point2D> stack) {
+        int n = stack.size();
+        if (n <= 2) return 0;
+        Point2D[] points = new Point2D[n];
+        int top = 0;
+        while (!stack.isEmpty()) points[top++] = stack.pop();
+
+        return polygonPerimeter(points);
     }
 
     /**
@@ -198,6 +209,26 @@ class Point2D implements Comparable<Point2D> {
         double dx = this.x - that.x;
         double dy = this.y - that.y;
         return dx * dx + dy * dy;
+    }
+
+    /* 직선의 방정식
+     * s1 - s2 를 잇는 직선에서 점p 까지 거리 (수선)
+     * ax + by + c = 0
+     * d = | ax1 + by1 + c | / sqrt(a^2 + b^2)
+     */
+    public static double getDistanceToSegment(Point2D s1, Point2D s2, Point2D p) {
+        if (s2.x == s1.x) { // 직선상의 두점 x가 같다면 y에 평행한 직선 |이되고 p점까지 x거리 차는 거리가 된다
+            return Math.abs(s1.x - p.x);
+        }
+
+        double a = s2.y - s1.y;
+        double b = s1.x - s2.x;
+        double c = s2.x * s1.y - s1.x * s2.y;
+
+        double dist = Math.abs(a * p.x + b * p.y + c) / Math.sqrt(a * a + b * b);
+        //System.out.println("dist " + dist);
+
+        return dist;
     }
 
     /**

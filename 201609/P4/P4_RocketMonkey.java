@@ -85,8 +85,7 @@ public class P4_RocketMonkey {
         EdgeWeightedGraph(int V) {
             this.V = V;
             distance = new int[V];
-            //Arrays.fill(distance, Integer.MAX_VALUE);            // cost를 우선 Max로 설정하고 더 작은 cost가 있다면 업데이트 되도록 한다
-            
+
             adjList = (ArrayList<Edge>[]) new ArrayList[V];
             for (int i = 0; i < V; ++i) adjList[i] = new ArrayList<>();
         }
@@ -94,16 +93,14 @@ public class P4_RocketMonkey {
         int bfs(int start, int[] H, int from, int to, int rocket) { // H 나무 높이
             //System.out.println(rocket + " rocket " + "\n" + Arrays.toString(H));
             
-            //PriorityQueue<Edge> pq = new PriorityQueue<>((o1, o2) -> {
-            //    if (o1.d > o2.d) return 1;
-            //    else return -1;
-            //});
-            //
-            Queue<Edge> pq = new LinkedList<>();
-            
+            PriorityQueue<Edge> pq = new PriorityQueue<>((o1, o2) -> {
+                if (o1.d > o2.d) return 1;
+                else return -1;
+            });
+
             Arrays.fill(distance, Integer.MAX_VALUE);
             distance[start] = 0;                                // root
-            pq.add(new Edge(start, start, 0, from)); // 1번 나무의 from 이 현재 위치
+            pq.add(new Edge(start, start, 0, from));        // 1번 나무의 from 이 현재 위치
             
             while (!pq.isEmpty()) {
                 Edge hereE = pq.poll();
@@ -113,7 +110,7 @@ public class P4_RocketMonkey {
                 int l = hereE.l; // here로 점프해온 마지막 지점
                 if(debug)
                 System.out.print(hereE);
-                
+
                 //if (distance[v] < d) continue; // !!! 로케트를 쓰면 d가 현재는 큰데 앞으로 작아지는 경우가 발생함
                 
                 for (Edge thereE : adjList[v]) {
@@ -122,7 +119,7 @@ public class P4_RocketMonkey {
                     int dist = thereE.d;
                     int land = 0;                   // there 나무로 점프후 착지 지점
                     int climb = 0;
-    
+
                     if (here == rocket) {           // rocket를 쓰는 나무라면 climb 필요 없을 수 있는데 오히려 내려가야 하는 경우도 있다
                         land = l;                   // 점프시 아래로 내려가지 않고 직선이동. l은 here, land 는 there 랜딩 지점
                         climb = 0;                  // 위로 올라가서 점프할 필요없다

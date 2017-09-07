@@ -81,7 +81,7 @@ public class TestPoint2D {
 
 /**
  * The {@code GrahamScan} data type provides methods for computing the
- * convex hull of a set of <em>n</em> points in the plane.
+ * convex hull of a setWithoutDup of <em>n</em> points in the plane.
  * <p>
  * The implementation uses the Graham-Scan convex hull algorithm.
  * It runs in O(<em>n</em> log <em>n</em>) time in the worst case
