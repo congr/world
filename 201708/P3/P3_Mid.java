@@ -8,7 +8,7 @@ import java.util.Scanner;
  */
 public class P3_Mid {
     public static void main(String[] args) throws Exception {
-        String inFilename = (args != null && args.length > 0) ? args[0] : "201708/P3/Set2.in"; // path from root
+        String inFilename = (args != null && args.length > 0) ? args[0] : "201708/P3/input002.txt"; // path from root
         File inFile = new File(inFilename);
         File outFile = new File(inFilename.replace("in", "out"));
         FileWriter wr = new FileWriter(outFile);
