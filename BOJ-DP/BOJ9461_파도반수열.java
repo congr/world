@@ -16,6 +16,14 @@ public class BOJ9461_파도반수열 {
         int M = 100;
         long[] D = new long[M + 1];
         D[0] = D[1] = D[2] = 1;
+
+        // D[N] = D[N-1] + D[N-5] 으로 해도 된다 대신 D[3], D[4]도 2로 초기화필요
+        //D[3] = D[4] = 2;
+        //for (int i = 5; i <= M ; i++) {
+        //    D[i] = D[i-1] + D[i-5];
+        //}
+
+        // D[N] = D[N-2] + D[N-3]
         for (int i = 3; i <= M; i++) {
             D[i] = D[i - 2] + D[i - 3];
         }
