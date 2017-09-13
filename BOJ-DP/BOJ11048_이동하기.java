@@ -9,6 +9,29 @@ public class BOJ11048_이동하기 {
 
         int N = sc.nextInt();
         int M = sc.nextInt();
+        int[][] A = new int[N + 1][M + 1];
+        int[][] D = new int[N + 1][M + 1];
+        
+        for (int i = 1; i <= N; i++) {
+            for (int j = 1; j <= M; j++) {
+                A[i][j] = sc.nextInt();
+            }
+        }
+        
+        for (int i = 1; i <= N; i++) {
+            for (int j = 1; j <= M; j++) {
+                D[i][j] = Math.max (D[i-1][j-1], Math.max(D[i-1][j], D[i][j-1])) + A[i][j]; 
+            }
+        }
+
+        System.out.println(D[N][M]);
+    }
+    
+    /*public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int N = sc.nextInt();
+        int M = sc.nextInt();
         int[][] A = new int[N][M];
         int[][] D = new int[N][M];
 
@@ -35,5 +58,5 @@ public class BOJ11048_이동하기 {
     static boolean insideTable(int i, int j, int N, int M) {
         if (i >= 0 && i < N && j >= 0 && j < M) return true;
         else return false;
-    }
+    }*/
 }

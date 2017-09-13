@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -14,12 +15,11 @@ public class BOJ2011_암호코드 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        String S = " " + sc.next(); // 25114
+        String S = " " + sc.next(); // " "25114
         int N = S.length();
         int[] D = new int[N + 1];
 
         D[1] = 1;
-
         for (int i = 2; i <= N; i++) {
             int s1 = S.charAt(i - 2) - 48; // 10자리, 48 is '0'
             int s2 = S.charAt(i - 1) - 48; // 1자리
@@ -33,8 +33,24 @@ public class BOJ2011_암호코드 {
 
             D[i] %= 1000000;
         }
+        System.out.println(Arrays.toString(D));
 
-        //System.out.println(Arrays.toString(D));
-        System.out.println(D[N]);
+        //String S = "" + sc.next();
+        //int N = S.length();
+        D = new int[N + 1];
+        D[1] = 1;
+        for (int i = 2; i <= N; i++) {
+            String str = S.charAt(i - 2) + "" + S.charAt(i - 1);
+            int num = Integer.parseInt(str.trim());
+
+            if (num >= 10 && num <= 26) // !! A가 1이면 Z는 26
+                D[i] += D[i - 2] % 1000000;
+
+            if (S.charAt(i - 1) != '0')
+                D[i] += D[i - 1] % 1000000;
+        }
+
+        System.out.println(Arrays.toString(D));
+        System.out.println(D[N] % 1000000);
     }
 }

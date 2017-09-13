@@ -26,6 +26,7 @@ public class BOJ11053_가장긴증가하는부분수열 {
                     D[i] = Math.max(D[i], D[j] + 1);
             }
 
+            //System.out.println(Arrays.toString(D));
             longest = Math.max(longest, D[i]);
         }
 

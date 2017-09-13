@@ -27,12 +27,12 @@ public class BOJ1912_연속합 {
         D[0] = A[0];
         for (int i = 1; i < N; i++) {
             D[i] = D[i - 1] + A[i];
-            if (D[i] < 0) D[i] = 0;
+            if (D[i] < 0) D[i] = 0; // 합한 결과가 0 보다 작다면 0으로 채우고 다음수열에서 합산을 다시 시작
             
             max = Math.max(max, D[i]);
         }
         
-        //System.out.println(Arrays.toString(D));
+        System.out.println(Arrays.toString(D));
         
         if (max == 0) max = amax;   // !!! 이런 지저분한 코드 넣은 이유는,, 문제에서 숫자를 단 하나는 꼭 포함해야 한다고 했는데 그 숫자가 음수라면 최저 음수를 출력해야 함
         System.out.println(max);
