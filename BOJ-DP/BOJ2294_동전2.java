@@ -27,11 +27,10 @@ public class BOJ2294_동전2 {
         Arrays.fill(D, 987654321);
 
         D[0] = 0; // 최소 동전 개수
-        for (int i = 0; i < N; i++) {
-            int V = A[i]; // 동전 액면가
-            for (int j = 0; j <= K; j++) { // K 는 총합, j는 서브 합
-                if (j - V >= 0)
-                    D[j] = Math.min(D[j], D[j - V] + 1); // j를 만드는 방법 + j-v를 만드는 방법
+        for (int n = 0; n < N; n++) { // 동전 액면가
+            for (int k = 0; k <= K; k++) { // K 는 총합, k는 서브 합
+                if (k - A[n] >= 0)
+                    D[k] = Math.min(D[k], D[k - A[n]] + 1); // A[n] 동전 1개 + k - A[n]를 만드는 동전 최소 개수
             }
         }
 

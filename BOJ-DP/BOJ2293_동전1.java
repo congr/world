@@ -17,17 +17,33 @@ public class BOJ2293_동전1 {
         }
 
         int[] D = new int[K + 1];
-        Arrays.fill(D, -1);
+        D[0] = 1;
 
-        for (int i = 1; i < N; i++) {
-            int V = A[i]; // 동전 액면가
+        // 1 + 1 + 2 와 1 + 2 + 1는 같다
+        for (int i = 0; i < N; i++) {
             for (int j = 0; j <= K; j++) { // K 는 총합, j는 서브 합
-                if (j - V >= 0)
-                    D[j] += D[j - V]; // j를 만드는 방법 + j-v를 만드는 방법
+                if (j - A[i] >= 0)
+                    D[j] += D[j - A[i]];
             }
         }
 
-        //System.out.println(Arrays.toString(D));
+        // i, j가 헷갈린다면
+        //for (int n = 0; n < N; n++) {
+        //    for (int k = 0; k <= K; k++) {
+        //        if (k - A[n] >= 0)
+        //            D[k] += D[k - A[n]];
+        //    }
+        //}
+
+        // 1 + 1 + 2 는 안됨 1을 한번만 쓴다면
+        //for (int n = 0; n < N; n++) {
+        //    for (int k = K; k >= A[n]; k--) {
+        //        if (k - A[n] >= 0)
+        //            D[k] += D[k - A[n]];
+        //    }
+        //}
+
+        System.out.println(Arrays.toString(D));
         System.out.println(D[K]);
     }
 }

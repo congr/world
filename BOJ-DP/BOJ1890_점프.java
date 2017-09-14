@@ -16,22 +16,20 @@ public class BOJ1890_점프 {
 
         int N = sc.nextInt();
         int[][] A = new int[N][N];
+        long[][] D = new long[N][N];
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
                 A[i][j] = sc.nextInt();
             }
         }
 
-        long[][] D = new long[N][N]; // !!! int로 하면 overflow, 경로의 개수는 2^63 -1 보다 작거나 같다라고 나와있음
         D[0][0] = 1;
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
-                if (D[i][j] > 0 && A[i][j] > 0) { // !!! A[i][j] 인 경우 더 진행할 수 없다. 이 조건절이 빠지면 inside table일 경우 계속 더하게 됨
-                    int k = A[i][j];
-                    if (insideTable(i + k, j, N))
-                        D[i + k][j] += D[i][j]; // !!! (i, j)까지 올 수 있는 방법을 다음 도착 지점에 계속 더해 줘야한다
-                    if (insideTable(i, j + k, N))
-                        D[i][j + k] += D[i][j];
+                int k = A[i][j];
+                if (k > 0) {
+                    if (i + k < N) D[i + k][j] += D[i][j];
+                    if (j + k < N) D[i][j + k] += D[i][j];
                 }
             }
         }
@@ -41,6 +39,37 @@ public class BOJ1890_점프 {
         //}
         System.out.println(D[N - 1][N - 1]);
     }
+
+    //public static void main(String[] args) {
+    //    Scanner sc = new Scanner(System.in);
+    //
+    //    int N = sc.nextInt();
+    //    int[][] A = new int[N][N];
+    //    for (int i = 0; i < N; i++) {
+    //        for (int j = 0; j < N; j++) {
+    //            A[i][j] = sc.nextInt();
+    //        }
+    //    }
+    //
+    //    long[][] D = new long[N][N]; // !!! int로 하면 overflow, 경로의 개수는 2^63 -1 보다 작거나 같다라고 나와있음
+    //    D[0][0] = 1;
+    //    for (int i = 0; i < N; i++) {
+    //        for (int j = 0; j < N; j++) {
+    //            if (D[i][j] > 0 && A[i][j] > 0) { // !!! A[i][j] 인 경우 더 진행할 수 없다. 이 조건절이 빠지면 inside table일 경우 계속 더하게 됨
+    //                int k = A[i][j];
+    //                if (insideTable(i + k, j, N))
+    //                    D[i + k][j] += D[i][j]; // !!! (i, j)까지 올 수 있는 방법을 다음 도착 지점에 계속 더해 줘야한다
+    //                if (insideTable(i, j + k, N))
+    //                    D[i][j + k] += D[i][j];
+    //            }
+    //        }
+    //    }
+    //
+    //    //for (int i = 0; i < N; i++) {
+    //    //    System.out.println(Arrays.toString(D[i]));
+    //    //}
+    //    System.out.println(D[N - 1][N - 1]);
+    //}
 
     static boolean insideTable(int i, int j, int N) {
         if (i >= 0 && i < N && j >= 0 && j < N) return true;
