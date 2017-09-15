@@ -9,7 +9,7 @@ public class P2_Main {
 	static int N;
 
 	public static void main(String[] args) throws Exception {
-		String inFilename = (args != null && args.length > 0) ? args[0] : "201606/P2/sample.in"; // path from root
+		String inFilename = (args != null && args.length > 0) ? args[0] : "201606/P2/input002.txt"; // path from root
 		File inFile = new File(inFilename);
 		File outFile = new File(inFilename.replace("in", "out"));
 		FileWriter wr = new FileWriter(outFile);
@@ -55,9 +55,9 @@ public class P2_Main {
 		}
 
 		// 반대방향일 경우 비교, -1 은 같지 않음.
-		System.out.println(Arrays.toString(aRo));
-		System.out.println(Arrays.toString(bRo));
-		System.out.println(Arrays.toString(cRo));
+		//System.out.println(Arrays.toString(aRo));
+		//System.out.println(Arrays.toString(bRo));
+		//System.out.println(Arrays.toString(cRo));
 		int kmp = kmpMatcher(cRo, bRo);
 
 		// 같은 방향 경우 비교
