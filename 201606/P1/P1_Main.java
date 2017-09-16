@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class P1_Main {
     public static void main(String[] args) throws Exception {
-        String inFilename = (args != null && args.length > 0) ? args[0] : "201606/P1/input003.txt"; // path from root
+        String inFilename = (args != null && args.length > 0) ? args[0] : "201606/P1/sample.in"; // path from root
         File inFile = new File(inFilename);
         File outFile = new File(inFilename.replace("in", "out"));
         FileWriter wr = new FileWriter(outFile);
@@ -31,6 +31,8 @@ public class P1_Main {
             
             int root = tree.getRoot();
             int ret = tree.height(root); // root
+            int diameter = tree.getDiameter(root);
+            System.out.println("diameter " + diameter);
             wr.write(ret + "\n");
             System.out.println(ret);
         }
@@ -76,6 +78,36 @@ public class P1_Main {
             }
             
             return h;
+        }
+        
+        // 트리의 최장 경로
+        // 트리의 높이 혹은 leaf노드 가장 긴 두개 +1
+        int longest;
+        
+        // return tree height, not diameter
+        private int heightForDiameter(int node) {
+            if (tree[node].children.isEmpty()) return 1;
+            
+            // store children's heights into hlist,
+            // get longest path size among children's subtree
+            ArrayList<Integer> hlist = new ArrayList<>();
+            for (int child : tree[node].children) {
+                hlist.add(heightForDiameter(child));
+            }
+            if (hlist.isEmpty()) return 0; // ***** if there's no children, it means leaf node, just return 0
+            
+            hlist.sort((a, b) -> -a + b); // 10, 9, 8 order
+            
+            if (hlist.size() >= 2)
+                longest = Math.max(longest, hlist.get(0) + hlist.get(1) + 1); // 가장 긴 잎 두개 + 1
+            
+            return hlist.get(0) + 1; // return the biggest height among children's subtree
+        }
+        
+        // tree diameter 최장 경로
+        int getDiameter(int root) {
+            int height = heightForDiameter(root);
+            return Math.max(longest, height); // 잎에서 다른 잎길이와 트리 높이 중 큰 것이 diameter가 된다
         }
     }
     
