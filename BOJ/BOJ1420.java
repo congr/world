@@ -46,7 +46,7 @@ public class BOJ1420 {
                     ff.setCapa(cell(y, x), cell(y, x) + 1, 1);// u -> u' 간선을 미리 연결
                 }
                 
-                // 상하좌우 빈칸이나 싱크를 찾아서 capa set
+                // 상하좌우 빈칸이나 싱크를 찾아서 capa setWithoutDup
                 int dx[] = new int[]{-1, 0, 1, 0};
                 int dy[] = new int[]{0, -1, 0, 1};
                 

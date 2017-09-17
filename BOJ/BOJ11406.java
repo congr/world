@@ -11,7 +11,7 @@ public class BOJ11406 {
         int N = sc.nextInt();               // 사람 수
         int M = sc.nextInt();               // 온라인 서점 수
         
-        MaximumFlow mf = new MaximumFlow(N + M + 2, N + M, N + M + 1);
+        MaximumFlowList mf = new MaximumFlowList(N + M + 2, N + M, N + M + 1);
         
         for (int i = 0; i < N; i++) {       // 각 사람이 살려고 하는 책의 개수
             int c = sc.nextInt();
@@ -34,7 +34,7 @@ public class BOJ11406 {
     }
 }
 
-class MaximumFlow {
+class MaximumFlowList {
     class Edge {
         int to, capacity;
         Edge rev;
@@ -49,7 +49,7 @@ class MaximumFlow {
     ArrayList<Edge>[] graph;
     boolean[] check;
     
-    MaximumFlow(int n, int source, int sink) {
+    MaximumFlowList(int n, int source, int sink) {
         this.n = n;
         this.source = source;
         this.sink = sink;

@@ -7,7 +7,7 @@ import java.util.*;
 // MAX_VALUE flow를 돌린 후에 더이상 u->v로 가는 capa가 남은 간선이 없다면 crucial link이다
 // flow 돌린 후 dfs로 남은 경로가 있는지 다 확인해서 더이상 capa가 남은 간선이 없는 카운트를 출력한다
 // 이를 위해 edge를 별도로 array나 list에 보관해야한다 edge도 from/to를 받도록 수정
-public class BOJ5651_MaximumFlow {
+public class BOJ5651_CrucialLink {
     public static void main(String[] args) { // class Solution
         Scanner sc = new Scanner(System.in);
         
@@ -17,7 +17,7 @@ public class BOJ5651_MaximumFlow {
             int N = sc.nextInt();
             int M = sc.nextInt();
             
-            MaximumFlow mf = new MaximumFlow(N + 1, 1, N);
+            MaximumFlowListCrucialLink mf = new MaximumFlowListCrucialLink(N + 1, 1, N);
             for (int i = 0; i < M; i++) {
                 int u = sc.nextInt();
                 int v = sc.nextInt();
@@ -30,7 +30,7 @@ public class BOJ5651_MaximumFlow {
         }
     }
     
-    static class MaximumFlow {
+    static class MaximumFlowListCrucialLink {
         class Edge {
             int from;
             int to, capacity;
@@ -48,7 +48,7 @@ public class BOJ5651_MaximumFlow {
         boolean[] check;
         ArrayList<Edge> edges;
         
-        MaximumFlow(int n, int source, int sink) {
+        MaximumFlowListCrucialLink(int n, int source, int sink) {
             this.n = n;
             this.source = source;
             this.sink = sink;
