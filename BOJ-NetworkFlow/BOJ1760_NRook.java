@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Created by cutececil on 2017. 4. 26..
  */
-public class BOJ1760_Bipartite {
+public class BOJ1760_NRook {
     public static void main(String[] args) { // class Solution
         Scanner sc = new Scanner(System.in);
 

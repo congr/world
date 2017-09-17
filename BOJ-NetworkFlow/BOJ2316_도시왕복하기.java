@@ -7,7 +7,7 @@ import java.util.Scanner;
  * Created by cutececil on 2017. 4. 4..
  */
 // 도시 왕복하기
-public class BOJ2316 {
+public class BOJ2316_도시왕복하기 {
     public static void main(String[] args) { // class Solution
         Scanner in = new Scanner(System.in);
         

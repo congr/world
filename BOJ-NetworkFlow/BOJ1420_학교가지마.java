@@ -7,7 +7,7 @@ import java.util.Scanner;
  * Created by cutececil on 2017. 4. 5..
  */
 // min-cut : vertex in-out -> min vertex cut
-public class BOJ1420 {
+public class BOJ1420_학교가지마 {
     public static void main(String[] args) { // class Solution
         Scanner in = new Scanner(System.in);
         

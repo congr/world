@@ -6,7 +6,7 @@ import java.util.*;
  * Created by cutececil on 2017. 4. 9..
  */
 // MCMF SPFA
-public class BOJ11405 {
+public class BOJ11405_책구매하기 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         

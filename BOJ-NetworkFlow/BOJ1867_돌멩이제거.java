@@ -5,7 +5,7 @@ import java.util.Scanner;
  * Created by cutececil on 2017. 4. 7..
  */
 // 이분그래프의 최대 매칭 개수 = minimum vertex cover
-public class BOJ1867 {
+public class BOJ1867_돌멩이제거 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         

@@ -7,7 +7,7 @@ import java.util.*;
  */
 // MCMF - 열혈강호5 (한사람은 한번에 한가지 일만 할 수 있다)
 // https://www.acmicpc.net/problem/11408
-public class BOJ11408 {
+public class BOJ11408_열혈강호5 {
     public static void main(String[] args) { // class Solution
         Scanner sc = new Scanner(System.in);
 

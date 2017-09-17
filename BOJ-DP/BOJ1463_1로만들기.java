@@ -4,7 +4,12 @@ import java.util.Scanner;
 /**
  * Created by cutececil on 2017. 4. 1..
  */
-public class BOJ1463 {
+/* 정수 X에 사용할 수 있는 연산은 다음과 같이 세 가지 이다.
+    X가 3으로 나누어 떨어지면, 3으로 나눈다.
+    X가 2로 나누어 떨어지면, 2로 나눈다.
+    1을 뺀다.
+*/
+public class BOJ1463_1로만들기 {
     static int dp[] = new int[1000000 + 1];
 
     public static void main(String[] args) { // class solution

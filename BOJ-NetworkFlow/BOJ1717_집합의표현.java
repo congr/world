@@ -4,7 +4,7 @@ import java.util.Scanner;
  * Created by cutececil on 2017. 4. 18..
  */
 // Union Find
-public class BOJ1717 {
+public class BOJ1717_집합의표현 {
     public static void main(String[] args) { // class Solution
         Scanner in = new Scanner(System.in);
 

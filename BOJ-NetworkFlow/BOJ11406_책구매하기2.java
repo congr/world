@@ -4,7 +4,7 @@ import java.util.*;
  * Created by cutececil on 2017. 4. 10..
  */
 // Maximum Flow
-public class BOJ11406 {
+public class BOJ11406_책구매하기2 {
     public static void main(String[] args) { // class Solution
         Scanner sc = new Scanner(System.in);
         

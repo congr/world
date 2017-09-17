@@ -4,7 +4,7 @@ import java.util.*;
  * Created by cutececil on 2017. 4. 3..
  */
 // 최대 유량 Edmond karp
-public class BOJ6086 { // Main class
+public class BOJ6086_최대유량 { // Main class
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 

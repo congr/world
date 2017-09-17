@@ -6,24 +6,24 @@ import java.util.Scanner;
  * Created by cutececil on 2017. 4. 25..
  */
 // https://gist.github.com/Baekjoon/689e5e3340bc7abe6b7e
-public class BOJ1733_Bipartite {
+public class BOJ1733_등번호 {
     public static void main(String[] args) { // class Solution
         Scanner sc = new Scanner(System.in);
 
         int N = sc.nextInt();
-        BipartiteList bi = new BipartiteList(1000000);
+        BipartiteList bi = new BipartiteList(1000001); // 등번호 최대값
         for (int i = 0; i < N; i++) {
             int left = sc.nextInt();
             int right = sc.nextInt();
-            bi.addEdge(i, left - 1);
-            bi.addEdge(i, right - 1);
+            bi.addEdge(i, left);
+            bi.addEdge(i, right);
         }
         int ans = bi.flow();
         if (ans != N) {
             System.out.println(-1);
         } else {
             for (int i = 0; i < N; i++) {
-                System.out.println(bi.matchL[i] + 1);
+                System.out.println(bi.matchL[i]);
             }
         }
     }
