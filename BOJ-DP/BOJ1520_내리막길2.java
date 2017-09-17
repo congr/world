@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -23,7 +24,10 @@ public class BOJ1520_내리막길2 {
         int[][] D = new int[N][M];
         boolean[][] V = new boolean[N][M]; // isVisited
         int cnt = go(0, 0, A, D, V, N, M);
-        
+    
+        for (int i = 0; i < N; i++) {
+            System.out.println(Arrays.toString(D[i]));
+        }
         System.out.println(cnt);
     }
     
