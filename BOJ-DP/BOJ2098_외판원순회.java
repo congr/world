@@ -5,7 +5,7 @@ import java.util.Scanner;
  */
 //https://www.acmicpc.net/problem/2098
 // 외판원 순회 문제로 N <= 16, 상태 다이나믹을 이용
-public class BOJ2098_DP {
+public class BOJ2098_외판원순회 {
     public static int MAX = 987654321;
 
     public static void main(String[] args) { // class Solution

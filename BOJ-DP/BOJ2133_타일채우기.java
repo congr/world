@@ -5,7 +5,7 @@ import java.util.Scanner;
  */
 //https://www.acmicpc.net/problem/2133
 // 2*1, 1*2 타일로 3*N크기의 벽을 채울 수 있는 방법의 가지수
-public class BOJ2133_DP {
+public class BOJ2133_타일채우기 {
     public static void main(String[] args) { // class Solution
         Scanner sc = new Scanner(System.in);
 

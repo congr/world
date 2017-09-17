@@ -12,7 +12,7 @@ import java.util.Scanner;
  D[i | (1<<k)] = D[i] + A[j][K]
  j는 i에서 켜져있는 발전소 k는 i에서 켜져있는 발전소
 */
-public class BOJ1102_DP {
+public class BOJ1102_발전소 {
     public static int MAX = 987654321;
 
     public static void main(String[] args) { // class Solution

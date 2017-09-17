@@ -12,7 +12,7 @@ https://www.acmicpc.net/problem/1562
     d[i + 1][j - 1][s | (1 << (j - 1))] += d[i][j][s];
 */
 
-public class BOJ1562_DP {
+public class BOJ1562_계단수 {
     public static long mod = 1000000000L;
 
     public static void main(String[] args) { // class Solution
