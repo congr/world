@@ -28,7 +28,7 @@ public class BOJ2749_피보나치수3 {
 
         long[] D = new long[P + 1];
         fibonacci(D, P, M);
-        System.out.println(D[(int) (N % P)] % M); // P[N] % M = P[N % P] % M
+        System.out.println(D[(int) (N % P)] % M); // D[N] % M = D[N % P] % M
     }
 
     // 주기는 1500000 - recursive는 stack overflow
