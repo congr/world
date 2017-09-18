@@ -27,6 +27,17 @@ public class BOJ2740_행렬곱셈 {
                 B[i][j] = sc.nextInt();
         }
 
+        int[][] C = multiplyMatrix(A, B, N, K, M);
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < K; j++) {
+                System.out.print(C[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    // 행렬 곱셈 N * M, M * K => N * K
+    static int[][] multiplyMatrix(int[][] A, int[][] B, int N, int K, int M) {
         int[][] C = new int[N][K];
         for (int n = 0; n < N; n++) {
             for (int k = 0; k < K; k++) {
@@ -35,12 +46,6 @@ public class BOJ2740_행렬곱셈 {
                 }
             }
         }
-
-        for (int i = 0; i < N; i++) {
-            for (int j = 0; j < K; j++) {
-                System.out.print(C[i][j] + " ");
-            }
-            System.out.println();
-        }
+        return C;
     }
 }
