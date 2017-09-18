@@ -82,6 +82,7 @@ public class P4_독재왕국 {
     /*
         Dijkstra, LCA
         g.dijkstra(start), dfs(start, start) -> lca(u, v)
+        g.getDist(u, v) - lca를 이용한 두정점간 거리
     */
     static class EdgeWeightedGraphLCA { // int or double?
         ArrayList<Edge>[] adjList;
