@@ -20,38 +20,11 @@ public class BOJ1967_트리의지름 {
 
         // 트리 지름 계산
         g.dijkstra(1); // 루트가 문제에서 1로 정의됨
-        int x = 0;
-        long distToRoot = 0;
-        for (int i = 1; i < g.distance.length; i++) {
-            if (distToRoot < g.distance[i]) {
-                distToRoot = g.distance[i];
-                x = i;
-            }
-        }
+        int x = g.getFarthestVertexIndex();
 
         g.dijkstra(x); // 루트에서 가장 먼점에서 시작해서, 이점에서 가장 먼 것이 트리 지름이 된다
-        long distToY = 0;
-        for (int i = 1; i < g.distance.length; i++) {
-            distToY = Math.max(distToY, g.distance[i]);
-        }
-
-        System.out.println(distToY);
-
-        //long[] copy = Arrays.copyOf(g.distance, g.distance.length);
-        //Arrays.sort(copy);
-        //long l1 = copy[N - 1], l2 = copy[N - 2];
-        //int u = 0, v = 0;
-        //for (int i = 1; i < g.distance.length; i++) {
-        //    if (g.distance[i] == l1) u = i;
-        //    else if (g.distance[i] == l2) v = i;
-        //}
-        //
-        //g.dfs(1, 1); // lca ready
-        ////int lca = g.lca(u, v);
-        //long distBetweenUV = g.getDist(u, v);
-        //long result = Math.max(distToRoot, distBetweenUV);
-
-        //System.out.println(result);
+        int y = g.getFarthestVertexIndex();
+        System.out.println(g.distance[y]);
     }
 
     /*
@@ -110,6 +83,18 @@ public class BOJ1967_트리의지름 {
             }
 
             return distance[V - 1];                             // distance[V-1]에 0부터 마지막점까지의 cost가 저장되어 있음.
+        }
+
+        int getFarthestVertexIndex() {
+            int v = 0;
+            long d = 0;
+            for (int i = 1; i < V; i++) {
+                if (d < distance[i]) {
+                    d = distance[i];
+                    v = i;
+                }
+            }
+            return v;
         }
 
         // lca를 구하기 위해 dfs를 한번 수행하여 tin - tout을 기록한다
