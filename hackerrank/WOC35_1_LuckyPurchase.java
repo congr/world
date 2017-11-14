@@ -8,10 +8,10 @@ public class WOC35_1_LuckyPurchase {
         Scanner in = new Scanner(System.in);
         int m = in.nextInt();
         int best = 987654321;
-        String result = "-1";
+        String result = "";
         for (int a0 = 0; a0 < m; a0++) {
             String s = in.next();
-            int n = in.nextInt();
+            String n = in.next(); // solution sample error
             int len = getLuckyLen(n);
             if (best > len) {
                 best = len;
@@ -25,9 +25,9 @@ public class WOC35_1_LuckyPurchase {
         in.close();
     }
     
-    public static int getLuckyLen(int n) {
+    public static int getLuckyLen(String s) {
         int cnt4 = 0, cnt7 = 0;
-        String s = n + "";
+        //String s = String.valueOf(n);
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             if (c == '4') cnt4++;
