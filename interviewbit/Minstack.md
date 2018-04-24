@@ -1,4 +1,4 @@
-class Solution {
+class Minstack {
     Stack eleSt = new Stack(), minSt = new Stack();
     
     public void push(int x) {
