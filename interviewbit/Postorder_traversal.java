@@ -11,7 +11,7 @@
  *     }
  * }
  */
-public class Solution {
+public class Postorder_traversal {
     Stack<TreeNode> st = new Stack<>();
     public ArrayList<Integer> postorderTraversal(TreeNode A) {
         ArrayList<Integer> al = new ArrayList<>();
