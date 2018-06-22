@@ -251,6 +251,15 @@ class Point2D implements Comparable<Point2D> {
         return 0;
     }
 
+    // convexhull 안된다
+    //public int compareTo(Point2D that) {
+    //    if (this.x < that.x) return -1;
+    //    if (this.x > that.x) return +1;
+    //    if (this.y < that.y) return -1;
+    //    if (this.y > that.y) return +1;
+    //    return 0;
+    //}
+
     /**
      * Compares two points by polar angle (between 0 and 2&pi;) with respect to this point.
      *

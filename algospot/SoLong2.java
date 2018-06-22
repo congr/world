@@ -144,7 +144,7 @@ public class SoLong2 {
 
                 children = t.children;
 
-                //set leaf node
+                //setWithoutDup leaf node
                 if (i == word.length() - 1) {
                     t.isLeaf = true;
                     t.id = index;

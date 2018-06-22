@@ -1,11 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/Test/ThreadTest.java" line="1" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b96e934b-436a-4cae-8b33-c30c33496cf5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackerrank/WOC32_CircularWalk.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackerrank/WOC32_Duplication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackerrank/WOC32_FightTheMonsters.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/BOJ-DP/BOJ1149_RGB거리.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/BOJ-DP/BOJ1309_동물원.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/BOJ-DP/BOJ1932_숫자삼각형.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/BOJ-DP/BOJ1937_욕심쟁이판다.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/CtCI/Ch01. Arrays and Strings/Q01_03_URLify.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/CtCI/Ch01. Arrays and Strings/Q01_04_PalindromePermutation.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/Permutation.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/ThreadTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pattern/CallCenter.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pattern/ChainOfResponsibility.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sorting/Bubble.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sorting/Quick.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sorting/merge.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sorting/selection.java" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/201705/P4/P4_Repeat.java" afterPath="$PROJECT_DIR$/201705/P4/P4_Repeat.java" />
+      <change beforePath="$PROJECT_DIR$/201705/P4/P4_Repeat2.java" afterPath="$PROJECT_DIR$/201705/P4/P4_Repeat2.java" />
+      <change beforePath="$PROJECT_DIR$/201705/P4/sample.in" afterPath="$PROJECT_DIR$/201705/P4/sample.in" />
+      <change beforePath="$PROJECT_DIR$/201705/P5/P5_T2.java" afterPath="$PROJECT_DIR$/201705/P5/P5_T2.java" />
+      <change beforePath="$PROJECT_DIR$/201705/P5/P5_Tsunami.java" afterPath="$PROJECT_DIR$/201705/P5/P5_Tsunami.java" />
+      <change beforePath="$PROJECT_DIR$/201705/P5/P5_해일.java" afterPath="$PROJECT_DIR$/201705/P5/P5_해일.java" />
+      <change beforePath="$PROJECT_DIR$/201705/P5/Set3.in" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/201705/P5/Set3.in 3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/201705/P5/Set3_keep.in" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/201705/P5/lsample.in" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/201705/P5/osample.in" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/201705/P5/sample.in" afterPath="$PROJECT_DIR$/201705/P5/sample.in" />
+      <change beforePath="$PROJECT_DIR$/201709/P1/P1_xxx.java" afterPath="$PROJECT_DIR$/201709/P1/P1_xxx.java" />
+      <change beforePath="$PROJECT_DIR$/BOJ-DP/BOJ2579_계단오르기.java" afterPath="$PROJECT_DIR$/BOJ-DP/BOJ2579_계단오르기.java" />
+      <change beforePath="$PROJECT_DIR$/CtCI/Ch01. Arrays and Strings/Q01_01_Is_Unique.java" afterPath="$PROJECT_DIR$/CtCI/Ch01. Arrays and Strings/Q01_01_Is_Unique.java" />
+      <change beforePath="$PROJECT_DIR$/CtCI/Ch01. Arrays and Strings/Q01_02_CheckPermutation.java" afterPath="$PROJECT_DIR$/CtCI/Ch01. Arrays and Strings/Q01_02_CheckPermutation.java" />
+      <change beforePath="$PROJECT_DIR$/Main.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test/LowerBound.java" afterPath="$PROJECT_DIR$/Test/LowerBound.java" />
+      <change beforePath="$PROJECT_DIR$/Test/Point2D.java" afterPath="$PROJECT_DIR$/Test/Point2D.java" />
+      <change beforePath="$PROJECT_DIR$/algospot/FamilyTree.java" afterPath="$PROJECT_DIR$/algospot/FamilyTree.java" />
+      <change beforePath="$PROJECT_DIR$/algospot/HANOI4.java" afterPath="$PROJECT_DIR$/algospot/HANOI4.java" />
+      <change beforePath="$PROJECT_DIR$/algospot/HANOI4B.java" afterPath="$PROJECT_DIR$/algospot/HANOI4B.java" />
+      <change beforePath="$PROJECT_DIR$/algospot/SoLong2.java" afterPath="$PROJECT_DIR$/algospot/SoLong2.java" />
+      <change beforePath="$PROJECT_DIR$/algospot/SortGame.java" afterPath="$PROJECT_DIR$/algospot/SortGame.java" />
+      <change beforePath="$PROJECT_DIR$/euler/E174_SqaureLaminae.java" afterPath="$PROJECT_DIR$/euler/E174_SqaureLaminae.java" />
+      <change beforePath="$PROJECT_DIR$/hackerrank/SpanningTreeFraction.java" afterPath="$PROJECT_DIR$/hackerrank/SpanningTreeFraction.java" />
+      <change beforePath="$PROJECT_DIR$/hackerrank/SplitPlane.java" afterPath="$PROJECT_DIR$/hackerrank/SplitPlane.java" />
+      <change beforePath="$PROJECT_DIR$/hackerrank/WOC33_3_TransformToPalindrome.java" afterPath="$PROJECT_DIR$/hackerrank/WOC33_3_TransformToPalindrome.java" />
+      <change beforePath="$PROJECT_DIR$/interviewbit/Minstack.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/interviewbit/Postorder_traversal.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/settings.jar" afterPath="$PROJECT_DIR$/settings.jar" />
+      <change beforePath="$PROJECT_DIR$/world.iml" afterPath="$PROJECT_DIR$/world.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,126 +63,128 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/world$ChainOfResponsibility.coverage" NAME="ChainOfResponsibility Coverage Results" MODIFIED="1528353923380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/world$P5_Tsunami.coverage" NAME="P5_Tsunami Coverage Results" MODIFIED="1495326327609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/world$E81_PathSum_TwoWays.coverage" NAME="E81_PathSum_TwoWays Coverage Results" MODIFIED="1490154874089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="world" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BISHOPS.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/algospot/BISHOPS.java">
+      <file leaf-file-name="ChainOfResponsibility.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pattern/ChainOfResponsibility.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1695">
-              <caret line="113" column="34" lean-forward="false" selection-start-line="113" selection-start-column="34" selection-end-line="113" selection-end-column="42" />
+            <state relative-caret-position="0">
+              <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+              <folding>
+                <element signature="e#1227#1228#0" expanded="true" />
+                <element signature="e#1279#1280#0" expanded="true" />
+                <element signature="e#1712#1713#0" expanded="true" />
+                <element signature="e#1754#1755#0" expanded="true" />
+                <element signature="e#1820#1821#0" expanded="true" />
+                <element signature="e#1902#1903#0" expanded="true" />
+                <element signature="e#2011#2012#0" expanded="true" />
+                <element signature="e#2053#2054#0" expanded="true" />
+                <element signature="e#2119#2120#0" expanded="true" />
+                <element signature="e#2198#2199#0" expanded="true" />
+                <element signature="e#2305#2306#0" expanded="true" />
+                <element signature="e#2347#2348#0" expanded="true" />
+                <element signature="e#2413#2414#0" expanded="true" />
+                <element signature="e#2483#2484#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LeetCode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Test/LeetCode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CJ201609_ConvexQuadrilateral.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/201609/P3/CJ201609_ConvexQuadrilateral.java">
+      <file leaf-file-name="routine.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Test/routine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="43" lean-forward="false" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+            <state relative-caret-position="424">
+              <caret line="36" column="22" lean-forward="true" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CJ201609_P3.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/201609/P3/CJ201609_P3.java">
+      <file leaf-file-name="CoinChange2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Test/CoinChange2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="56" column="17" lean-forward="false" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+            <state relative-caret-position="360">
+              <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WOC32_Duplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hackerrank/WOC32_Duplication.java">
+      <file leaf-file-name="GFG.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Test/GFG.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WOC32_FightTheMonsters.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hackerrank/WOC32_FightTheMonsters.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Arrays.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="142" column="23" lean-forward="false" selection-start-line="142" selection-start-column="23" selection-end-line="142" selection-end-column="23" />
-              <folding>
-                <element signature="e#5027#5028#0" expanded="true" />
-                <element signature="e#5098#5099#0" expanded="true" />
-                <element signature="e#88329#88330#0" expanded="true" />
-                <element signature="e#88386#88387#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WOC32_CircularWalk.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hackerrank/WOC32_CircularWalk.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ZeroOneGame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hackerrank/ZeroOneGame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            <state relative-caret-position="11">
+              <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="String.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/lang/String.java">
+      <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="3097" column="25" lean-forward="false" selection-start-line="3097" selection-start-column="25" selection-end-line="3097" selection-end-column="25" />
-              <folding>
-                <element signature="e#121727#121728#0" expanded="true" />
-                <element signature="e#121769#121770#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="174">
+              <caret line="687" column="19" lean-forward="false" selection-start-line="687" selection-start-column="19" selection-end-line="687" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FindTheRunningMedian.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hackerrank/FindTheRunningMedian.java">
+      <file leaf-file-name="BOJ1717_집합의표현.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BOJ-NetworkFlow/BOJ1717_집합의표현.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="188">
+              <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dictionary.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/algospot/Dictionary.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="110" column="17" lean-forward="true" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BOJ2252_줄세우기.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BOJ-Graph/BOJ2252_줄세우기.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="45" column="14" lean-forward="true" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BOJ1967_트리의지름.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BOJ-Graph/BOJ1967_트리의지름.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -152,43 +201,49 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Integer.MAX_VALUE</find>
-      <find>st</find>
-      <find>println</find>
-      <find>RangeSearch</find>
-      <find>range search</find>
-      <find>MA</find>
-      <find>M</find>
-      <find>Ma</find>
-      <find>Maxi</find>
-      <find>Maximum</find>
-      <find>MaximumFL</find>
-      <find>MaximumFLow</find>
-      <find>g</find>
-      <find>gcd</find>
-      <find>bi</find>
-      <find>binsear</find>
-      <find>binsea</find>
-      <find>binse</find>
-      <find>bins</find>
-      <find>binSear</find>
-      <find>binSea</find>
-      <find>binS</find>
-      <find>bin</find>
-      <find>bina</find>
-      <find>binar</find>
-      <find>binary</find>
-      <find>binaryS</find>
-      <find>binarySear</find>
-      <find>binarySearc</find>
+      <find>prim</find>
+      <find>LinkedHashMAp</find>
+      <find>removeEldestEntryremoveEldestEntry</find>
+      <find>removeEldestEntry</find>
+      <find>copy</find>
+      <find>map</find>
       <find>binarySearch</find>
+      <find>math.pow</find>
+      <find>permutation</find>
+      <find>permut</find>
+      <find>precalc</find>
+      <find>sort</find>
+      <find>priority</find>
+      <find>dijkstra</find>
+      <find>clone</find>
+      <find>hashset</find>
+      <find>arrayList</find>
+      <find>remove</find>
+      <find>BitSet</find>
+      <find>collections.sort</find>
+      <find>getValue</find>
+      <find>Collections.sort</find>
+      <find>permutat</find>
+      <find>permu</find>
+      <find>permutations</find>
+      <find>shortest</find>
+      <find>edge</find>
+      <find>union</find>
+      <find>insideGRid</find>
+      <find>topolo</find>
     </findStrings>
     <replaceStrings>
       <replace>INF</replace>
+      <replace>anyPt</replace>
+      <replace>farDist</replace>
+      <replace>multiply</replace>
+      <replace>Tup</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$USER_HOME$/HybridProjects/cutePuppyPics/plugin_src/cordova-kakaotalk</dir>
       <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/Test</dir>
+      <dir>$PROJECT_DIR$/sorting</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -202,57 +257,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/201606/P4/sample.in" />
-        <option value="$PROJECT_DIR$/201606/P4/CJ201606_P4.java" />
-        <option value="$PROJECT_DIR$/201606/P4/problem_4_Set4.out" />
-        <option value="$PROJECT_DIR$/201606/P5/CJ201606_P5.java" />
-        <option value="$PROJECT_DIR$/BOJ/BOJ6086.java" />
-        <option value="$PROJECT_DIR$/BOJ/BOJ2316.java" />
-        <option value="$PROJECT_DIR$/BOJ/BOJ1420.java" />
-        <option value="$PROJECT_DIR$/algospot/BISHOPS.java" />
-        <option value="$PROJECT_DIR$/BOJ/BOJ11046.java" />
-        <option value="$PROJECT_DIR$/BOJ/BOJ11406.java" />
-        <option value="$PROJECT_DIR$/BOJ/BOJ11405.java" />
-        <option value="$PROJECT_DIR$/hackerrank/BeautifulWord.java" />
-        <option value="$PROJECT_DIR$/BOJ/BOJ11407.java" />
-        <option value="$PROJECT_DIR$/BOJ/BOJ11408.java" />
-        <option value="$PROJECT_DIR$/BOJ/BOJ11409.java" />
-        <option value="$PROJECT_DIR$/hackerrank/ZeroOneGame.java" />
-        <option value="$PROJECT_DIR$/hackerrank/SpanningTreeFraction.java" />
-        <option value="$PROJECT_DIR$/Test/GraphClient.java" />
-        <option value="$PROJECT_DIR$/Test/GraphGenerator.java" />
-        <option value="$PROJECT_DIR$/Test/pointdata.txt" />
-        <option value="$PROJECT_DIR$/Test/Point2DRandom.java" />
-        <option value="$PROJECT_DIR$/Test/RectDraw.java" />
-        <option value="$PROJECT_DIR$/201609/CJ201609_P3.java" />
-        <option value="$PROJECT_DIR$/algospot/DRUNKEN.java" />
-        <option value="$PROJECT_DIR$/Test/sample.in" />
-        <option value="$PROJECT_DIR$/Test/TestPoint2D.java" />
-        <option value="$PROJECT_DIR$/201609/P3/sample.in" />
-        <option value="$PROJECT_DIR$/201609/P3/CJ201609_P3.java" />
-        <option value="$PROJECT_DIR$/201609/P3/main.cpp" />
-        <option value="$PROJECT_DIR$/Test/Point2D.java" />
-        <option value="$PROJECT_DIR$/201609/P3/CJ201609_P3_BF.java" />
-        <option value="$PROJECT_DIR$/201609/P3/CJ201609_ConvexRectangle.java" />
-        <option value="$PROJECT_DIR$/201609/P3/CJ201609_ConvexQuadrilateral.java" />
-        <option value="$PROJECT_DIR$/201608/P4/Main.cpp" />
-        <option value="$PROJECT_DIR$/201609/P2/sample.in" />
-        <option value="$PROJECT_DIR$/hackerrank/SplitPlane.java" />
+        <option value="$PROJECT_DIR$/201709/P5/P5_small.java" />
+        <option value="$PROJECT_DIR$/201709/P5/P5_xSmall.java" />
+        <option value="$PROJECT_DIR$/algospot/Gallery.java" />
+        <option value="$PROJECT_DIR$/201709/P1/sample.in" />
+        <option value="$PROJECT_DIR$/201709/P1/P1_xxx.java" />
+        <option value="$PROJECT_DIR$/201709/P4/Set1.out" />
+        <option value="$PROJECT_DIR$/201709/P4/P4_xxx.java" />
+        <option value="$PROJECT_DIR$/201709/P4/sample.in" />
+        <option value="$PROJECT_DIR$/201709/P4/P4_절단중심_Set1.java" />
+        <option value="$PROJECT_DIR$/201709/P4/P4_절단중심_Set2.java" />
+        <option value="$PROJECT_DIR$/201709/P2/P2_여행_Set2.java" />
+        <option value="$PROJECT_DIR$/201709/P2/P2_여행.java" />
+        <option value="$PROJECT_DIR$/KOI-Intermediate/최대값_S.java" />
+        <option value="$PROJECT_DIR$/KOI-Intermediate/KOI_최대값_S.java" />
+        <option value="$PROJECT_DIR$/KOI-Intermediate/KOI_3의배수게임.java" />
+        <option value="$PROJECT_DIR$/KOI-Intermediate/KOI_두더지굴_S.java" />
+        <option value="$PROJECT_DIR$/KOI-Intermediate/KOI_두더지굴_L.java" />
+        <option value="$PROJECT_DIR$/KOI-Intermediate/KOI_NQueen.java" />
+        <option value="$PROJECT_DIR$/KOI-Intermediate/KOI_미로찾기.java" />
+        <option value="$PROJECT_DIR$/CtCI/Ch01. Arrays and Strings/Q01_01_Is_Unique.java" />
+        <option value="$PROJECT_DIR$/CtCI/Ch01. Arrays and Strings/Q01_02_CheckPermutation.java" />
+        <option value="$PROJECT_DIR$/CtCI/Ch01. Arrays and Strings/Q01_03_URLify.java" />
+        <option value="$PROJECT_DIR$/CtCI/Ch01. Arrays and Strings/Q01_04_PalindromePermutation.java" />
+        <option value="$PROJECT_DIR$/BOJ-DP/BOJ_TEST.java" />
+        <option value="$PROJECT_DIR$/BOJ-DP/BOJ1149_RGB거리.java" />
+        <option value="$PROJECT_DIR$/BOJ-DP/BOJ1932_숫자삼각형.java" />
+        <option value="$PROJECT_DIR$/BOJ-DP/BOJ1309_동물원.java" />
+        <option value="$PROJECT_DIR$/BOJ-DP/BOJ1937_욕심쟁이판다.java" />
+        <option value="$PROJECT_DIR$/CtCI/Ch01. Arrays and Strings/Test.java" />
+        <option value="$PROJECT_DIR$/Test/LowerBound.java" />
+        <option value="$PROJECT_DIR$/sorting/bubble.java" />
+        <option value="$PROJECT_DIR$/sorting/merge.java" />
+        <option value="$PROJECT_DIR$/sorting/Bubble.java" />
+        <option value="$PROJECT_DIR$/sorting/Selection.java" />
+        <option value="$PROJECT_DIR$/sorting/Merge.java" />
+        <option value="$PROJECT_DIR$/Test/Thread.java" />
+        <option value="$PROJECT_DIR$/Test/ThreadTest.java" />
+        <option value="$PROJECT_DIR$/BOJ-DP/BOJ1912_연속합.java" />
+        <option value="$PROJECT_DIR$/BOJ-DP/BOJ2579_계단오르기.java" />
+        <option value="$PROJECT_DIR$/Test/InterviewBit.java" />
+        <option value="$PROJECT_DIR$/sorting/Quick.java" />
+        <option value="$PROJECT_DIR$/sorting/Insertion.java" />
         <option value="$PROJECT_DIR$/201609/P2/CJ201609_IdeaMeeting.java" />
-        <option value="$PROJECT_DIR$/BOJ/BOJ1733_Bipartite.java" />
-        <option value="$PROJECT_DIR$/BOJ/BOJ1760.java" />
-        <option value="$PROJECT_DIR$/BOJ/BOJ1760_Bipartite.java" />
-        <option value="$PROJECT_DIR$/BOJ/BOJ2133.java" />
-        <option value="$PROJECT_DIR$/BOJ/BOJ2133_DP.java" />
-        <option value="$PROJECT_DIR$/BOJ/BOJ2098_DB.java" />
-        <option value="$PROJECT_DIR$/BOJ/BOJ2098_Dㅖ.java" />
-        <option value="$PROJECT_DIR$/BOJ/BOJ2098_DP.java" />
-        <option value="$PROJECT_DIR$/BOJ/BOJ1102_DP.java" />
-        <option value="$PROJECT_DIR$/BOJ/BOJ1562_DP.java" />
-        <option value="$PROJECT_DIR$/hackerrank/WOC32_duplication.java" />
-        <option value="$PROJECT_DIR$/hackerrank/WOC32_Duplication.java" />
-        <option value="$PROJECT_DIR$/hackerrank/WOC32_FightTheMonsters.java" />
-        <option value="$PROJECT_DIR$/hackerrank/WOC32_CircularWalk.java" />
+        <option value="$PROJECT_DIR$/pattern/ChainOfResponsibility.java" />
+        <option value="$PROJECT_DIR$/Test/LeetCode.java" />
+        <option value="$PROJECT_DIR$/pattern/CallCenter.java" />
+        <option value="$PROJECT_DIR$/Test/Permutation.java" />
+        <option value="$PROJECT_DIR$/Test/routine.java" />
+        <option value="$PROJECT_DIR$/Test/CoinChange.java" />
+        <option value="$PROJECT_DIR$/Test/CoinChange2.java" />
+        <option value="$PROJECT_DIR$/Test/GFG.java" />
       </list>
     </option>
   </component>
@@ -262,10 +317,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="37" />
+  <component name="MavenProjectNavigator">
+    <treeState />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="36" />
     <option name="y" value="22" />
-    <option name="width" value="1403" />
+    <option name="width" value="1365" />
     <option name="height" value="878" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -315,175 +373,68 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 1.8 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 1.8 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rt.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 1.8 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rt.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 1.8 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rt.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 1.8 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rt.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hackerrank" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hackerrank" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SplitPlane.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="world" type="b2602c69:ProjectViewProjectNode" />
+              <item name="world" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="world" type="b2602c69:ProjectViewProjectNode" />
+              <item name="world" type="462c0819:PsiDirectoryNode" />
+              <item name="201606" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="world" type="b2602c69:ProjectViewProjectNode" />
+              <item name="world" type="462c0819:PsiDirectoryNode" />
+              <item name="201606" type="462c0819:PsiDirectoryNode" />
+              <item name="P4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="world" type="b2602c69:ProjectViewProjectNode" />
+              <item name="world" type="462c0819:PsiDirectoryNode" />
+              <item name="algospot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="world" type="b2602c69:ProjectViewProjectNode" />
+              <item name="world" type="462c0819:PsiDirectoryNode" />
+              <item name="BOJ" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="world" type="b2602c69:ProjectViewProjectNode" />
+              <item name="world" type="462c0819:PsiDirectoryNode" />
+              <item name="BOJ-Graph" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="world" type="b2602c69:ProjectViewProjectNode" />
+              <item name="world" type="462c0819:PsiDirectoryNode" />
+              <item name="BOJ-NetworkFlow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="world" type="b2602c69:ProjectViewProjectNode" />
+              <item name="world" type="462c0819:PsiDirectoryNode" />
+              <item name="BOJ-NetworkFlow" type="462c0819:PsiDirectoryNode" />
+              <item name="BOJ1717_집합의표현.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="world" type="b2602c69:ProjectViewProjectNode" />
+              <item name="world" type="462c0819:PsiDirectoryNode" />
+              <item name="pattern" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="world" type="b2602c69:ProjectViewProjectNode" />
+              <item name="world" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -492,26 +443,33 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="drun&#9;PSI&#9;JAVA://DRUNKEN&#10;farthest&#9;PSI&#9;JAVA://edu.princeton.cs.algs4.FarthestPair&#10;closesPair&#9;PSI&#9;JAVA://edu.princeton.cs.algs4.ClosestPair&#10;segment&#9;PSI&#9;JAVA://FamilyTree.SegmentTree&#10;seg&#9;PSI&#9;JAVA://FamilyTree.SegmentTree" />
+    <property name="SearchEverywhereHistoryKey" value="Thread&#9;FILE&#9;file:///Users/cutececil/git/world/Test/Thread.java&#10;Test&#9;FILE&#9;file:///Users/cutececil/git/world/CtCI/Ch01. Arrays and Strings/Test.java&#10;G&#9;FILE&#9;file:///Users/cutececil/git/world/algospot/Gallery.java&#10;gall&#9;PSI&#9;JAVA://Gallery&#10;Poin&#9;FILE&#9;file:///Users/cutececil/git/world/Test/Point2D.java&#10;Point2D&#9;PSI&#9;JAVA://Point2D&#10;11406&#9;PSI&#9;JAVA://BOJ11406&#10;6086&#9;PSI&#9;JAVA://BOJ6086&#10;Grah&#9;PSI&#9;JAVA://GrahamScan&#10;2041.java&#9;null&#9;null&#10;mo&#9;PSI&#9;JAVA://Mordor&#10;Circu&#9;PSI&#9;JAVA://WOC32_CircularWalk&#10;WOC33_3&#9;FILE&#9;file:///Users/cutececil/git/world/hackerrank/WOC33_3_Palindrome.java&#10;BOJ56&#9;PSI&#9;JAVA://BOJ5651_MaximumFlow&#10;drun&#9;PSI&#9;JAVA://DRUNKEN&#10;farthest&#9;PSI&#9;JAVA://edu.princeton.cs.algs4.FarthestPair&#10;closesPair&#9;PSI&#9;JAVA://edu.princeton.cs.algs4.ClosestPair&#10;segment&#9;PSI&#9;JAVA://FamilyTree.SegmentTree&#10;seg&#9;PSI&#9;JAVA://FamilyTree.SegmentTree" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Test" />
-      <recent name="$PROJECT_DIR$/201609/P3" />
-      <recent name="$PROJECT_DIR$/201606/P4" />
-      <recent name="$PROJECT_DIR$/201608/P1" />
+      <recent name="$PROJECT_DIR$/201709/P5" />
+      <recent name="$PROJECT_DIR$/201606/P5" />
+      <recent name="$PROJECT_DIR$/201606/P3" />
+      <recent name="$PROJECT_DIR$/201606/P2" />
+      <recent name="$PROJECT_DIR$/201606/P1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/201609/P3" />
-      <recent name="$PROJECT_DIR$/201608/P1" />
+      <recent name="$PROJECT_DIR$/CtCI" />
+      <recent name="$PROJECT_DIR$/BOJ-NetworkFlow" />
+      <recent name="$PROJECT_DIR$/201509/P2" />
+      <recent name="$PROJECT_DIR$/201608" />
+      <recent name="$PROJECT_DIR$/201708/P1" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -526,25 +484,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.WOC32_CircularWalk">
-    <configuration default="false" name="BOJ1102_DP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="BOJ1102_DP" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="world" />
-      <envs />
-      <method />
+  <component name="RunManager" selected="Application.GFG">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
     </configuration>
-    <configuration default="false" name="BOJ1562_DP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="CoinChange" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="BOJ1562_DP" />
+      <option name="MAIN_CLASS_NAME" value="CoinChange" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -555,11 +505,10 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="world" />
       <envs />
-      <method />
     </configuration>
-    <configuration default="false" name="WOC32_Duplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="CoinChange2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="WOC32_Duplication" />
+      <option name="MAIN_CLASS_NAME" value="CoinChange2" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -570,11 +519,10 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="world" />
       <envs />
-      <method />
     </configuration>
-    <configuration default="false" name="WOC32_FightTheMonsters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="GFG" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="WOC32_FightTheMonsters" />
+      <option name="MAIN_CLASS_NAME" value="GFG" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -585,11 +533,10 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="world" />
       <envs />
-      <method />
     </configuration>
-    <configuration default="false" name="WOC32_CircularWalk" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Permutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="WOC32_CircularWalk" />
+      <option name="MAIN_CLASS_NAME" value="Permutation" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -600,14 +547,94 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="world" />
       <envs />
-      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration name="routine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="routine" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="world" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
-      <method />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
@@ -632,6 +659,30 @@
         <option name="GAPID_DISABLE_PCS" value="false" />
         <option name="SUPPORT_LIB_ENABLED" value="true" />
         <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="GAPID_DISABLE_PCS" value="false" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -662,29 +713,6 @@
         <option name="SUPPORT_LIB_ENABLED" value="true" />
         <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
@@ -842,27 +870,6 @@
       <setting name="depsClasspath" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <envs />
@@ -925,46 +932,10 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <method />
-    </configuration>
     <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -990,45 +961,21 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.BOJ1102_DP" />
-      <item index="1" class="java.lang.String" itemvalue="Application.BOJ1562_DP" />
-      <item index="2" class="java.lang.String" itemvalue="Application.WOC32_Duplication" />
-      <item index="3" class="java.lang.String" itemvalue="Application.WOC32_FightTheMonsters" />
-      <item index="4" class="java.lang.String" itemvalue="Application.WOC32_CircularWalk" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Permutation" />
+      <item index="1" class="java.lang.String" itemvalue="Application.routine" />
+      <item index="2" class="java.lang.String" itemvalue="Application.CoinChange" />
+      <item index="3" class="java.lang.String" itemvalue="Application.CoinChange2" />
+      <item index="4" class="java.lang.String" itemvalue="Application.GFG" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.WOC32_CircularWalk" />
-        <item index="1" class="java.lang.String" itemvalue="Application.WOC32_FightTheMonsters" />
-        <item index="2" class="java.lang.String" itemvalue="Application.WOC32_Duplication" />
-        <item index="3" class="java.lang.String" itemvalue="Application.BOJ1562_DP" />
-        <item index="4" class="java.lang.String" itemvalue="Application.BOJ1102_DP" />
+        <item index="0" class="java.lang.String" itemvalue="Application.GFG" />
+        <item index="1" class="java.lang.String" itemvalue="Application.CoinChange2" />
+        <item index="2" class="java.lang.String" itemvalue="Application.CoinChange" />
+        <item index="3" class="java.lang.String" itemvalue="Application.routine" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Permutation" />
       </list>
     </recent_temporary>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="GAPID_DISABLE_PCS" value="false" />
-      </Profilers>
-      <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <method />
-    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -1057,52 +1004,173 @@
       <workItem from="1492017591579" duration="25572000" />
       <workItem from="1492570781229" duration="61957000" />
       <workItem from="1493686814599" duration="9615000" />
-      <workItem from="1494832302716" duration="7634000" />
+      <workItem from="1494832302716" duration="23775000" />
+      <workItem from="1495161815227" duration="130978000" />
+      <workItem from="1495412140305" duration="14218000" />
+      <workItem from="1495581060496" duration="39924000" />
+      <workItem from="1497486584722" duration="1890000" />
+      <workItem from="1497832235720" duration="2074000" />
+      <workItem from="1497892628208" duration="36410000" />
+      <workItem from="1499390449831" duration="37559000" />
+      <workItem from="1502153689590" duration="11425000" />
+      <workItem from="1502226233366" duration="22020000" />
+      <workItem from="1502950928224" duration="1901000" />
+      <workItem from="1502990221635" duration="78376000" />
+      <workItem from="1503189286618" duration="32122000" />
+      <workItem from="1503230025135" duration="5426000" />
+      <workItem from="1503240735862" duration="2193000" />
+      <workItem from="1503242937295" duration="49724000" />
+      <workItem from="1503534238508" duration="3869000" />
+      <workItem from="1503542056449" duration="21238000" />
+      <workItem from="1503627865455" duration="475000" />
+      <workItem from="1503631636634" duration="2469000" />
+      <workItem from="1503638229233" duration="64251000" />
+      <workItem from="1504733550608" duration="12340000" />
+      <workItem from="1504759883048" duration="12263000" />
+      <workItem from="1504851779393" duration="14329000" />
+      <workItem from="1505098612331" duration="33573000" />
+      <workItem from="1505368122689" duration="27325000" />
+      <workItem from="1505453425849" duration="59965000" />
+      <workItem from="1505857665139" duration="21711000" />
+      <workItem from="1505953290226" duration="20791000" />
+      <workItem from="1506061217342" duration="2696000" />
+      <workItem from="1506065876494" duration="137000" />
+      <workItem from="1506066101631" duration="4090000" />
+      <workItem from="1509435701230" duration="1635000" />
+      <workItem from="1510108081790" duration="1699000" />
+      <workItem from="1510712288827" duration="9338000" />
+      <workItem from="1511226226852" duration="6477000" />
+      <workItem from="1511742868300" duration="260000" />
+      <workItem from="1511941500558" duration="4806000" />
+      <workItem from="1512700362122" duration="3501000" />
+      <workItem from="1512980929239" duration="18208000" />
+      <workItem from="1513300373554" duration="1807000" />
+      <workItem from="1513752715988" duration="1680000" />
+      <workItem from="1514249434191" duration="121000" />
+      <workItem from="1514256895110" duration="203000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219796000" />
+    <option name="totallyTimeSpent" value="1053434000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="37" y="22" width="1403" height="878" extended-state="0" />
+    <frame x="36" y="22" width="1404" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951653" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3256705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23155217" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23409669" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.326972" sideWeight="0.50549453" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299045" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30395913" sideWeight="0.4945055" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30788803" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2707535" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24761204" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18428782" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38314176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24981631" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2302799" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30140486" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Amazon EC2" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844335" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Amazon EC2" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299045" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24981631" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3562341" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951653" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569975" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.326972" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30152673" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24809161" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19823788" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3842239" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1137,7 +1205,7 @@
           <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/BOJ/BOJ2316.java</url>
+          <url>file://$PROJECT_DIR$/BOJ-NetworkFlow/BOJ2316_도시왕복하기.java</url>
           <line>36</line>
           <properties />
           <option name="timeStamp" value="75" />
@@ -1167,13 +1235,7 @@
           <option name="timeStamp" value="155" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/201609/P2/CJ201609_IdeaMeeting.java</url>
-          <line>131</line>
-          <properties />
-          <option name="timeStamp" value="173" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/BOJ/BOJ1102_DP.java</url>
+          <url>file://$PROJECT_DIR$/BOJ-DP/BOJ1102_발전소.java</url>
           <line>29</line>
           <properties />
           <option name="timeStamp" value="175" />
@@ -1191,13 +1253,148 @@
           <option name="timeStamp" value="177" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/hackerrank/WOC32_CircularWalk.java</url>
+          <url>file://$PROJECT_DIR$/201705/P1/P1_.java</url>
+          <line>77</line>
+          <properties />
+          <option name="timeStamp" value="189" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/201705/P4/P4_Repeat.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="194" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/201708/P1/P1_Queue.java</url>
+          <line>78</line>
+          <properties />
+          <option name="timeStamp" value="287" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/201708/P1/P1_Queue.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="288" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/201708/P5/P5_Large.java</url>
+          <line>177</line>
+          <properties />
+          <option name="timeStamp" value="315" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/201708/P5/P5_Large.java</url>
+          <line>132</line>
+          <properties />
+          <option name="timeStamp" value="318" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/201708/P5/P5_Large.java</url>
+          <line>198</line>
+          <properties />
+          <option name="timeStamp" value="323" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/201608/P1/P1_Adballoon.java</url>
           <line>26</line>
           <properties />
-          <option name="timeStamp" value="178" />
+          <option name="timeStamp" value="334" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/201608/P2/P2_GasStation.java</url>
+          <line>73</line>
+          <properties />
+          <option name="timeStamp" value="340" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/201608/P3/P3_Contact.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="354" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/201608/P3/P3_Contact.java</url>
+          <line>113</line>
+          <properties />
+          <option name="timeStamp" value="358" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/201609/P1/P1_저울추.java</url>
+          <line>114</line>
+          <properties />
+          <option name="timeStamp" value="366" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/201609/P1/P1_저울추.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="367" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/201609/P4/P4_RocketMonkey.java</url>
+          <line>156</line>
+          <properties />
+          <option name="timeStamp" value="396" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/201609/P4/P4_RocketMonkey.java</url>
+          <line>141</line>
+          <properties />
+          <option name="timeStamp" value="397" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/201708/P2/P2_ThinRectangle.java</url>
+          <line>69</line>
+          <properties />
+          <option name="timeStamp" value="400" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/201705/P5/P5_해일.java</url>
+          <line>181</line>
+          <properties />
+          <option name="timeStamp" value="432" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/201705/P5/P5_해일.java</url>
+          <line>121</line>
+          <properties />
+          <option name="timeStamp" value="437" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/201705/P5/P5_해일.java</url>
+          <line>97</line>
+          <properties />
+          <option name="timeStamp" value="438" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/201709/P1/P1_xxx.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="472" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/201709/P4/P4_절단중심_Set1.java</url>
+          <line>87</line>
+          <properties />
+          <option name="timeStamp" value="476" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/201709/P4/P4_절단중심_Set2.java</url>
+          <line>98</line>
+          <properties />
+          <option name="timeStamp" value="482" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/201709/P4/P4_절단중심_Set2.java</url>
+          <line>83</line>
+          <properties />
+          <option name="timeStamp" value="483" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="179" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="519" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1205,485 +1402,404 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>D[y][x]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>A[y][x]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/algs4.jar!/edu/princeton/cs/algs4/Point2D.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/PriorityQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="363" column="28" lean-forward="false" selection-start-line="363" selection-start-column="28" selection-end-line="363" selection-end-column="28" />
+        <state relative-caret-position="4365">
+          <caret line="322" column="0" lean-forward="false" selection-start-line="322" selection-start-column="0" selection-end-line="322" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/201606/P4/CJ201606_P4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algospot/DRUNKEN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/GraphGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/javafx-src.zip!/javafx/geometry/Point2D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1649">
-          <caret line="246" column="37" lean-forward="false" selection-start-line="246" selection-start-column="37" selection-end-line="246" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/algs4.jar!/edu/princeton/cs/algs4/FloydWarshall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="215" column="0" lean-forward="true" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/201609/P3/sample.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/algs4.jar!/edu/princeton/cs/algs4/Stack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="112" column="0" lean-forward="true" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/201609/P3/Problem3_set2/output1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/201609/P3/output1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/201609/P3/Problem3_set1/output1.txt">
+    <entry file="file://$PROJECT_DIR$/hackerrank/AccurateSorting.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <caret line="15" column="38" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/201609/P3/Problem3_set1/input1.txt">
+    <entry file="file://$PROJECT_DIR$/interviewbit/Minstack.md" />
+    <entry file="file://$PROJECT_DIR$/Test/GraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="429" column="0" lean-forward="true" selection-start-line="429" selection-start-column="0" selection-end-line="429" selection-end-column="0" />
+        <state relative-caret-position="1050">
+          <caret line="70" column="29" lean-forward="false" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/awt/geom/Point2D.java">
+    <entry file="file://$PROJECT_DIR$/201509/P3/P3_TriangleGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5159">
-          <caret line="41" column="22" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/pointdata.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/Scanner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="610" column="0" lean-forward="false" selection-start-line="610" selection-start-column="0" selection-end-line="610" selection-end-column="0" />
+        <state relative-caret-position="615">
+          <caret line="41" column="51" lean-forward="false" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/ComparableTimSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="319" column="0" lean-forward="false" selection-start-line="319" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/201609/P3/input1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36202">
-          <caret line="2690" column="0" lean-forward="false" selection-start-line="2690" selection-start-column="0" selection-end-line="2690" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/sample.in">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/코딩/LGCodeJam/2016/2016 final/Problem3_suboptimal.cp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/201609/P3/sample.in">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/201609/P3/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="57" column="36" lean-forward="false" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/TestPoint2D.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/LinkedHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4185">
+          <caret line="304" column="51" lean-forward="false" selection-start-line="304" selection-start-column="51" selection-end-line="304" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interviewbit/Minstack.java" />
+    <entry file="file://$PROJECT_DIR$/interviewbit/Postorder_traversal.java" />
+    <entry file="file://$PROJECT_DIR$/Main.java" />
+    <entry file="file://$PROJECT_DIR$/hackerrank/PrimHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="704" column="0" lean-forward="false" selection-start-line="704" selection-start-column="0" selection-end-line="704" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sorting/Merge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="82" lean-forward="false" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5310">
+          <caret line="381" column="46" lean-forward="false" selection-start-line="381" selection-start-column="39" selection-end-line="381" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/ThreadTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#122#123#0" expanded="false" />
+            <element signature="e#196#197#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BOJ-DP/BOJ1912_연속합.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BOJ-DP/BOJ1890_점프.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BOJ-DP/BOJ2579_계단오르기.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="44" column="37" lean-forward="true" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/TreeMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="710" column="13" lean-forward="false" selection-start-line="710" selection-start-column="13" selection-end-line="710" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="643" column="27" lean-forward="true" selection-start-line="643" selection-start-column="27" selection-end-line="643" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/lang/StrictMath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="631" column="32" lean-forward="false" selection-start-line="631" selection-start-column="32" selection-end-line="631" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CtCI/Ch01. Arrays and Strings/Q01_01_Is_Unique.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CtCI/Ch01. Arrays and Strings/Q01_02_CheckPermutation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="50" column="46" lean-forward="true" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CtCI/Ch01. Arrays and Strings/Q01_03_URLify.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="42" lean-forward="false" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algospot/SortGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="57" column="42" lean-forward="false" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sorting/Quick.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sorting/Insertion.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="55" column="35" lean-forward="false" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
-          <folding>
-            <marker date="1493094781000" expanded="true" signature="171:2703" ph="{...}" />
-            <marker date="1493094781000" expanded="true" signature="234:2701" ph="{...}" />
-            <marker date="1493094781000" expanded="true" signature="2705:3262" ph="/**...*/" />
-            <marker date="1493094781000" expanded="true" signature="3280:7429" ph="{...}" />
-            <marker date="1493094781000" expanded="true" signature="3317:3326" ph="&lt;~&gt;" />
-            <marker date="1493094781000" expanded="true" signature="3335:3701" ph="/**...*/" />
-            <marker date="1493094781000" expanded="true" signature="3742:5497" ph="{...}" />
-            <marker date="1493094781000" expanded="true" signature="4219:4411" ph="//..." />
-            <marker date="1493094781000" expanded="true" signature="4445:4545" ph="//..." />
-            <marker date="1493094781000" expanded="true" signature="5503:5680" ph="/**...*/" />
-            <marker date="1493094781000" expanded="true" signature="5717:5833" ph="{...}" />
-            <marker date="1493094781000" expanded="true" signature="5755:5764" ph="&lt;~&gt;" />
-            <marker date="1493094781000" expanded="true" signature="5895:6081" ph="{...}" />
-            <marker date="1493094781000" expanded="true" signature="6168:6577" ph="{...}" />
-            <marker date="1493094781000" expanded="true" signature="6600:6611" ph=" { " />
-            <marker date="1493094781000" expanded="true" signature="6630:6636" ph=" }" />
-            <marker date="1493094781000" expanded="true" signature="6642:7011" ph="/**...*/" />
-            <marker date="1493094781000" expanded="true" signature="7055:7426" ph="{...}" />
-          </folding>
+          <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Point2D.java">
+    <entry file="file://$PROJECT_DIR$/euler/E174_SqaureLaminae.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="69" lean-forward="false" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
-          <folding />
+        <state relative-caret-position="249">
+          <caret line="42" column="19" lean-forward="false" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/201608/P4/Main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="115" column="32" lean-forward="false" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/PriorityQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="81" column="13" lean-forward="false" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#32360#0" expanded="false" />
-            <element signature="e#4277#4278#0" expanded="false" />
-            <element signature="e#4329#4330#0" expanded="false" />
-            <element signature="e#4748#4749#0" expanded="false" />
-            <element signature="e#4791#4792#0" expanded="false" />
-            <element signature="e#5256#5257#0" expanded="false" />
-            <element signature="e#5314#5315#0" expanded="false" />
-            <element signature="e#12127#12128#0" expanded="false" />
-            <element signature="e#12158#12159#0" expanded="false" />
-            <element signature="e#12969#12970#0" expanded="false" />
-            <element signature="e#13025#13026#0" expanded="false" />
-            <element signature="e#14861#14862#0" expanded="false" />
-            <element signature="e#14900#14901#0" expanded="false" />
-            <element signature="e#15477#15478#0" expanded="false" />
-            <element signature="e#15526#15527#0" expanded="false" />
-            <element signature="e#18065#18066#0" expanded="false" />
-            <element signature="e#18097#18098#0" expanded="false" />
-            <element signature="e#21183#21184#0" expanded="false" />
-            <element signature="e#21210#21211#0" expanded="false" />
-            <element signature="e#26782#26783#0" expanded="false" />
-            <element signature="e#26815#26816#0" expanded="false" />
-            <element signature="e#28862#28863#0" expanded="false" />
-            <element signature="e#28932#28933#0" expanded="false" />
-            <element signature="e#32159#32160#0" expanded="false" />
-            <element signature="e#32217#32218#0" expanded="false" />
-            <element signature="e#32257#32258#0" expanded="false" />
-            <element signature="e#32350#32351#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/201609/P2/sample.in">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackerrank/SplitPlane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="83" column="16" lean-forward="false" selection-start-line="83" selection-start-column="16" selection-end-line="84" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/201609/P2/chart.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/201609/P2/CJ201609_IdeaMeeting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding>
-            <element signature="e#1727#1734#0" expanded="true" />
-            <element signature="e#7826#7827#0" expanded="true" />
-            <element signature="e#7875#7876#0" expanded="true" />
-            <element signature="e#8565#8566#0" expanded="true" />
-            <element signature="e#8606#8607#0" expanded="true" />
-            <element signature="e#8653#8654#0" expanded="true" />
-            <element signature="e#8694#8695#0" expanded="true" />
-            <element signature="e#10272#10273#0" expanded="true" />
-            <element signature="e#10322#10323#0" expanded="true" />
-            <element signature="e#10873#10874#0" expanded="true" />
-            <element signature="e#10918#10919#0" expanded="true" />
-            <element signature="e#13173#13174#0" expanded="true" />
-            <element signature="e#13221#13222#0" expanded="true" />
-            <element signature="e#15006#15007#0" expanded="true" />
-            <element signature="e#15047#15048#0" expanded="true" />
-            <element signature="e#15256#15257#0" expanded="true" />
-            <element signature="e#15299#15300#0" expanded="true" />
-            <element signature="e#16698#16699#0" expanded="true" />
-            <element signature="e#16752#16753#0" expanded="true" />
-            <element signature="e#16843#16844#0" expanded="true" />
-            <element signature="e#16890#16891#0" expanded="true" />
-            <element signature="e#17205#17206#0" expanded="true" />
-            <element signature="e#17261#17262#0" expanded="true" />
-            <element signature="e#17898#17899#0" expanded="true" />
-            <element signature="e#17949#17950#0" expanded="true" />
-            <marker date="1493094781000" expanded="false" signature="18003:18018" ph=" { " />
-            <marker date="1493094781000" expanded="false" signature="18047:18057" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BOJ/BOJ1867.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="67" column="5" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="67" selection-end-column="5" />
+        <state relative-caret-position="1170">
+          <caret line="78" column="13" lean-forward="false" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BOJ/BOJ11406.java">
+    <entry file="file://$PROJECT_DIR$/sorting/Bubble.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="12" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+        <state relative-caret-position="285">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BOJ/BOJ1733_Bipartite.java">
+    <entry file="file://$PROJECT_DIR$/sorting/Selection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="405">
+          <caret line="27" column="5" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Interval2D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="19" lean-forward="false" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-          <folding>
-            <element signature="e#1821#1822#0" expanded="false" />
-            <element signature="e#1883#1884#0" expanded="false" />
-            <element signature="e#2042#2043#0" expanded="false" />
-            <element signature="e#2088#2089#0" expanded="false" />
-            <element signature="e#2351#2352#0" expanded="false" />
-            <element signature="e#2387#2388#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BOJ/BOJ1760_Bipartite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="91" column="12" lean-forward="true" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BOJ/BOJ2133_DP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BOJ/BOJ1102_DP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="35" lean-forward="false" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BOJ/BOJ5651_MaximumFlow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="37" lean-forward="false" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BOJ/BOJ1562_DP.java">
+    <entry file="file://$PROJECT_DIR$/algospot/HANOI4.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BOJ/BOJ2098_DP.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/BitSet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="9" lean-forward="false" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+        <state relative-caret-position="14535">
+          <caret line="1002" column="10" lean-forward="false" selection-start-line="1002" selection-start-column="10" selection-end-line="1002" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algospot/AdjListNetworkFlow.java">
+    <entry file="file://$PROJECT_DIR$/Test/InterviewBit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="705">
+          <caret line="47" column="58" lean-forward="false" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algospot/BISHOPS.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/Comparator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1695">
-          <caret line="113" column="34" lean-forward="false" selection-start-line="113" selection-start-column="34" selection-end-line="113" selection-end-column="42" />
+        <state relative-caret-position="1890">
+          <caret line="149" column="8" lean-forward="false" selection-start-line="149" selection-start-column="8" selection-end-line="149" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/201609/P3/CJ201609_ConvexQuadrilateral.java">
+    <entry file="file://$PROJECT_DIR$/pattern/CallCenter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="43" lean-forward="false" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/201609/P3/CJ201609_P3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="56" column="17" lean-forward="false" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackerrank/FindTheRunningMedian.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="3097" column="25" lean-forward="false" selection-start-line="3097" selection-start-column="25" selection-end-line="3097" selection-end-column="25" />
+        <state relative-caret-position="1275">
+          <caret line="89" column="23" lean-forward="false" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
           <folding>
-            <element signature="e#121727#121728#0" expanded="true" />
-            <element signature="e#121769#121770#0" expanded="true" />
+            <element signature="e#629#630#0" expanded="false" />
+            <element signature="e#672#673#0" expanded="false" />
+            <element signature="e#811#812#0" expanded="false" />
+            <element signature="e#851#852#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackerrank/ZeroOneGame.java">
+    <entry file="file://$PROJECT_DIR$/CtCI/Ch01. Arrays and Strings/Q01_04_PalindromePermutation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackerrank/WOC32_Duplication.java">
+    <entry file="file://$PROJECT_DIR$/Test/Permutation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="1290">
+          <caret line="88" column="18" lean-forward="false" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#1346#1347#0" expanded="false" />
+            <element signature="e#1375#1376#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackerrank/WOC32_FightTheMonsters.java">
+    <entry file="file://$PROJECT_DIR$/201606/P4/CJ201606_P4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        <state relative-caret-position="945">
+          <caret line="65" column="63" lean-forward="false" selection-start-line="65" selection-start-column="63" selection-end-line="65" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BOJ/BOJ11438_LCA2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="92" column="9" lean-forward="false" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pattern/ChainOfResponsibility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#1227#1228#0" expanded="true" />
+            <element signature="e#1279#1280#0" expanded="true" />
+            <element signature="e#1712#1713#0" expanded="true" />
+            <element signature="e#1754#1755#0" expanded="true" />
+            <element signature="e#1820#1821#0" expanded="true" />
+            <element signature="e#1902#1903#0" expanded="true" />
+            <element signature="e#2011#2012#0" expanded="true" />
+            <element signature="e#2053#2054#0" expanded="true" />
+            <element signature="e#2119#2120#0" expanded="true" />
+            <element signature="e#2198#2199#0" expanded="true" />
+            <element signature="e#2305#2306#0" expanded="true" />
+            <element signature="e#2347#2348#0" expanded="true" />
+            <element signature="e#2413#2414#0" expanded="true" />
+            <element signature="e#2483#2484#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
+    <entry file="file://$PROJECT_DIR$/BOJ-NetworkFlow/BOJ1717_집합의표현.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="142" column="23" lean-forward="false" selection-start-line="142" selection-start-column="23" selection-end-line="142" selection-end-column="23" />
-          <folding>
-            <element signature="e#5027#5028#0" expanded="true" />
-            <element signature="e#5098#5099#0" expanded="true" />
-            <element signature="e#88329#88330#0" expanded="true" />
-            <element signature="e#88386#88387#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="188">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackerrank/WOC32_CircularWalk.java">
+    <entry file="file://$PROJECT_DIR$/algospot/Dictionary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="302">
+          <caret line="110" column="17" lean-forward="true" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BOJ-Graph/BOJ2252_줄세우기.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="45" column="14" lean-forward="true" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BOJ-Graph/BOJ1967_트리의지름.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/LeetCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="687" column="19" lean-forward="false" selection-start-line="687" selection-start-column="19" selection-end-line="687" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/routine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="36" column="22" lean-forward="true" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="66" column="13" lean-forward="false" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/CoinChange2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/GFG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11">
+          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>

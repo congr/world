@@ -40,23 +40,23 @@ public class E174_SqaureLaminae {
     }
     
     static int solve(int K) {
-//        LinkedHashSet<Long> set = new LinkedHashSet<>(); // to remove duplicate numbers
+//        LinkedHashSet<Long> setWithoutDup = new LinkedHashSet<>(); // to remove duplicate numbers
         int[] types = new int[K+1];
         
         int cnt = 0;
         for (int n = 1; n <= 10; n++) { // 1 <= n <= 10
-//            LinkedHashSet<Long> set = new LinkedHashSet<>();
+//            LinkedHashSet<Long> setWithoutDup = new LinkedHashSet<>();
             cnt =0;
             for (int a = 2 * n + 1; cnt <= K ; a++) {
                 cnt = a * a - (a - 2 * n) * (a - 2 * n);// a^2 - (a-2n)^2
                 if (cnt <= K) // t <= k
                     types[cnt]++;
-//                    set.add(cnt);
+//                    setWithoutDup.add(cnt);
                 else if (cnt > K)
                     break;
             }
            // System.out.println(n + "---------");
-           // System.out.println(set.toString());
+           // System.out.println(setWithoutDup.toString());
         }
     
         int result =0;
@@ -70,8 +70,8 @@ public class E174_SqaureLaminae {
                 System.out.println("t==0");
         }
         return result;
-            //System.out.println(set.toString()); // [8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80, 84, 88, 92, 96, 100]
-        //return 10;//set.size();
+            //System.out.println(setWithoutDup.toString()); // [8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80, 84, 88, 92, 96, 100]
+        //return 10;//setWithoutDup.size();
     }
     
     private static final int SIZE_LIMIT = 2000;

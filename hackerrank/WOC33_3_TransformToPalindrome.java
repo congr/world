@@ -81,25 +81,25 @@ public class WOC33_3_TransformToPalindrome {
         
         void makeSet(int n) {
             for (int i = 0; i < n; i++) {
-                parent[i] = i;                          // Initially, all elements are in their own set.
+                parent[i] = i;                          // Initially, all elements are in their own setWithoutDup.
             }
         }
         
-        // Returns representative of x's set
+        // Returns representative of x's setWithoutDup
         int find(int x) {
-            if (parent[x] != x) {                       // Finds the representative of the set that x is an element of
-                parent[x] = find(parent[x]);            // if x is not the parent of itself Then x is not the representative of his set,
+            if (parent[x] != x) {                       // Finds the representative of the setWithoutDup that x is an element of
+                parent[x] = find(parent[x]);            // if x is not the parent of itself Then x is not the representative of his setWithoutDup,
                 // so we recursively call Find on its parent
-                // and move i's node directly under the representative of this set
+                // and move i's node directly under the representative of this setWithoutDup
             }
             return parent[x];
         }
         
-        // Unites the set that includes x and the set that includes x
+        // Unites the setWithoutDup that includes x and the setWithoutDup that includes x
         void union(int x, int y) {
             int xRoot = find(x), yRoot = find(y);       // Find representatives of two sets
             
-            if (xRoot == yRoot)                         // Elements are in the same set, no need to unite anything.
+            if (xRoot == yRoot)                         // Elements are in the same setWithoutDup, no need to unite anything.
                 return;
             
             if (rank[xRoot] < rank[yRoot])              // If x's rank is less than y's rank

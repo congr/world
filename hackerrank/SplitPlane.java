@@ -455,7 +455,7 @@ final class StdRandom {
 
     // static initializer
     static {
-        // this is how the seed was set in Java 1.4
+        // this is how the seed was setWithoutDup in Java 1.4
         seed = System.currentTimeMillis();
         random = new Random(seed);
     }

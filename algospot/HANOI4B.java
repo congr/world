@@ -34,9 +34,9 @@ public class HANOI4B {
                 String[] AB = br.readLine().split(" ");
                 int eachN = Integer.parseInt(AB[0]);            // i기둥에 놓인 원반 개수
 
-                for (int j = 0; j < eachN; j++) {               // 원반 개수만큼 루프를 돌면서 어떤 원반이 i기둥에 있는지 set
+                for (int j = 0; j < eachN; j++) {               // 원반 개수만큼 루프를 돌면서 어떤 원반이 i기둥에 있는지 setWithoutDup
                     int value = Integer.parseInt(AB[j + 1]);    // value는 원반 번호로 {1~..12} 로 입력됨
-                    begin = set(begin, value - 1, i);     // i 기둥에 value 원반이 있다고 set, 내부적으로 0부터 시작하도록 - 1
+                    begin = set(begin, value - 1, i);     // i 기둥에 value 원반이 있다고 setWithoutDup, 내부적으로 0부터 시작하도록 - 1
                 }
             }
 

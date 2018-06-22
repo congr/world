@@ -47,7 +47,7 @@ public class SortGame {
 
         String root = Arrays.toString(perm).replaceAll("\\[|\\]|,|\\s", "");
         queue.add(root);
-        toSort.put(root, 0); // LinkedHashMap to set new value
+        toSort.put(root, 0); // LinkedHashMap to setWithoutDup new value
 
         while (!queue.isEmpty()) {
             String here = queue.poll(); // retrieve and remove the front

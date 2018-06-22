@@ -50,7 +50,7 @@ public class FamilyTree {
                 Node parent = tree.get(pIndex);
                 Node child = tree.get(i + 1);
                 parent.addChild(child);
-                //child.depth = parent.depth + 1; // can't set depth from parent, if parent is not yet set since input data might not be sorted
+                //child.depth = parent.depth + 1; // can't setWithoutDup depth from parent, if parent is not yet setWithoutDup since input data might not be sorted
             }
 
             // eulerTour output -> eulerVisits[2N-1], eulerDepths[2N-1], nodeFirstBump[N]
@@ -101,7 +101,7 @@ public class FamilyTree {
         if (nodeFirstBump[root.data] == -1) // if not visited yet
             nodeFirstBump[root.data] = pos;
 
-        // each node set here at first
+        // each node setWithoutDup here at first
         eulerVisits[pos] = root.data;
         eulerDepths[pos] = root.depth;
         pos++;
@@ -112,7 +112,7 @@ public class FamilyTree {
             eulerTour(node, eulerVisits, eulerDepths, nodeFirstBump);
             dep--;
 
-            // each node set here again (set euler tour's node occurrence)
+            // each node setWithoutDup here again (setWithoutDup euler tour's node occurrence)
             eulerVisits[pos] = root.data;
             eulerDepths[pos] = root.depth;
             pos++;

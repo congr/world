@@ -127,7 +127,7 @@ public class SpanningTreeFraction {
                 edge[i] = new Edge();
         }
 
-        // A utility function to find set of an element i
+        // A utility function to find setWithoutDup of an element i
         // (uses path compression technique)
         int find(subset subsets[], int i) {
             // find root and make root as parent of i (path compression)

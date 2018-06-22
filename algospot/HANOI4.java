@@ -2,8 +2,10 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
-import java.util.*;
-import java.util.stream.IntStream;
+import java.util.BitSet;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * Created by cutececil on 2017. 2. 15..
@@ -43,9 +45,9 @@ public class HANOI4 {
                 String[] AB = br.readLine().split(" ");
                 int A = Integer.parseInt(AB[0]); // i기둥에 놓인 원반 개수
 
-                for (int j = 0; j < A; j++) { // 원반 개수만큼 루프를 돌면서 어떤 원반이 i기둥에 있는지 set
+                for (int j = 0; j < A; j++) { // 원반 개수만큼 루프를 돌면서 어떤 원반이 i기둥에 있는지 setWithoutDup
                     int value = Integer.parseInt(AB[j + 1]);
-                    //begin = set(begin, i, value); // i 기둥에 value 원반이 있다고 set
+                    //begin = setWithoutDup(begin, i, value); // i 기둥에 value 원반이 있다고 setWithoutDup
                 }
             }
 
