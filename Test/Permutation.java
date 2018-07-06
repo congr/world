@@ -11,7 +11,7 @@ public class Permutation {
         //    System.out.println(Arrays.toString(s));
         //}
 
-        allPermutation(a);
+        System.out.println(getPermutation(10,40));
 
         //perm("1234"); // all permutation
         //
@@ -21,7 +21,7 @@ public class Permutation {
     }
 
     static void allPermutation(int[] arr) {
-        System.out.println(Arrays.toString(arr));
+        //System.out.println(Arrays.toString(arr));
 
         while (true) {
             int i = arr.length - 2;
@@ -30,6 +30,7 @@ public class Permutation {
 
             int j = arr.length - 1;
             while (j >= 0 && arr[i] > arr[j]) j--; // rightmost largest id -> j
+            System.out.println(Arrays.toString(arr) + " i " + i + " j " + j);
             swap(arr, i, j);
             reverseArr(arr, i + 1);
             System.out.println(Arrays.toString(arr));
@@ -89,6 +90,7 @@ public class Permutation {
         arr[pos2] = h;
     }
 
+    // permutation sequence
     static public String getPermutation(int n, int k) {
         List<Integer> num = new LinkedList<Integer>();
         for (int i = 1; i <= n; i++) num.add(i);
@@ -97,6 +99,7 @@ public class Permutation {
         for (int i = 1; i < n; i++) fact[i] = i * fact[i - 1];
         System.out.println(Arrays.toString(fact));
         k = k - 1;
+
         StringBuilder sb = new StringBuilder();
         for (int i = n; i > 0; i--) {
             int ind = k / fact[i - 1];

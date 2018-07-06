@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Quick {
     public static void main(String[] args) {
-        int[] A = {2, 8, 7, 1, 3, 5, 6, 4};
+        int[] A = {9,-3,5,2,6,8,-6,1,3};
         quickSort(A, 0, A.length - 1);
         System.out.println(Arrays.toString(A));
     }
@@ -33,7 +33,7 @@ public class Quick {
         if (start > end) return;
 
         int pivot = partition(A, start, end);
-        System.out.println(pivot);
+        System.out.println(Arrays.toString(A)+" pivot's new index: " + pivot);
 
         quickSort(A, start, pivot - 1);
         quickSort(A, pivot + 1, end);
